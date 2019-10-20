@@ -18,8 +18,8 @@ var schemeData =
 			"_data": {
 				"1": {
 					"id": "1",
-					"x": 604,
-					"y": 492,
+					"x": 602,
+					"y": 614,
 					"label": "mm-vis-js",
 					"shape": "text",
 					"font": {
@@ -29,8 +29,8 @@ var schemeData =
 				},
 				"93190b70-40fd-4ed7-8177-2b78d925134b": {
 					"id": "93190b70-40fd-4ed7-8177-2b78d925134b",
-					"x": 1338,
-					"y": 729,
+					"x": 898,
+					"y": 1130,
 					"label": "Пример заметки.",
 					"shape": "box",
 					"link": "",
@@ -40,8 +40,8 @@ var schemeData =
 				},
 				"d5d764d3-1dce-4f92-8d64-e7c20e194f6e": {
 					"id": "d5d764d3-1dce-4f92-8d64-e7c20e194f6e",
-					"x": 1172,
-					"y": 865,
+					"x": 1341,
+					"y": 1129,
 					"label": "                                       \n   ",
 					"shape": "box",
 					"borderWidth": "3",
@@ -72,8 +72,8 @@ var schemeData =
 				},
 				"ea153d3c-e619-4eea-a53e-399b37c850d1": {
 					"id": "ea153d3c-e619-4eea-a53e-399b37c850d1",
-					"x": 1031,
-					"y": 319,
+					"x": 1037,
+					"y": 335,
 					"label": "быстро сделать простой инструмент публикации схем и их редактирования.",
 					"shape": "box",
 					"link": ""
@@ -131,8 +131,8 @@ var schemeData =
 				},
 				"4f8a5b3a-9252-45e5-b3f6-d644e3aef68a": {
 					"id": "4f8a5b3a-9252-45e5-b3f6-d644e3aef68a",
-					"x": 706,
-					"y": 322,
+					"x": 711,
+					"y": 335,
 					"label": "Цель"
 				},
 				"ee7cf4ac-ceca-4805-9299-80d862b7ba4a": {
@@ -165,17 +165,81 @@ var schemeData =
 				},
 				"62e1abf0-15ec-455a-a4ab-20e021624151": {
 					"id": "62e1abf0-15ec-455a-a4ab-20e021624151",
-					"x": 822,
-					"y": 859,
+					"x": 917,
+					"y": 842,
 					"label": "https://github.com/sushilshik/mm-vis-js",
 					"shape": "box",
 					"link": "https://github.com/sushilshik/mm-vis-js",
 					"color": {
 						"background": ""
 					}
+				},
+				"946bccb9-fc9b-42a3-a00c-6ed88f5455eb": {
+					"id": "946bccb9-fc9b-42a3-a00c-6ed88f5455eb",
+					"x": 709,
+					"y": 841,
+					"label": "Код"
+				},
+				"bc9de21d-dfe5-4b7a-a972-5f22e0faeec3": {
+					"id": "bc9de21d-dfe5-4b7a-a972-5f22e0faeec3",
+					"x": 728,
+					"y": 1006,
+					"label": "Примеры"
+				},
+				"b248fde4-bbe8-4342-8e94-9a3ccaaf74f6": {
+					"id": "b248fde4-bbe8-4342-8e94-9a3ccaaf74f6",
+					"x": 1280,
+					"y": 899,
+					"label": "https://sushilshik.github.io/examples/technicheskoe_risovanie_-_sherbina.html",
+					"shape": "box",
+					"link": "https://sushilshik.github.io/examples/technicheskoe_risovanie_-_sherbina.html",
+					"color": {
+						"background": "",
+						"border": ""
+					},
+					"borderWidth": ""
+				},
+				"5cb5a670-d957-46bf-ab09-ee85e779742f": {
+					"id": "5cb5a670-d957-46bf-ab09-ee85e779742f",
+					"x": 876,
+					"y": 901,
+					"label": "Cхема книги",
+					"shape": "box",
+					"link": "https://sushilshik.github.io/examples/technicheskoe_risovanie_-_sherbina.html",
+					"color": {
+						"background": "",
+						"border": ""
+					},
+					"borderWidth": ""
+				},
+				"de162667-d58a-44a9-b92f-2ce4d491bd77": {
+					"id": "de162667-d58a-44a9-b92f-2ce4d491bd77",
+					"x": 886,
+					"y": 962,
+					"label": "Схема кода vis.js",
+					"shape": "box",
+					"link": "https://sushilshik.github.io/examples/vis.js.html",
+					"color": {
+						"background": "",
+						"border": ""
+					},
+					"borderWidth": ""
+				},
+				"08e86b96-cceb-4c30-8895-efd97ea4642a": {
+					"id": "08e86b96-cceb-4c30-8895-efd97ea4642a",
+					"x": 1192,
+					"y": 966,
+					"label": "https://sushilshik.github.io/examples/vis.js.html",
+					"shape": "box",
+					"link": "https://sushilshik.github.io/examples/vis.js.html",
+					"color": {
+						"background": "",
+						"border": ""
+					},
+					"borderWidth": ""
 				}
 			},
-			"length": 18,
+			"length": 24,
 			"_idProp": "id",
 			"_type": {}
 		},
@@ -269,13 +333,48 @@ var schemeData =
 					"to": "77056608-d537-4045-9218-87c0f992eb3a",
 					"id": "87a4e75f-1897-4573-a2fa-bc74ce204134"
 				},
-				"c6a5c932-3083-4b36-9d80-60aa1a029472": {
+				"de55b068-3794-4b57-8a03-721a4d2e4008": {
 					"from": "1",
+					"to": "946bccb9-fc9b-42a3-a00c-6ed88f5455eb",
+					"id": "de55b068-3794-4b57-8a03-721a4d2e4008"
+				},
+				"c1893e69-caf6-4cc4-9bdc-24347ab5d2a3": {
+					"from": "946bccb9-fc9b-42a3-a00c-6ed88f5455eb",
 					"to": "62e1abf0-15ec-455a-a4ab-20e021624151",
-					"id": "c6a5c932-3083-4b36-9d80-60aa1a029472"
+					"id": "c1893e69-caf6-4cc4-9bdc-24347ab5d2a3"
+				},
+				"a6ddde8b-00f5-41b4-ace2-7bdc5777929a": {
+					"from": "bc9de21d-dfe5-4b7a-a972-5f22e0faeec3",
+					"to": "5cb5a670-d957-46bf-ab09-ee85e779742f",
+					"id": "a6ddde8b-00f5-41b4-ace2-7bdc5777929a"
+				},
+				"8acd2d9f-6710-4820-9398-7125b80f83f7": {
+					"from": "5cb5a670-d957-46bf-ab09-ee85e779742f",
+					"to": "b248fde4-bbe8-4342-8e94-9a3ccaaf74f6",
+					"id": "8acd2d9f-6710-4820-9398-7125b80f83f7"
+				},
+				"32a88557-be08-40d8-bc2c-595e82eba39c": {
+					"from": "1",
+					"to": "bc9de21d-dfe5-4b7a-a972-5f22e0faeec3",
+					"id": "32a88557-be08-40d8-bc2c-595e82eba39c"
+				},
+				"a87b90f5-7142-4f8f-9f87-a960e9661f48": {
+					"from": "bc9de21d-dfe5-4b7a-a972-5f22e0faeec3",
+					"to": "de162667-d58a-44a9-b92f-2ce4d491bd77",
+					"id": "a87b90f5-7142-4f8f-9f87-a960e9661f48"
+				},
+				"740c438d-6fb3-4946-9fb8-3d72d235dc54": {
+					"from": "de162667-d58a-44a9-b92f-2ce4d491bd77",
+					"to": "08e86b96-cceb-4c30-8895-efd97ea4642a",
+					"id": "740c438d-6fb3-4946-9fb8-3d72d235dc54"
+				},
+				"c9624e43-c8f6-4e28-8c3f-7813a2f07b5a": {
+					"from": "bc9de21d-dfe5-4b7a-a972-5f22e0faeec3",
+					"to": "93190b70-40fd-4ed7-8177-2b78d925134b",
+					"id": "c9624e43-c8f6-4e28-8c3f-7813a2f07b5a"
 				}
 			},
-			"length": 16,
+			"length": 23,
 			"_idProp": "id",
 			"_type": {}
 		}
@@ -286,13 +385,16 @@ var schemeData =
 				"*": [],
 				"add": [
 				{},
+				{},
 				{}
 				],
 				"remove": [
 				{},
+				{},
 				{}
 				],
 				"update": [
+				{},
 				{},
 				{}
 				]
@@ -301,8 +403,8 @@ var schemeData =
 			"_data": {
 				"0": {
 					"id": "0",
-					"x": 1170,
-					"y": 920,
+					"x": 1270,
+					"y": 1190,
 					"image": "https://images-na.ssl-images-amazon.com/images/I/91RQuV%2Bu4VL._SX425_.jpg",
 					"shape": "image",
 					"size": "150",
@@ -318,13 +420,16 @@ var schemeData =
 				"*": [],
 				"add": [
 				{},
+				{},
 				{}
 				],
 				"remove": [
 				{},
+				{},
 				{}
 				],
 				"update": [
+				{},
 				{},
 				{}
 				]
@@ -339,7 +444,7 @@ var schemeData =
 	"setup": {
 		"scale": 1,
 		"viewPosition": {
-			"x": 827.4214,
+			"x": 827.4214000000001,
 			"y": 697.1176
 		}
 	}
