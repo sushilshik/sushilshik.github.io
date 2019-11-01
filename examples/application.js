@@ -1,7 +1,11 @@
-var canvasWidth = 1200;
-var canvasHeight = 800;
+//var canvasWidth = 1200;
+//var canvasHeight = 800;
+var canvasWidthSetup = 100;
+var canvasHeightSetup = 100;
+var canvasWidth = window.innerWidth;
+var canvasHeight = window.innerHeight;
+var body = null
 
-var topMenu = null;
 var showDataButton = null;
 var schemeEditElementsMenu = null;
 var schemeDataMenu = null;
@@ -83,17 +87,23 @@ function draw() {
 	var container = document.getElementById('network');
 	var container1 = document.getElementById('forImage');
 	var options = {
-		height: canvasHeight + 'px',
-		width: canvasWidth + 'px',
+		height: canvasHeightSetup + '%',
+		width: canvasWidthSetup + '%',
 		layout: {randomSeed:seed}, 
 		physics: {enabled: false},
 		edges: { smooth: { enabled: false, type: "dynamic", roundness: 0.5 }, },
 		nodes: { shape: "box" },
+		autoResize: true,
 		interaction: {
 			dragNodes: true,
 			zoomView: true, 
 			dragView: true, 
-			hover: true
+			hover: false,
+			multiselect: true,
+			keyboard: {
+				enabled: true,
+				bindToWindow:true
+				},
 		},
 		manipulation: {
 			addNode: function (data, callback) {
@@ -128,18 +138,21 @@ function draw() {
 		}
 	};
 	var options1 = {
-		height: canvasHeight + 'px',
-		width: canvasWidth + 'px',
+		height: canvasHeightSetup + '%',
+		width: canvasWidthSetup + '%',
 		layout: {randomSeed:seed},
 		physics: {enabled: false},
 		edges: { smooth: { enabled: false, type: "dynamic", roundness: 0.5 }, },
 		nodes: { shape: "box" },
+		autoResize: true,
 		interaction: {
 			dragNodes: true,
 			zoomView: true, 
 			dragView: true  
 		},
 		manipulation: {
+			enabled: false
+			/*
 			addNode: function (data, callback) {
 				// filling in the popup DOM elements
 				document.getElementById('operation').innerHTML = "Add Node";
@@ -169,6 +182,7 @@ function draw() {
 					callback(data);
 				}
 			}
+			*/
 		}
 	};
 
@@ -187,6 +201,10 @@ function draw() {
 		position: {x:positionX, y:positionY},
 		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
 		scale: setup.scale,
+	});
+	network.on('resize', function(properties) {
+		canvasWidth = properties.width;
+		canvasHeight = properties.height;
 	});
 	network.on('selectNode', function (properties) {
 		schemeEditElementsMenu.show();
@@ -257,8 +275,8 @@ function draw() {
 			var position = network.getViewPosition();
 			var canvasPosition = $("#network").position();
 			var positionX = parseFloat((x - canvasWidth/2).toFixed(5))
-				var positionY = parseFloat((y - canvasHeight/2).toFixed(5))
-				var positionX = x - canvasWidth/(2*scale);
+			var positionY = parseFloat((y - canvasHeight/2).toFixed(5))
+			var positionX = x - canvasWidth/(2*scale);
 			var positionY = x - canvasWidth/(2*scale);
 
 			var positionX = -position.x/(scale) + x*scale + canvasWidth/(2*scale) + canvasPosition.top;
@@ -367,6 +385,9 @@ function draw() {
 			});
 			 */
 		});
+		network.editNode();
+		$(".vis-separator-line").remove();
+		$(".vis-close").remove();
 }
 
 function clearPopUp() {
@@ -392,12 +413,11 @@ function init() {
 }
 
 $(document).ready(function() {
-	topMenu = $("<div style='margin:0 0 0 0; padding:3px; background-color: black;color:white;z-index:9999'></div>");
-	var body = $("body");
-	body.prepend(topMenu);
-	showDataButton = $("<span style='color:white'>showData</span>");
-	topMenu.append(showDataButton);
-	schemeEditElementsMenu = $("<div id='schemeEditElementsMenu' style='height:60%; width:300px; position:fixed; left:0; bottom:0; background-color:grey;z-index:5000; padding: 40px 20px 20px 20px'></div>");
+	//topMenu = $("<div style='margin:0 0 0 0; padding:3px; background-color: black;color:white;z-index:9999'></div>");
+	body = $("body");
+	showDataButton = $("<div style='color:black;float:right;position:fixed;top:3px;right:0;z-index:9999;margin:5px 10px 5px 0;font-size:12px'>showData</div>");
+	body.append(showDataButton);
+	schemeEditElementsMenu = $("<div id='schemeEditElementsMenu' style='height:100%; width:300px; position:fixed; left:0; top:33px; background-color:grey;z-index:5000; padding: 40px 20px 20px 20px'></div>");
 	schemeEditElementsMenu.hide();
 	body.append(schemeEditElementsMenu);
 
@@ -525,7 +545,8 @@ $(document).ready(function() {
 	var leftMenuHelpLine1 = $("<div style='margin:40px 0 0 0'><span id='leftMenuHelpLine1'>transparent color - rgba(0,0,0,0)</span></div>");
 	schemeEditElementsMenu.append(leftMenuHelpLine1);
 
-	schemeDataMenu = $("<div id='schemeDataMenu' style='height:100%; width:260px; position:fixed; right:0; top:0; background-color:grey;z-index:5000; padding: 40px 20px 20px 20px'></div>");
+	schemeDataMenu = $("<div id='schemeDataMenu' style='height:100%; width:260px; position:fixed; right:0; top:33px; background-color:grey;z-index:5000; padding: 40px 20px 20px 20px'></div>");
+	schemeDataMenu.hide()
 	schemeDataTextArea = $("<div style='margin:0;padding:0;'><textarea id='schemeDataTextArea' cols='30' rows='45'></textarea></div>");
 	schemeDataMenu.append(schemeDataTextArea);
 	body.append(schemeDataMenu);
