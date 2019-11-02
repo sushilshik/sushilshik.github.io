@@ -1594,8 +1594,8 @@ var schemeData =
         },
         "6772a2f4-ac34-47d3-b380-ea114411434b": {
           "id": "6772a2f4-ac34-47d3-b380-ea114411434b",
-          "x": 15817,
-          "y": -5052,
+          "x": 15192,
+          "y": -5102,
           "label": "Тестирование mm-vis-js",
           "shape": "box",
           "link": "",
@@ -2035,6 +2035,224 @@ var schemeData =
           "x": 16072,
           "y": -15825,
           "label": "vscode"
+        },
+        "73a7e043-4cd4-454a-b808-011a4f163fb3": {
+          "id": "73a7e043-4cd4-454a-b808-011a4f163fb3",
+          "x": 15611,
+          "y": -4782,
+          "label": "Разработка этой схемы"
+        },
+        "d2d6d16f-73eb-4be4-a11b-e52baf19d970": {
+          "id": "d2d6d16f-73eb-4be4-a11b-e52baf19d970",
+          "x": 15775,
+          "y": -4779,
+          "label": "init"
+        },
+        "fd509eec-b81a-4d72-a04c-d9ccd92ea72d": {
+          "id": "fd509eec-b81a-4d72-a04c-d9ccd92ea72d",
+          "x": 15924,
+          "y": -4783,
+          "label": "2019-11-01 21:45"
+        },
+        "a4147672-3022-4782-8a9d-796439e2cb3e": {
+          "id": "a4147672-3022-4782-8a9d-796439e2cb3e",
+          "x": 15558,
+          "y": -5342,
+          "label": "Разделы"
+        },
+        "e359f160-b31a-419d-8edf-4beab29db855": {
+          "id": "e359f160-b31a-419d-8edf-4beab29db855",
+          "x": 15707,
+          "y": -4995,
+          "label": "Примечания"
+        },
+        "25d82c80-2203-4faa-9747-87120f00ae81": {
+          "id": "25d82c80-2203-4faa-9747-87120f00ae81",
+          "x": 15700,
+          "y": -5429,
+          "label": "Процедура"
+        },
+        "179b5dcc-0496-4c74-8451-cbb796144379": {
+          "id": "179b5dcc-0496-4c74-8451-cbb796144379",
+          "x": 15890,
+          "y": -5486,
+          "label": "Предварительно установить",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "6fa1e7e0-c5d6-4003-83e1-cea4406fae46": {
+          "id": "6fa1e7e0-c5d6-4003-83e1-cea4406fae46",
+          "x": 16083,
+          "y": -5528,
+          "label": "Docker"
+        },
+        "3263da94-2ce8-402a-8d42-bd22669b945b": {
+          "id": "3263da94-2ce8-402a-8d42-bd22669b945b",
+          "x": 16115,
+          "y": -5473,
+          "label": "docker-compose"
+        },
+        "85e6ba42-7db6-4680-919c-3269559c0fbe": {
+          "id": "85e6ba42-7db6-4680-919c-3269559c0fbe",
+          "x": 16319,
+          "y": -5476,
+          "label": "pip install docker-compose"
+        },
+        "8cfea21a-e1f4-400e-b764-c9ef63fef1c8": {
+          "id": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "x": 15870,
+          "y": -5278,
+          "label": "Выполнение тестов"
+        },
+        "c529d633-f904-4990-b1cd-879e8c0b164b": {
+          "id": "c529d633-f904-4990-b1cd-879e8c0b164b",
+          "x": 16182,
+          "y": -5408,
+          "label": "Необходимо открыть два консоли",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "532636aa-db78-49e6-be51-3be6ae888b09": {
+          "id": "532636aa-db78-49e6-be51-3be6ae888b09",
+          "x": 16197,
+          "y": -5351,
+          "label": "В первой консоли выполните команду",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "a2fc6f92-bd21-4679-870f-a3f4d5e301f0": {
+          "id": "a2fc6f92-bd21-4679-870f-a3f4d5e301f0",
+          "x": 16492,
+          "y": -5355,
+          "label": "docker-compose up --build.",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "1724f3cb-c073-4014-8a02-8132f6186803": {
+          "id": "1724f3cb-c073-4014-8a02-8132f6186803",
+          "x": 16833,
+          "y": -5367,
+          "label": "Запустится докер-контейнер с браузером chrome внутри.",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "ea5d67e7-c760-4ec1-8bc3-ffbd63a895d9": {
+          "id": "ea5d67e7-c760-4ec1-8bc3-ffbd63a895d9",
+          "x": 16203,
+          "y": -5266,
+          "label": "Во второй консоли выполните команду",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "3b1b8717-0bfb-4b5f-a9de-aa39f4f825fd": {
+          "id": "3b1b8717-0bfb-4b5f-a9de-aa39f4f825fd",
+          "x": 16548,
+          "y": -5268,
+          "label": "docker exec -it app-express npm run test:e2e"
+        },
+        "e335fc55-69e7-4f38-b4c6-09e133d6688f": {
+          "id": "e335fc55-69e7-4f38-b4c6-09e133d6688f",
+          "x": 16836,
+          "y": -5279,
+          "label": "Выполнятся тесты"
+        },
+        "9072fccc-888c-4b01-b039-1d0027a1e73a": {
+          "id": "9072fccc-888c-4b01-b039-1d0027a1e73a",
+          "x": 16893,
+          "y": -5241,
+          "label": "Процесс выйдет после выполнения.",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "76062b6c-58fb-46cc-9370-c59d6f3718c6": {
+          "id": "76062b6c-58fb-46cc-9370-c59d6f3718c6",
+          "x": 16786,
+          "y": -5335,
+          "label": "Процесс останется запущенным в консоли"
+        },
+        "df94c97c-1d97-4c9f-887e-2251e166787f": {
+          "id": "df94c97c-1d97-4c9f-887e-2251e166787f",
+          "x": 16201,
+          "y": -5161,
+          "label": "В первой консоли выполните команду"
+        },
+        "79d0dbf8-19a9-462f-b150-e0ee56523d65": {
+          "id": "79d0dbf8-19a9-462f-b150-e0ee56523d65",
+          "x": 16476,
+          "y": -5163,
+          "label": "docker-compose down"
+        },
+        "3ea5f8fc-f7db-431e-b3f4-024a28f9313c": {
+          "id": "3ea5f8fc-f7db-431e-b3f4-024a28f9313c",
+          "x": 16748,
+          "y": -5164,
+          "label": "Чтобы остановить ее контейнер",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
         }
       },
       "length": 0,
@@ -2964,6 +3182,121 @@ var schemeData =
           "from": "28c78af2-c055-4907-b879-b40a312664f7",
           "to": "8e0b73ac-bf1d-43f5-9962-1d293d9c95a2",
           "id": "643c77e5-be93-422c-808e-f3158aca5635"
+        },
+        "c45d8725-bcef-4f11-8195-0292716b6b9d": {
+          "from": "6772a2f4-ac34-47d3-b380-ea114411434b",
+          "to": "73a7e043-4cd4-454a-b808-011a4f163fb3",
+          "id": "c45d8725-bcef-4f11-8195-0292716b6b9d"
+        },
+        "dde080f5-19c0-48aa-a601-abbcef0ea494": {
+          "from": "73a7e043-4cd4-454a-b808-011a4f163fb3",
+          "to": "d2d6d16f-73eb-4be4-a11b-e52baf19d970",
+          "id": "dde080f5-19c0-48aa-a601-abbcef0ea494"
+        },
+        "3d8d1bf9-1171-4959-8936-6dead7a10631": {
+          "from": "d2d6d16f-73eb-4be4-a11b-e52baf19d970",
+          "to": "fd509eec-b81a-4d72-a04c-d9ccd92ea72d",
+          "id": "3d8d1bf9-1171-4959-8936-6dead7a10631"
+        },
+        "3e1e27cf-d5d2-4613-8526-463fc3aebc98": {
+          "from": "6772a2f4-ac34-47d3-b380-ea114411434b",
+          "to": "a4147672-3022-4782-8a9d-796439e2cb3e",
+          "id": "3e1e27cf-d5d2-4613-8526-463fc3aebc98"
+        },
+        "5b7fc374-0476-4338-94f4-53932b28316f": {
+          "from": "a4147672-3022-4782-8a9d-796439e2cb3e",
+          "to": "e359f160-b31a-419d-8edf-4beab29db855",
+          "id": "5b7fc374-0476-4338-94f4-53932b28316f"
+        },
+        "0172d54e-dbae-4e17-a89c-1ec7e07a386a": {
+          "from": "a4147672-3022-4782-8a9d-796439e2cb3e",
+          "to": "25d82c80-2203-4faa-9747-87120f00ae81",
+          "id": "0172d54e-dbae-4e17-a89c-1ec7e07a386a"
+        },
+        "58f56651-0ac4-4a27-9b5f-42475535a652": {
+          "from": "25d82c80-2203-4faa-9747-87120f00ae81",
+          "to": "179b5dcc-0496-4c74-8451-cbb796144379",
+          "id": "58f56651-0ac4-4a27-9b5f-42475535a652"
+        },
+        "edb8de6f-dd81-48a9-8a9e-22df42e7f765": {
+          "from": "179b5dcc-0496-4c74-8451-cbb796144379",
+          "to": "6fa1e7e0-c5d6-4003-83e1-cea4406fae46",
+          "id": "edb8de6f-dd81-48a9-8a9e-22df42e7f765"
+        },
+        "4d2da645-8190-4049-88bb-1a1cff819915": {
+          "from": "179b5dcc-0496-4c74-8451-cbb796144379",
+          "to": "3263da94-2ce8-402a-8d42-bd22669b945b",
+          "id": "4d2da645-8190-4049-88bb-1a1cff819915"
+        },
+        "236d89ce-84de-49e8-99c5-ff752f2356e0": {
+          "from": "3263da94-2ce8-402a-8d42-bd22669b945b",
+          "to": "85e6ba42-7db6-4680-919c-3269559c0fbe",
+          "id": "236d89ce-84de-49e8-99c5-ff752f2356e0"
+        },
+        "16be88db-07b1-4fb7-be0b-714fcdc196c4": {
+          "from": "25d82c80-2203-4faa-9747-87120f00ae81",
+          "to": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "id": "16be88db-07b1-4fb7-be0b-714fcdc196c4"
+        },
+        "34a40ce9-dcb1-4381-830f-f1cfb529b45d": {
+          "from": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "to": "532636aa-db78-49e6-be51-3be6ae888b09",
+          "id": "34a40ce9-dcb1-4381-830f-f1cfb529b45d"
+        },
+        "a96bc994-65e5-45a4-8b81-a5a2e3519afa": {
+          "from": "532636aa-db78-49e6-be51-3be6ae888b09",
+          "to": "a2fc6f92-bd21-4679-870f-a3f4d5e301f0",
+          "id": "a96bc994-65e5-45a4-8b81-a5a2e3519afa"
+        },
+        "65682c9e-29c7-46af-b8f5-60c94a5be3d0": {
+          "from": "a2fc6f92-bd21-4679-870f-a3f4d5e301f0",
+          "to": "1724f3cb-c073-4014-8a02-8132f6186803",
+          "id": "65682c9e-29c7-46af-b8f5-60c94a5be3d0"
+        },
+        "1c8cfaee-300e-4a36-ba52-4774151b743a": {
+          "from": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "to": "c529d633-f904-4990-b1cd-879e8c0b164b",
+          "id": "1c8cfaee-300e-4a36-ba52-4774151b743a"
+        },
+        "e2a12e9a-82f9-429f-b6fd-4de28350d184": {
+          "from": "a2fc6f92-bd21-4679-870f-a3f4d5e301f0",
+          "to": "76062b6c-58fb-46cc-9370-c59d6f3718c6",
+          "id": "e2a12e9a-82f9-429f-b6fd-4de28350d184"
+        },
+        "95489a10-15d0-4b1f-a614-85b3e5766728": {
+          "from": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "to": "ea5d67e7-c760-4ec1-8bc3-ffbd63a895d9",
+          "id": "95489a10-15d0-4b1f-a614-85b3e5766728"
+        },
+        "c4e81ca9-d44d-462e-860a-66a9914ba320": {
+          "from": "ea5d67e7-c760-4ec1-8bc3-ffbd63a895d9",
+          "to": "3b1b8717-0bfb-4b5f-a9de-aa39f4f825fd",
+          "id": "c4e81ca9-d44d-462e-860a-66a9914ba320"
+        },
+        "511dce64-9210-412d-be48-0ec7fa0e4794": {
+          "from": "3b1b8717-0bfb-4b5f-a9de-aa39f4f825fd",
+          "to": "e335fc55-69e7-4f38-b4c6-09e133d6688f",
+          "id": "511dce64-9210-412d-be48-0ec7fa0e4794"
+        },
+        "6434b1c6-b1ef-48fa-9764-e86d4f06edd5": {
+          "from": "3b1b8717-0bfb-4b5f-a9de-aa39f4f825fd",
+          "to": "9072fccc-888c-4b01-b039-1d0027a1e73a",
+          "id": "6434b1c6-b1ef-48fa-9764-e86d4f06edd5"
+        },
+        "69dc7af4-6d44-4ccd-afbb-864201885a7c": {
+          "from": "8cfea21a-e1f4-400e-b764-c9ef63fef1c8",
+          "to": "df94c97c-1d97-4c9f-887e-2251e166787f",
+          "id": "69dc7af4-6d44-4ccd-afbb-864201885a7c"
+        },
+        "a827babf-69aa-4721-b2a4-9301b4de9e01": {
+          "from": "df94c97c-1d97-4c9f-887e-2251e166787f",
+          "to": "79d0dbf8-19a9-462f-b150-e0ee56523d65",
+          "id": "a827babf-69aa-4721-b2a4-9301b4de9e01"
+        },
+        "16e2043c-ff8a-433b-a74f-b29caee9c30d": {
+          "from": "79d0dbf8-19a9-462f-b150-e0ee56523d65",
+          "to": "3ea5f8fc-f7db-431e-b3f4-024a28f9313c",
+          "id": "16e2043c-ff8a-433b-a74f-b29caee9c30d"
         }
       },
       "length": 0,
@@ -3010,10 +3343,10 @@ var schemeData =
     }
   },
   "setup": {
-    "scale": 0.8078853551362873,
+    "scale": 0.7639106868559643,
     "viewPosition": {
-      "x": 834.4809381335017,
-      "y": -5342.3795465706335
+      "x": 913.2550375839884,
+      "y": -5346.699059353829
     }
   }
 }
