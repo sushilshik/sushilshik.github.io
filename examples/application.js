@@ -1,5 +1,6 @@
 //var canvasWidth = 1200;
 //var canvasHeight = 800;
+
 var canvasWidthSetup = 100;
 var canvasHeightSetup = 100;
 var canvasWidth = window.innerWidth;
@@ -20,6 +21,19 @@ var drawingSurfaceImageData;
 var containerJQ = $("div#network");
 var doubleClickTimeThreshold = 300;
 var doubleClick = false;
+var loadSavedProjectToMenuButton;
+var deleteSavedProjectButton;
+var projectSaveNodeNamePrefix = "projectSave_";
+var saveCanvasProjectDataLine = "saveCanvasProjectData";
+var projectSaveIdLine = "projectSaveId";
+var nodesToPaste = [];
+var edgesToPaste = [];
+var themeGraph = false;
+var cancelNodeEdit = false;
+var showCursorCoordinates = false;
+//Colors:
+//"#ffc63b"
+//"#FFD570" - lighter
 ///////////////////////////////////
 
 function getUrlVars() {
@@ -37,6 +51,7 @@ function objectToArray(obj) {
 		return obj[key];
 	});
 }
+
 if (typeof code_data1 !== "undefined") {
 	objectToArray(code_data1).forEach(function(item) {
 		schemeData.canvas1Data.nodes._data[item.id] = item;
@@ -48,15 +63,19 @@ if (typeof book_imgs !== "undefined") {
 		schemeData.canvas2Data.nodes._data[item.id] = item;
 	});
 }
+
 var scaleFromUrl = getUrlVars()["scale"];
 var xFromUrl = getUrlVars()["x"];
 var yFromUrl = getUrlVars()["y"];
+
 if (typeof scaleFromUrl !== "undefined") {
 	schemeData.setup.scale = scaleFromUrl;
 }
+
 if (typeof xFromUrl !== "undefined") {
 	schemeData.setup.viewPosition.x = xFromUrl;
 }
+
 if (typeof yFromUrl !== "undefined") {
 	schemeData.setup.viewPosition.y = yFromUrl;
 }
@@ -72,16 +91,28 @@ var nodes = new vis.DataSet(objectToArray(schemeData.canvas1Data.nodes._data));
 var edges = new vis.DataSet(objectToArray(schemeData.canvas1Data.edges._data));
 var nodes1 = new vis.DataSet(objectToArray(schemeData.canvas2Data.nodes._data));
 var edges1 = new vis.DataSet(objectToArray(schemeData.canvas2Data.edges._data));
+
 data = {
 	nodes: nodes,
 	edges: edges
 };
+
 data1 = {
 	nodes: nodes1,
 	edges: edges1
 };
 
 var seed = 2;
+
+function getNodeById(data, id) {
+	for (var n = 0; n < data.length; n++) {
+		if (data[n].id == id) { 
+			return data[n];
+		}
+	};
+
+	throw 'Can not find id \'' + id + '\' in data';
+}
 
 function destroy() {
 	if (network !== null) {
@@ -90,13 +121,56 @@ function destroy() {
 	}
 }
 
+function alignNodesLeft(nodes) {
+	var minLeft;
+	nodes.forEach(function(node) {
+		var nodeD = network.body.data.nodes.get(node.id);
+		var pNode = network.getPositions()[node.id];
+		nodeD.x = pNode.x;
+		nodeD.y = pNode.y;
+		network.body.data.nodes.update(nodeD);
+	});
+
+	for (i = 0; i < nodes.length; i++) {
+		if (i == 0) minLeft = nodes[i].shape.left;
+		if (minLeft > nodes[i].shape.left) {
+			minLeft = nodes[i].shape.left;
+		};
+	}
+
+	for (i = 0; i < nodes.length; i++) {
+		var leftDiff = nodes[i].shape.left - parseFloat(minLeft.toFixed(5));
+		network.body.nodes[nodes[i].id].x = nodes[i].x - leftDiff;
+	}
+
+	var scale = network.getScale();
+	var n1X = parseFloat(network.getViewPosition().x.toFixed(5));
+	var n1Y = parseFloat(network.getViewPosition().y.toFixed(5));
+	var positionX = parseFloat((n1X - canvasWidth/(2*scale)).toFixed(5));
+	var positionY = parseFloat((n1Y - canvasHeight/(2*scale)).toFixed(5));
+
+	network.moveTo({
+		position: {x: positionX, y: positionY},
+		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
+		scale: scale,
+	});
+
+	network1.moveTo({
+		position: {x: positionX, y: positionY},
+		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
+		scale: scale,
+	});
+}
+
 function draw() {
 	destroy();
 	// create a network
 	var container = document.getElementById('network');
 	var container1 = document.getElementById('forImage');
+
 	//Colors:
 	//"#ffc63b"
+	//"#FFD570"
 	var options = {
 		height: canvasHeightSetup + '%',
 		width: canvasWidthSetup + '%',
@@ -129,12 +203,29 @@ function draw() {
 		manipulation: {
 			addNode: function (data, callback) {
 				// filling in the popup DOM elements
+				var clickPosition = network.canvasToDOM({x: data.x, y: data.y});
 				document.getElementById('operation').innerHTML = "Add Node";
 				document.getElementById('node-id').value = data.id;
-				document.getElementById('node-label').value = data.label;
+				//document.getElementById('node-label').value = data.label;
+				document.getElementById('node-label').value = "";
 				document.getElementById('saveButton').onclick = saveData.bind(this, data, callback);
 				document.getElementById('cancelButton').onclick = clearPopUp.bind();
 				document.getElementById('network-popUp').style.display = 'block';
+				var schemeDataMenuWidth = 0;
+				if (document.getElementById("schemeDataMenu").style.display != "none") {
+					schemeDataMenuWidth = parseInt(document.getElementById("schemeDataMenu").style.width.replace("px",""), 10);
+				} else {
+					schemeDataMenuWidth = 0;
+				}
+				if ((clickPosition.x + 390) > (canvasWidth - schemeDataMenuWidth)) {
+					clickPosition.x = clickPosition.x - 340;
+				}
+				if ((clickPosition.y + 240) > canvasHeight) {
+					clickPosition.y = clickPosition.y - 260;
+				}
+				document.getElementById('network-popUp').style.top = (clickPosition.y + 20) + "px";
+				document.getElementById('network-popUp').style.left = (clickPosition.x + 20) + "px";
+				$("textarea#node-label").focus();
 			},
 			editNode: function (data, callback) {
 				// filling in the popup DOM elements
@@ -155,7 +246,10 @@ function draw() {
 				else {
 					callback(data);
 				}
-			}
+			},
+			deleteNode: function (data, callback) {
+				callback(data);
+			},
 		}
 	};
 	var options1 = {
@@ -174,7 +268,7 @@ function draw() {
 		nodes: { 
 			shape: "box",
 			color: {
-				background: "#ffc63b"
+				background: "#FFD570"
 			},
 			labelHighlightBold: false,
 			borderWidth: 0
@@ -209,37 +303,16 @@ function draw() {
 	*/
 	network.leftAlignNodes = function () {
 		network.manipulation.leftAlignNodes = function() {
-			var selectedNodesCount = this.selectionHandler._getSelectedNodeCount();
+			//var selectedNodesCount = this.selectionHandler._getSelectedNodeCount();
 			var nodes = objectToArray(this.selectionHandler.selectionObj.nodes);
-			var minLeft;
-			for (i = 0; i < selectedNodesCount; i++) {
-				if (i == 0) minLeft = nodes[i].shape.left;
-				if (minLeft > nodes[i].shape.left) {
-					minLeft = nodes[i].shape.left;
-				};
-			}
-			for (i = 0; i < selectedNodesCount; i++) {
-				var leftDiff = nodes[i].shape.left - parseFloat(minLeft.toFixed(5));
-				network.body.nodes[nodes[i].id].x = nodes[i].x - leftDiff;
-			}
-			var scale = network.getScale();
-			var n1X = parseFloat(network.getViewPosition().x.toFixed(5));
-			var n1Y = parseFloat(network.getViewPosition().y.toFixed(5));
-			var positionX = parseFloat((n1X - canvasWidth/(2*scale)).toFixed(5));
-			var positionY = parseFloat((n1Y - canvasHeight/(2*scale)).toFixed(5));
-			network.moveTo({
-				position: {x: positionX, y: positionY},
-				offset: {x: -canvasWidth/2, y: -canvasHeight/2},
-				scale: scale,
-			});
-			network1.moveTo({
-				position: {x: positionX, y: positionY},
-				offset: {x: -canvasWidth/2, y: -canvasHeight/2},
-				scale: scale,
-			});
+			alignNodesLeft(nodes);
+
 		};
+
+
 		return network.manipulation.leftAlignNodes.apply(network.manipulation, arguments);
 	};
+
 	network.createLeftAlignNodesButton = function () {
 		network.manipulation.createLeftAlignNodesButton = function() {
 			var leftAlignBtnClass;
@@ -254,6 +327,137 @@ function draw() {
 
 		};
 		return network.manipulation.createLeftAlignNodesButton.apply(network.manipulation, arguments);
+	};
+
+	network.createMakeJsonNodeFromSelectionButton = function () {
+		network.manipulation.createMakeJsonNodeFromSelectionButton = function() {
+			var makeJsonNodeFromSelectionNodesClass;
+
+			makeJsonNodeFromSelectionNodesClass = 'vis-button vis-makeJsonNodeFromSelectionNodesBtn';
+
+			var button = this._createButton('makeJsonNodeFromSelectionNodes', makeJsonNodeFromSelectionNodesClass, "toJson");
+
+			this.manipulationDiv.appendChild(button);
+
+			this._bindHammerToDiv(button, network.makeJsonNodeFromSelectionNodes.bind(network.manipulation));
+
+		};
+		return network.manipulation.createMakeJsonNodeFromSelectionButton.apply(network.manipulation, arguments);
+	};
+	network.makeJsonNodeFromSelectionNodes = function () {
+		network.manipulation.makeJsonNodeFromSelectionNodesleftAlignNodes = function() {
+			var selectedNodes = objectToArray(this.selectionHandler.selectionObj.nodes);
+			var selectedEdges = objectToArray(this.selectionHandler.selectionObj.edges);
+			var nodes = []
+			selectedNodes.forEach(function(node) {
+				nodes.push(network.body.data.nodes.get(node.id));
+			});
+			var edges = []
+			selectedEdges.forEach(function(edge) {
+				edges.push(network.body.data.edges.get(edge.id));
+			});
+			//console.log(nodes);
+			//console.log(edges);
+
+			var data = {
+				nodes: [],
+				edges: []
+			};
+
+			var positions1 = network.getPositions();
+			nodes1ToCopy = {}; 
+			nodes.forEach(function(item) {
+				nodes1ToCopy[item.id.toString()] = item;
+			});
+			selectedNodes.forEach(function(node) {
+				objectToArray(positions1).forEach(function(position) {
+					if (node.id == position.id) {
+						node.x = position.x;
+						node.y = position.y;
+					}
+				});
+			});
+			data.nodes = nodes1ToCopy;
+
+			var edges1ToCopy = {}; 
+			edges.forEach(function(item) {
+				edges1ToCopy[item.id.toString()] = item;
+			});
+			data.edges = edges1ToCopy;
+			var label = JSON.stringify(data, undefined, 1);
+			//var label = JSON.stringify(data);
+			var screenCenterPosition = network.canvas.DOMtoCanvas({x:canvasWidth/2,y:canvasHeight/2})
+			network.body.data.nodes.add([{
+				label:label,
+				x:screenCenterPosition.x,
+				y:screenCenterPosition.y
+			}]);
+		};
+		return network.manipulation.makeJsonNodeFromSelectionNodesleftAlignNodes.apply(network.manipulation, arguments);
+	};
+	network.createMakeNodesFromJsonNodeButton = function () {
+		network.manipulation.createMakeNodesFromJsonNodeButton = function() {
+			var makeNodesFromJsonNodeClass;
+
+			makeNodesFromJsonNodeClass = 'vis-button vis-makeNodesFromJsonNodeBtn';
+
+			var button = this._createButton('makeNodesFromJsonNode', makeNodesFromJsonNodeClass, "fromJson");
+
+			this.manipulationDiv.appendChild(button);
+
+			this._bindHammerToDiv(button, network.makeNodesFromJsonNode.bind(network.manipulation));
+
+		};
+		return network.manipulation.createMakeNodesFromJsonNodeButton.apply(network.manipulation, arguments);
+	};
+	network.makeNodesFromJsonNode = function () {
+		network.manipulation.makeNodesFromJsonNode = function() {
+			var selectedNodes = objectToArray(this.selectionHandler.selectionObj.nodes);
+			var jsonNode = network.body.data.nodes.get(selectedNodes[0].id);
+			var label = jsonNode.label;
+			var data = JSON.parse(label);
+			var date = new Date();
+			var idPostfix = date.getMilliseconds().toString().substring(-7).toString();
+			objectToArray(data.nodes).forEach(function(node) {
+				node.id = node.id + idPostfix;
+				nodesToPaste.push(node);
+				//var newNode = network.nodesHandler.create(node);
+				//network.body.data.nodes.add(newNode.options);
+			});
+			var screenCenterPosition = network.canvas.DOMtoCanvas({x:canvasWidth/2,y:canvasHeight/2})
+			network.selectionHandler.unselectAll();
+			network.selectionHandler.updateSelection();
+			objectToArray(data.edges).forEach(function(edge) {
+				edge.id = edge.id + idPostfix;	
+				edge.from = edge.from + idPostfix;
+				edge.to = edge.to + idPostfix;
+				edgesToPaste.push(edge);
+				//var newEdge = network.edgesHandler.create(edge);
+				//network.body.data.edges.add(newEdge.options);
+			});
+		};
+		return network.manipulation.makeNodesFromJsonNode.apply(network.manipulation, arguments);
+	};
+	network.createAddThemeGraphButton = function () {
+		network.manipulation.createAddThemeGraphButton = function() {
+			var addThemeGraphClass;
+
+			addThemeGraphClass = 'vis-button vis-addThemeGraphBtn';
+
+			var button = this._createButton('addThemeGraph', addThemeGraphClass, "addThemeGraph");
+
+			this.manipulationDiv.appendChild(button);
+
+			this._bindHammerToDiv(button, network.addThemeGraph.bind(network.manipulation));
+
+		};
+		return network.manipulation.createAddThemeGraphButton.apply(network.manipulation, arguments);
+	};
+	network.addThemeGraph = function () {
+		network.manipulation.addThemeGraph = function() {
+			themeGraph = true;
+		};
+		return network.manipulation.addThemeGraph.apply(network.manipulation, arguments);
 	};
 	network.showManipulatorToolbar = function () {
 		this.manipulation.showManipulatorToolbar = function () {
@@ -299,7 +503,16 @@ function draw() {
 					}
 				} // bind the close button
 				
-				network.createLeftAlignNodesButton();
+				if (selectedNodeCount > 0) {
+					network.createLeftAlignNodesButton();
+					network.createMakeJsonNodeFromSelectionButton();
+				}
+				if (selectedNodeCount == 1) {
+					network.createMakeNodesFromJsonNodeButton();
+				}
+				if (selectedNodeCount == 0) {
+					network.createAddThemeGraphButton();
+				}
 
 				this._bindHammerToDiv(this.closeDiv, this.toggleEditMode.bind(this)); // refresh this bar based on what has been selected
 
@@ -320,11 +533,13 @@ function draw() {
 	var setup = schemeData.setup;
 	var positionX = parseFloat((setup.viewPosition.x - canvasWidth/(2*setup.scale)).toFixed(5));
 	var positionY = parseFloat((setup.viewPosition.y - canvasHeight/(2*setup.scale)).toFixed(5));
+
 	network.moveTo({
 		position: {x:positionX, y:positionY},
 		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
 		scale: setup.scale,
 	});
+
 	network1.moveTo({
 		position: {x:positionX, y:positionY},
 		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
@@ -334,6 +549,7 @@ function draw() {
 	network.on('click', function(e) {
 		 onClick(e)
 	});
+
 	network.on('doubleClick', function(e) {
 		onDoubleClick(e)
 	});
@@ -348,6 +564,259 @@ function draw() {
 	}
 
 	function doOnClick(e) {
+		if (nodesToPaste.length > 0) {
+			//console.log(e.event.srcEvent);
+			var position = network.canvas.DOMtoCanvas({x:e.event.srcEvent.x,y:e.event.srcEvent.y})
+			var topLeftNodeX = nodesToPaste[0].x;
+			var topLeftNodeY = nodesToPaste[0].y;
+			nodesToPaste.forEach(function(node) {
+				if (node.x < topLeftNodeX && node.y < topLeftNodeY) {
+					topLeftNodeX = node.x;
+					topLeftNodeY = node.y;
+				}
+			});
+			nodesToPaste.forEach(function(node) {
+				var shiftX = - topLeftNodeX + parseFloat((position.x).toFixed(5));
+				var shiftY = - topLeftNodeY + parseFloat((position.y).toFixed(5));
+				node.x = node.x + shiftX;
+				node.y = node.y + shiftY;
+				var newNode = network.nodesHandler.create(node);
+				network.body.data.nodes.add(newNode.options);
+			});
+			edgesToPaste.forEach(function(edge) {
+				var newEdge = network.edgesHandler.create(edge);
+				network.body.data.edges.add(newEdge.options);
+			});
+			nodesToPaste = [];
+			edgesToPaste = [];
+		}
+		if (themeGraph) {
+			var position = network.canvas.DOMtoCanvas({x:e.event.srcEvent.x,y:e.event.srcEvent.y})
+			var newNode1Id = network.body.data.nodes.add({
+				label:"New Theme Name",
+				x: position.x,
+				y: position.y,
+				font: {size: 72},
+				color: {background:"red"}
+			})[0];
+			var newNode2Id = network.body.data.nodes.add({
+				label:"Development",
+				x: position.x+300,
+				y: position.y+450 
+			})[0];
+			network.body.data.edges.add({
+				from:newNode1Id,
+				to:newNode2Id
+			});
+			var newNode4Id = network.body.data.nodes.add({
+				label:(new Date().toLocaleDateString()),
+				x: position.x+550,
+				y: position.y+450 
+			})[0];
+			network.body.data.edges.add({
+				from:newNode2Id,
+				to:newNode4Id
+			});
+			var newNode3Id = network.body.data.nodes.add({
+				label:"init",
+				x: position.x+450,
+				y: position.y+450 
+			})[0];
+			network.body.data.edges.add({
+				from:newNode4Id,
+				to:newNode3Id
+			});
+			var newNode5Id = network.body.data.nodes.add({
+				label:"Notes",
+				x: position.x+300,
+				y: position.y-400 
+			})[0];
+			network.body.data.edges.add({
+				from:newNode1Id,
+				to:newNode5Id
+			});
+			var newNode6Id = network.body.data.nodes.add({
+				label:"Dictionary of\nconcepts",
+				x: position.x+450,
+				y: position.y-650 
+			})[0];
+			network.body.data.edges.add({
+				from:newNode5Id,
+				to:newNode6Id
+			});
+			var newNode7Id = network.body.data.nodes.add({
+				label:"Details, thoughts",
+				x: position.x+450,
+				y: position.y-400
+			})[0];
+			network.body.data.edges.add({
+				from:newNode5Id,
+				to:newNode7Id
+			});
+			var sectionsNodeId = network.body.data.nodes.add({
+				label:"Sections",
+				x: position.x+450,
+				y: position.y-150
+			})[0];
+			network.body.data.edges.add({
+				from:newNode5Id,
+				to:sectionsNodeId
+			});
+			var booksNodeId = network.body.data.nodes.add({
+				label:"Books",
+				x: position.x+550,
+				y: position.y-300
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:booksNodeId
+			});
+			var rDInstitutionsNodeId = network.body.data.nodes.add({
+				label:"R&D institutions",
+				x: position.x+550,
+				y: position.y-275
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:rDInstitutionsNodeId
+			});
+			var sitesNodeId = network.body.data.nodes.add({
+				label:"Sites",
+				x: position.x+550,
+				y: position.y-250
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:sitesNodeId
+			});
+			var magazinesNodeId = network.body.data.nodes.add({
+				label:"Magazines",
+				x: position.x+550,
+				y: position.y-225
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:magazinesNodeId
+			});
+			var articlesNodeId = network.body.data.nodes.add({
+				label:"Articles",
+				x: position.x+550,
+				y: position.y-200
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:articlesNodeId
+			});
+			var mediaContentNodeId = network.body.data.nodes.add({
+				label:"Media content",
+				x: position.x+550,
+				y: position.y-175
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:mediaContentNodeId
+			});
+			var miscWebLinksNodeId = network.body.data.nodes.add({
+				label:"Misc. web links",
+				x: position.x+550,
+				y: position.y-150
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:miscWebLinksNodeId
+			});
+			var projectsNodeId = network.body.data.nodes.add({
+				label:"Projects",
+				x: position.x+550,
+				y: position.y-125
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:projectsNodeId
+			});
+			var toolsNodeId = network.body.data.nodes.add({
+				label:"Tools",
+				x: position.x+550,
+				y: position.y-100
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:toolsNodeId
+			});
+			var organizationsNodeId = network.body.data.nodes.add({
+				label:"Organizations",
+				x: position.x+550,
+				y: position.y-75
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:organizationsNodeId
+			});
+			var standartsNodeId = network.body.data.nodes.add({
+				label:"Standarts",
+				x: position.x+550,
+				y: position.y-50
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:standartsNodeId
+			});
+			var forumsGroupsNodeId = network.body.data.nodes.add({
+				label:"Forums, Groups",
+				x: position.x+550,
+				y: position.y-25
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:forumsGroupsNodeId
+			});
+			var lawsNodeId = network.body.data.nodes.add({
+				label:"Laws",
+				x: position.x+550,
+				y: position.y
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:lawsNodeId
+			});
+			var adjacentThemesNodeId = network.body.data.nodes.add({
+				label:"Adjacent Themes",
+				x: position.x+550,
+				y: position.y+25
+			})[0];
+			network.body.data.edges.add({
+				from:sectionsNodeId,
+				to:adjacentThemesNodeId
+			});
+			var questionsNodeId = network.body.data.nodes.add({
+				label:"Questions",
+				x: position.x+300,
+				y: position.y+150
+			})[0];
+			network.body.data.edges.add({
+				from:newNode1Id,
+				to:questionsNodeId
+			});
+			var problemsNodeId = network.body.data.nodes.add({
+				label:"Problems",
+				x: position.x+300,
+				y: position.y+250
+			})[0];
+			network.body.data.edges.add({
+				from:newNode1Id,
+				to:problemsNodeId
+			});
+			var goalsNodeId = network.body.data.nodes.add({
+				label:"Goals",
+				x: position.x+300,
+				y: position.y+350
+			})[0];
+			network.body.data.edges.add({
+				from:newNode1Id,
+				to:goalsNodeId
+			});
+			themeGraph = false;
+		}
 	}
 
 	function onDoubleClick(e) {
@@ -357,6 +826,133 @@ function draw() {
 			network.addNodeMode();
 		}
 	}
+
+	$("#network").keyup(function (event) {
+		//Duplicate. Ctrl+alt+d.
+		if (event.ctrlKey && event.altKey && event.keyCode === 68) {
+			var selectedNodes = objectToArray(network.selectionHandler.selectionObj.nodes);
+			var selectedEdges = objectToArray(network.selectionHandler.selectionObj.edges);
+			var nodes = []
+			selectedNodes.forEach(function(node) {
+				var nodeD = network.body.data.nodes.get(node.id);
+				pNode = network.getPositions()[node.id];
+				nodeD.x = pNode.x;
+				nodeD.y = pNode.y;
+				network.body.data.nodes.update(nodeD);
+
+				nodes.push(network.body.data.nodes.get(node.id));
+			});
+			var edges = []
+			selectedEdges.forEach(function(edge) {
+				edges.push(network.body.data.edges.get(edge.id));
+			});
+
+			var data = {
+				nodes: {},
+				edges: {}
+			};
+			
+			var positions1 = network.getPositions();
+			nodes1ToCopy = {}; 
+			nodes.forEach(function(item) {
+				nodes1ToCopy[item.id.toString()] = item;
+			});
+			selectedNodes.forEach(function(node) {
+				objectToArray(positions1).forEach(function(position) {
+					if (node.id == position.id) {
+						node.x = position.x;
+						node.y = position.y;
+					}
+				});
+			});
+			data.nodes = nodes1ToCopy;
+
+			var edges1ToCopy = {}; 
+			edges.forEach(function(item) {
+				edges1ToCopy[item.id.toString()] = item;
+			});
+			data.edges = edges1ToCopy;
+			var label = JSON.stringify(data, undefined, 1);
+			var data = JSON.parse(label);
+			var date = new Date();
+			var idPostfix = date.getMilliseconds().toString().substring(-7).toString();
+			network.selectionHandler.unselectAll();
+			objectToArray(data.nodes).forEach(function(node) {
+				node.id = node.id + idPostfix;
+				node.y = node.y; 
+				var newNode = network.nodesHandler.create(node);
+				network.body.data.nodes.add(newNode.options);
+				network.selectionHandler.selectObject(newNode);
+			});
+			objectToArray(data.edges).forEach(function(edge) {
+				edge.id = edge.id + idPostfix;	
+				edge.from = edge.from + idPostfix;
+				edge.to = edge.to + idPostfix;
+				var newEdge = network.edgesHandler.create(edge);
+				network.body.data.edges.add(newEdge.options);
+				network.selectionHandler.selectObject(newEdge);
+			});
+			network.selectionHandler.setSelection(network.selectionHandler.getSelection());
+		}
+	});	
+	$("#network").keydown(function (event) {
+		//Delete or Backspace
+		//if (event.ctrlKey && event.keyCode === 13) {
+		if (event.keyCode === 46 || event.keyCode === 8) {
+			network.manipulation.deleteSelected();
+		}
+	});
+	$("div#network-popUp").keydown(function (event) {
+		//ctrl+Enter
+		if (event.ctrlKey && event.keyCode === 13) {
+			$("#saveButton").click();
+		}
+	});
+	$("div#network-popUp").keydown(function (event) {
+		//Esc
+		if (event.keyCode === 27) {
+			$("input#cancelButton").click();
+			cancelNodeEdit = true;
+		}
+	});
+	$(document).keydown(function (event) {
+		//Esc
+		if (event.keyCode === 27) {
+			if (document.getElementById('network-popUp').style.display == "none" && cancelNodeEdit == false) {
+				network.disableEditMode();
+				network.editNode();
+			} else {
+				cancelNodeEdit = false;
+			}
+		}
+	});
+	$(document).keydown(function (event) {
+		//Connect nodes. ctrl+alt+c.
+		if (event.ctrlKey && event.altKey && event.keyCode === 67) {
+                        var selectedNodesCount = network.selectionHandler._getSelectedNodeCount();
+			if (selectedNodesCount < 2) return;
+                        var nodes = objectToArray(network.selectionHandler.selectionObj.nodes);
+			var rootNodeId;
+                        var minLeft;
+                        for (i = 0; i < selectedNodesCount; i++) {
+				if (i == 0) {
+					minLeft = nodes[0].x;
+					rootNodeId = nodes[0].id;
+				}
+                                if (minLeft > nodes[i].x) {
+                                        minLeft = nodes[i].x;
+					rootNodeId = nodes[i].id;
+                                };
+                        }
+                        for (i = 0; i < selectedNodesCount; i++) {
+				if (nodes[i].id != rootNodeId) {
+					var edgeData = {from: rootNodeId, to: nodes[i].id};
+					network.body.data.edges.getDataSet().add(edgeData);
+					network.selectionHandler.unselectAll();
+				}
+                        }
+		}
+	});
 
 	containerJQ.on("mousemove", function(e) {
 		if (drag) { 
@@ -405,6 +1001,7 @@ function draw() {
 		var nodeShapeInput = $("input#nodeShapeInput");
 		var nodeLinkInput = $("input#nodeLinkInput");
 		var nodeFontSizeInput = $("input#nodeFontSizeInput");
+		var nodeFontAlignInput = $("input#nodeFontAlignInput");
 		var nodeColorInput = $("input#nodeColorInput");
 		var nodeBorderWidthInput = $("input#nodeBorderWidthInput");
 		var nodeBorderColorInput = $("input#nodeBorderColorInput");
@@ -430,6 +1027,12 @@ function draw() {
 			nodeFontSizeInput.val(14);
 			nodeD.font = {size: 14};
 		}
+		if (typeof nodeD.font !== "undefined" && typeof nodeD.font.align !== "undefined") {
+			nodeFontAlignInput.val(nodeD.font.align);
+		} else {
+			nodeFontAlignInput.val("left");
+			nodeD.font = {align: "left"};
+		}
 		if (typeof nodeD.color !== "undefined" && typeof nodeD.color.background !== "undefined") {
 			nodeColorInput.val(nodeD.color.background);
 		} else {
@@ -440,6 +1043,15 @@ function draw() {
 		}
 		if (typeof nodeD.color !== "undefined" && nodeD.color.length > 0) {
 			nodeBorderColorInput.val(nodeD.color.border);
+		}
+		if (nodeD.label.search(new RegExp(projectSaveNodeNamePrefix + ".*")) >= 0) {
+			loadSavedProjectToMenuButton.show();
+			loadSavedProjectToMenuButton.saveProjectLabel = nodeD.label;
+			deleteSavedProjectButton.show();
+			deleteSavedProjectButton.saveProjectLabel = nodeD.label;
+		} else {
+			loadSavedProjectToMenuButton.hide();
+			deleteSavedProjectButton.hide();
 		}
 	});
 	network.on('resize', function(properties) {
@@ -567,6 +1179,7 @@ function updateSchemeFromMenu() {
 		offset: {x: -canvasWidth/2, y: -canvasHeight/2},
 		scale: setup.scale,
 	});
+	console.log("Scheme updated");
 }
 
 function updateMenuFromScheme() {
@@ -676,12 +1289,200 @@ function getStartToEnd(start, theLen) {
     return theLen > 0 ? {start: start, end: start + theLen} : {start: start + theLen, end: start};
 }
 
+function getNodesByRegexSearchInLabel(network, regex) {
+	var nodes = network.body.data.nodes.get();
+	var foundNodes = []
+	for (var n = 0; n < nodes.length; n++) {
+		if ((typeof nodes[n].label !== "undefined") && (nodes[n].label.search(regex) >= 0)) { 
+			foundNodes.push(nodes[n]);
+		}
+	};
+	return foundNodes;
+}
+
+function updateNodePositionData(network, node) {
+	var nodesPositions = objectToArray(network.getPositions());
+	for (var n = 0; n < nodesPositions.length; n++) {
+		if (nodesPositions[n].id == node.id) { 
+			node.x = nodesPositions[n].x;
+			node.y = nodesPositions[n].y;
+		}
+	};
+}
+function makeSaveProjectToBrowserNode(label, positionX, positionY) {
+	network.body.data.nodes.add([{
+		label:label,
+		x:positionX,
+		y:positionY
+	}]);
+}
+function findProjectSavesKeys() {
+	var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + saveCanvasProjectDataLine + "$"));
+	if (saveCanvasProjectDataNodes.length == 0) {
+		console.log("ERROR: no saveCanvasProjectData node");
+		return [];
+	}
+	var saveCanvasProjectDataNode = saveCanvasProjectDataNodes[0];
+	var projectSaveId = getProjectId(saveCanvasProjectDataNode, network);
+	var saveNameRegex = new RegExp(projectSaveNodeNamePrefix + projectSaveId + "_.*");
+	var storageItemsSize = localStorage.length;
+	var keys = [];
+	for (var i = 0; i < storageItemsSize; i++) {
+		var storageKey = localStorage.key(i);
+		if (storageKey.search(saveNameRegex) >= 0) {
+			keys.push(localStorage.key(i));
+		}
+	}
+	return keys;
+}
+function deleteNodesIfTheyAreProjectSaves(network, nodes) {
+	var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + saveCanvasProjectDataLine + "$"));
+	if (saveCanvasProjectDataNodes.length == 0) {
+		console.log("ERROR: no saveCanvasProjectData node");
+		return;
+	}
+	var saveCanvasProjectDataNode = saveCanvasProjectDataNodes[0];
+	var projectSaveId = getProjectId(saveCanvasProjectDataNode, network);
+	objectToArray(data.nodes).forEach(function(nodeId) {
+		var node = getNodeById(network.body.data.nodes.get(), nodeId);
+		if (node.label.search(new RegExp(projectSaveNodeNamePrefix + projectSaveId + "_.*")) >= 0) {
+			localStorage.removeItem(node.label);
+		}
+	});
+}
+function removeSaveNodes() {
+	var oldSavesKeys = findProjectSavesKeys();
+	var nodes = network.body.data.nodes;
+	for (var i = 0; i < oldSavesKeys.length; i++) {
+		var key = oldSavesKeys[i];
+		var saveCanvasProjectDateNodes = getNodesByRegexSearchInLabel(network, new RegExp(key));
+		saveCanvasProjectDateNodes.forEach(function(node) {
+			nodes.remove(node.id);
+		});
+	}
+}
+function getProjectId(saveCanvasProjectDataNode, network) {
+	var projectSaveIdNodes = getNodesByRegexSearchInLabel(network, new RegExp(projectSaveIdLine));
+	if (projectSaveIdNodes.length == 0) {
+		console.log("ERROR: no " + projectSaveIdLine + " node");
+		return;
+	}
+	var projectSaveIdNode = projectSaveIdNodes[0];
+	var connectedNodesIds = network.getConnectedNodes(projectSaveIdNode.id);
+	var projectIdNode;
+	connectedNodesIds.forEach(function(nodeId) {
+		var node = getNodeById(network.body.data.nodes.get(), nodeId);
+		if (node.label.split(": ")[0] == "projectSaveId") {
+			projectIdNode = node;
+		}
+	});
+	return projectIdNode.label.split(": ")[1]; 
+}
+function buildSaveNodesList() {
+	var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + saveCanvasProjectDataLine + "$"));
+	if (saveCanvasProjectDataNodes.length == 0) {
+		console.log("ERROR: no saveCanvasProjectData node");
+		return;
+	}
+	var saveCanvasProjectDataNode = saveCanvasProjectDataNodes[0];
+	updateNodePositionData(network, saveCanvasProjectDataNode);
+	var oldSavesKeys = findProjectSavesKeys();
+	oldSavesKeys.forEach(function(key,i) {
+		makeSaveProjectToBrowserNode(
+			key,
+			saveCanvasProjectDataNode.x + 400, 
+			saveCanvasProjectDataNode.y + 40*i);
+	});
+}
+function deleteProjectLocalStorageSaves(network) {
+	var oldSavesKeys = findProjectSavesKeys();
+	for (var i = 0; i < oldSavesKeys.length; i++) {
+		var key = oldSavesKeys[i];
+		localStorage.removeItem(key);
+	}
+}
+function deleteLocalStorageSavesAndSaveNodes(network) {
+	removeSaveNodes();
+	deleteProjectLocalStorageSaves(network);
+}
+function deleteLocalStorageSaveAndSaveNodeBySaveName(network, saveName) {
+	localStorage.removeItem(saveName);
+	var saveCanvasProjectDateNodes = getNodesByRegexSearchInLabel(network, new RegExp(saveName));
+	saveCanvasProjectDateNodes.forEach(function(node) {
+		nodes.remove(node.id);
+	});
+}
+
+function loadSavedProjectDataToDataMenuBySaveName(network, saveName) {
+	var jsonString = localStorage.getItem(saveName);
+	$("textarea#schemeDataTextArea").val(jsonString);
+}
+function saveProjectToBrowserLocalStorage(network) {
+	var regex = saveCanvasProjectDataLine;
+	var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + regex + "$"));
+	var projectSaveIdNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + projectSaveIdLine + "$"));
+	var projectSaveIdWithDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + projectSaveIdLine + ":.*$"));
+	if ((typeof saveCanvasProjectDataNodes === "undefined") || (saveCanvasProjectDataNodes.length == 0) ||
+		(typeof projectSaveIdNodes === "undefined") || (projectSaveIdNodes.length == 0) ||
+		(typeof projectSaveIdWithDataNodes === "undefined") || (projectSaveIdWithDataNodes.length == 0)) 
+	{
+		alert("Add setup nodes for canvas save information: '" + saveCanvasProjectDataLine + "', '" + projectSaveIdLine + "', '" +  projectSaveIdLine + ": projectName'.");
+	} else {
+		removeSaveNodes();
+		var date = new Date().toLocaleString("ru-RU");
+		date = date.replace(/\./g,"-");
+		date = date.replace(/:/g,"-");
+		date = date.replace(/,/g,"_");
+		date = date.replace(" ","");
+		var projectJson = $("textarea#schemeDataTextArea").val();
+		var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + saveCanvasProjectDataLine + "$"));
+		if (saveCanvasProjectDataNodes.length == 0) {
+			console.log("ERROR: no saveCanvasProjectData node");
+			return;
+		}
+		var saveCanvasProjectDataNode = saveCanvasProjectDataNodes[0];
+		var projectSaveId = getProjectId(saveCanvasProjectDataNode, network);
+		localStorage.setItem(projectSaveNodeNamePrefix + projectSaveId + "_" + date,projectJson);
+		buildSaveNodesList();
+	}
+}
+
+function clearBrowserLocalStorage() {
+	var storageItemsSize = localStorage.length;
+	var keys = [];
+	for (var i = 0; i < storageItemsSize; i++) {
+		keys.push(localStorage.key(i));
+	}
+	for (var i = 0; i < storageItemsSize; i++) {
+		var key = keys[i];
+		localStorage.removeItem(key);
+	}
+}
+
+function showBrowserLocalStorage() {
+	var storageItemsSize = localStorage.length;
+	for (var i = 0; i < storageItemsSize; i++) {
+		var key = localStorage.key(i);
+	}
+}
+
+function showBrowserLocalStorageKeys() {
+	var storageItemsSize = localStorage.length;
+	for (var i = 0; i < storageItemsSize; i++) {
+		var key = localStorage.key(i);
+	}
+}
+
 $(document).ready(function() {
+
 	containerJQ[0].oncontextmenu = () => false;
 	//topMenu = $("<div style='margin:0 0 0 0; padding:3px; background-color: black;color:white;z-index:9999'></div>");
+	
 	body = $("body");
-	showDataButton = $("<div style='cursor:pointer;color:black;float:right;position:fixed;top:3px; line-height: 0;right:0;z-index:9999;padding: 15px;margin:-5px 0 5px 0; background-color:white;border: 1px solid #a3a3a3;font-size:12px'>showData</div>");
+
+	showDataButton = $("<div id='showData' style='cursor:pointer;color:black;float:right;position:fixed;top:3px; line-height: 0;right:0;z-index:9999;padding: 15px;margin:-5px 0 5px 0; background-color:white;border: 1px solid #a3a3a3;font-size:12px'>showData</div>");
 	body.append(showDataButton);
+
 	schemeEditElementsMenu = $("<div id='schemeEditElementsMenu' style='height:100%; width:300px; position:fixed; left:0; top:29px;border-right: 1px solid #a3a3a3; background-color:white;z-index:5000; padding: 40px 20px 20px 20px'></div>");
 	schemeEditElementsMenu.hide();
 	body.append(schemeEditElementsMenu);
@@ -799,17 +1600,27 @@ $(document).ready(function() {
 	var nodeFontSizeInput = $("<input type='text' id='nodeFontSizeInput'></input>");
 	eSItem102.append(nodeFontSizeInput);
 
+	var eSRow11 = $("<tr></tr>");
+	elementsSetupTable.append(eSRow11);
+	var eSItem111 = $("<td></td>");
+	var eSItem112 = $("<td></td>");
+	eSRow11.append(eSItem111);
+	eSRow11.append(eSItem112);
+	var nodeFontAlignInputLabel = $("<div style=''><span>nodeFontAlign: </span></div>");
+	eSItem111.append(nodeFontAlignInputLabel);
+	var nodeFontAlignInput = $("<input type='text' id='nodeFontAlignInput'></input>");
+	eSItem112.append(nodeFontAlignInput);
+
 	linkOpenButton.click(function() {
 		var link = nodeLinkInput.val();
 		if (link.length > 0) {
 			window.open(link, '_blank');
-			console.log(link);
 		}
 	});
 
 	schemeEditElementsMenu.append(elementsSetupTable);
 
-	var saveElementEditButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='saveElementEditButton'>saveElementEditButton</span></div>");
+	var saveElementEditButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='saveElementEditButton'>saveElement</span></div>");
 	schemeEditElementsMenu.append(saveElementEditButton);
 
 	saveElementEditButton.click(function() {
@@ -820,11 +1631,12 @@ $(document).ready(function() {
 		var nodeShapeInput = schemeEditElementsMenu.find("input#nodeShapeInput");
 		var nodeLinkInput = schemeEditElementsMenu.find("input#nodeLinkInput");
 		var nodeFontSizeInput = schemeEditElementsMenu.find("input#nodeFontSizeInput");
+		var nodeFontAlignInput = schemeEditElementsMenu.find("input#nodeFontAlignInput");
 		var nodeColorInput = schemeEditElementsMenu.find("input#nodeColorInput");
 		var nodeBorderWidthInput = schemeEditElementsMenu.find("input#nodeBorderWidthInput");
 		var nodeBorderColorInput = schemeEditElementsMenu.find("input#nodeBorderColorInput");
 		var nodeD = network.body.data.nodes.get(nodeIdInput.val());
-		pNode = network.getPositions()[nodeIdInput.val()];
+		var pNode = network.getPositions()[nodeIdInput.val()];
 		nodeXInput.val(pNode.x);
 		nodeYInput.val(pNode.y);
 		nodeD.id = nodeIdInput.val();
@@ -835,29 +1647,142 @@ $(document).ready(function() {
 		nodeD.link = nodeLinkInput.val();
 		if (typeof nodeD.font === "undefined") nodeD.font = {size: 14};
 		nodeD.font.size = parseInt(nodeFontSizeInput.val(),10);
+		nodeD.font.align = nodeFontAlignInput.val();
 		if (typeof nodeD.color === "undefined") nodeD.color = {};
 		nodeD.color.background = nodeColorInput.val();
 		nodeD.color.border = nodeBorderColorInput.val();
 		nodeD.borderWidth = nodeBorderWidthInput.val();
 		network.body.data.nodes.update(nodeD);
-		//console.log(nodeD);
-		//console.log(network.body.data.nodes.get(nodeD.id));
 	});
 
-	var closeElementEditButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='closeElementEditButton'>closeElementEditButton</span></div>");
+	var closeElementEditButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='closeElementEditButton'>closeElement</span></div>");
 	schemeEditElementsMenu.append(closeElementEditButton);
+
 	closeElementEditButton.click(function() {
 		schemeEditElementsMenu.hide();
 	});
 
+	var splitNodeListLabelButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='splitNodeListLabelButton'>splitNodeListLabel</span></div>");
+	schemeEditElementsMenu.append(splitNodeListLabelButton);
+
+	splitNodeListLabelButton.click(function() {
+		var nodeIdInput = schemeEditElementsMenu.find("input#nodeIdInput");
+		var sourceNode = network.body.data.nodes.get(nodeIdInput.val());
+		var nodeLabel = sourceNode.label;
+		var pNode = network.getPositions()[nodeIdInput.val()];
+		var labelLines = nodeLabel.split("\n");
+		labelLines.forEach(function(line,index) {
+			network.body.data.nodes.add({
+				label:line,
+				x: pNode.x + 300,
+				y: pNode.y + 24*index
+			});
+		});
+	});
+
+	var runNodeCodeButton = $("<div style='cursor:pointer;margin:20px 0 0 0'><span id='runNodeCodeButton'>runNodeCode</span></div>");
+
+	schemeEditElementsMenu.append(runNodeCodeButton);
+
+	function collectCodeNodesContent(rootCodeNodeId) {
+		var codeNode = network.body.data.nodes.get(rootCodeNodeId).label + "\n";
+		var nodeEdges = network.body.nodes[rootCodeNodeId].edges;
+		var codeEdges = [];
+		nodeEdges.forEach(function(edge) {
+			if (edge.options.label == "code" && edge.fromId == rootCodeNodeId) {
+				codeEdges.push(edge);
+			}
+		});
+		var branchCodeNodes = [];
+		codeEdges.forEach(function(codeEdge) {
+			branchCodeNodes.push(network.body.data.nodes.get(codeEdge.toId));
+		});
+		function compare( a, b ) {
+			if ( a.y < b.y ){
+				return -1;
+			}
+			if ( a.y > b.y ){
+				return 1;
+			}
+			return 0;
+		}
+
+		var branchCodeNodes = branchCodeNodes.sort(compare);
+		branchCodeNodes.forEach(function(branchNode) {
+			codeNode = codeNode + collectCodeNodesContent(branchNode.id);
+		});
+		return codeNode;
+	}
+
+	runNodeCodeButton.click(function() {
+		var nodeId = schemeEditElementsMenu.find("input#nodeIdInput").val();
+		var code = collectCodeNodesContent(nodeId);
+		var codeFunction = new Function('codeNodeId', code);
+		codeFunction(nodeId);
+	});
+
 	var leftMenuHelpLine1 = $("<div style='margin:40px 0 0 0'><span id='leftMenuHelpLine1'>transparent color - rgba(0,0,0,0)</span></div>");
 	schemeEditElementsMenu.append(leftMenuHelpLine1);
+	//#FFD570
+	//#ffc63b
+	var leftMenuHelpLine2 = $("<div style='margin:10px 0 0 0'><span id='leftMenuHelpLine2'>nodes yellow color - #ffd570</span></div>");
+	schemeEditElementsMenu.append(leftMenuHelpLine2);
+
+	loadSavedProjectToMenuButton = $("<div style='cursor:pointer;margin:80px 0 0 0'><span id='loadSavedProjectToMenuButton'>loadSavedProjectToMenu</span></div>");
+	schemeEditElementsMenu.append(loadSavedProjectToMenuButton);
+	loadSavedProjectToMenuButton.hide();
+	loadSavedProjectToMenuButton.click(function() {
+		var saveLabel = loadSavedProjectToMenuButton.saveProjectLabel;
+		loadSavedProjectDataToDataMenuBySaveName(network, saveLabel);
+		updateSchemeFromMenu();
+		removeSaveNodes();
+		buildSaveNodesList();
+	});;
+	deleteSavedProjectButton = $("<div style='cursor:pointer;margin:40px 0 0 0'><span id='deleteSavedProjectButton'>!!deleteSavedProject!!</span></div>");
+	schemeEditElementsMenu.append(deleteSavedProjectButton);
+	deleteSavedProjectButton.hide();
+	deleteSavedProjectButton.click(function() {
+		var saveLabel = deleteSavedProjectButton.saveProjectLabel;
+		deleteLocalStorageSaveAndSaveNodeBySaveName(network, saveLabel);
+	});
 
 	schemeDataMenu = $("<div id='schemeDataMenu' style='height:100%; width:260px; position:fixed; right:0; top:0; background-color:white;border-left: 1px solid #a3a3a3;z-index:5000; padding: 40px 20px 20px 20px'></div>");
 	//schemeDataMenu.hide()
 	schemeDataTextArea = $("<div style='margin:0;padding:0;'><textarea id='schemeDataTextArea' cols='30' rows='45'></textarea></div>");
 	schemeDataMenu.append(schemeDataTextArea);
+	saveLoadButton = $("<div style='cursor:pointer;margin:20px 0 0 0;padding:0;'><span id='saveLoadButton' style='background-color:white; color: black;'>Save/Load</span></div>");
+	schemeDataMenu.append(saveLoadButton);
 	body.append(schemeDataMenu);
+	saveLoadButton.click(function() {
+		var regex = saveCanvasProjectDataLine;
+		var saveCanvasProjectDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + regex + "$"));
+		var projectSaveIdNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + projectSaveIdLine + "$"));
+		var projectSaveIdWithDataNodes = getNodesByRegexSearchInLabel(network, new RegExp("^" + projectSaveIdLine + ":.*$"));
+		if ((typeof saveCanvasProjectDataNodes === "undefined") || (saveCanvasProjectDataNodes.length == 0) ||
+			(typeof projectSaveIdNodes === "undefined") || (projectSaveIdNodes.length == 0) ||
+			(typeof projectSaveIdWithDataNodes === "undefined") || (projectSaveIdWithDataNodes.length == 0)) 
+			{
+			alert("Add setup nodes for canvas save information: '" + saveCanvasProjectDataLine + "', '" + projectSaveIdLine + "', '" +  projectSaveIdLine + ": projectName'.");
+		} else {
+			var node = saveCanvasProjectDataNodes[0];
+			updateNodePositionData(network, node);
+			var scale = network.getScale();
+			var n1X = parseFloat(node.x.toFixed(5));
+			var n1Y = parseFloat(node.y.toFixed(5));
+			var positionX = parseFloat((n1X - canvasWidth/(2*scale)).toFixed(5));
+			var positionY = parseFloat((n1Y - canvasHeight/(2*scale)).toFixed(5));
+			network.moveTo({
+				position: {x: positionX, y: positionY},
+				offset: {x: -canvasWidth/2, y: -canvasHeight/2},
+				scale: scale,
+			});
+			network1.moveTo({
+				position: {x: positionX, y: positionY},
+				offset: {x: -canvasWidth/2, y: -canvasHeight/2},
+				scale: scale,
+			});
+		}
+	});
 	showDataButton.click(function() {
 		schemeDataMenu.toggle();
 	});
@@ -865,12 +1790,16 @@ $(document).ready(function() {
 	if (typeof runUpateMenuFromSchemeAtPageReady !== "undefined" && runUpateMenuFromSchemeAtPageReady) {
 		updateMenuFromScheme();
 	}
+	removeSaveNodes();
+	buildSaveNodesList();
 	var updateSchemeFromMenuButton = $("<div style='cursor:pointer;margin: 0 0 20px 0;'><span id='updateSchemeFromMenuButton' style='background-color:white;color:black;'>updateSchemeFromMenu</span></div>");
 	var updateMenuFromSchemeButton = $("<div style='cursor:pointer;margin: 0 0 20px 0;'><span id='updateMenuFromSchemeButton' style='background-color:white;color:black;'>updateMenuFromScheme</span></div>");
 	schemeDataMenu.prepend(updateMenuFromSchemeButton);
 	schemeDataMenu.prepend(updateSchemeFromMenuButton);
 	updateSchemeFromMenuButton.click(function() {
 		updateSchemeFromMenu();
+		removeSaveNodes();
+		buildSaveNodesList();
 	});
 
 	function addConnections(elem, index) {
@@ -911,16 +1840,6 @@ $(document).ready(function() {
 		return new vis.DataSet(networkNodes);
 	}
 
-	function getNodeById(data, id) {
-		for (var n = 0; n < data.length; n++) {
-			if (data[n].id == id) { 
-				return data[n];
-			}
-		};
-
-		throw 'Can not find id \'' + id + '\' in data';
-	}
-
 	function getEdgeData(data) {
 		var networkEdges = [];
 
@@ -946,8 +1865,25 @@ $(document).ready(function() {
 	}
 
 	updateMenuFromSchemeButton.click(function() {
+		removeSaveNodes();
 		updateMenuFromScheme();
+		//saveProjectToBrowserLocalStorage(network);
+		localStorageSpace();
 	});
+	if (showCursorCoordinates) {
+		var cursorCoordinatesWidget = $("<div style='position: fixed;right:330px;font-size:12px'>" +
+			"<div id='domCursorCoordinates'></div>" +
+			"<div id='canvasCursorCoordinates'></div>" +
+			"</div>");
+		$("body").append(cursorCoordinatesWidget);
+		$(document).mousemove(function(event) {
+			$("#domCursorCoordinates").text(event.pageX.toString() + "x" + event.pageY.toString());
+			var domX = (event.pageX - containerJQ.position().left).toFixed(0);
+			var domY = (event.pageY - containerJQ.position().top).toFixed(0);
+			var canvasPosition = network.canvas.DOMtoCanvas({x: domX,y: domY});
+			$("#canvasCursorCoordinates").text((canvasPosition.x).toFixed(0) + "x" + (canvasPosition.y).toFixed(0));
+		});
+	}
 });
 
 function c(x, y) {
@@ -964,5 +1900,74 @@ function c(x, y) {
 	var green = imgData.data[index+1];
 	var blue = imgData.data[index+2];
 	var alpha = imgData.data[index+3];
-	console.log('pix x ' + x + ' y ' + y + ' index ' + index + ' COLOR ' + red + ', ' + green + ', ' + blue + ', ' + alpha);
+	//console.log('pix x ' + x + ' y ' + y + ' index ' + index + ' COLOR ' + red + ', ' + green + ', ' + blue + ', ' + alpha);
+}
+
+function rdf() {
+	var store = $rdf.graph();
+	console.log($rdf);
+	console.log(store);
+	console.log(network);
+	network.body.data.nodes.get().forEach(function(node) {
+		store.add($rdf.literal(node.id), FOAF('name'), $rdf.literal(node.id));
+		//store.add(node.id, "name",);
+	});
+	network.body.data.nodes.get().forEach(function(item) {
+	});
+	console.log(store.length);
+}
+
+function localStorageSpace() {
+    var data = '';
+
+    console.log('Current local storage: ');
+
+    for(var key in window.localStorage){
+
+        if(window.localStorage.hasOwnProperty(key)){
+            data += window.localStorage[key];
+            console.log( key + " = " + ((window.localStorage[key].length * 16)/(8 * 1024)).toFixed(2) + ' KB' );
+        }
+
+    }
+
+    console.log(data ? '\n' + 'Total space used: ' + ((data.length * 16)/(8 * 1024)).toFixed(2) + ' KB' : 'Empty (0 KB)');
+    console.log(data ? 'Approx. space remaining: ' + (5120 - ((data.length * 16)/(8 * 1024)).toFixed(2)) + ' KB' : '5 MB');
+};
+
+function makeNodeJsonLine(id, label, link, x, y) {
+	label = label.replace(":","\:");
+	link = link.replace(":","\:");
+	var json = "";
+	json += "\"" + id + "\": { \"id\": \"" + id + "\",";
+	json += "\"x\": " + x.toString() + ", \"y\": " + y.toString() + ",";
+	json += "\"label\": \"" + label + "\",";
+	json += "\"link\": \"" + link + "\"";
+	json += "}";
+	return json;
+}
+
+function addNodeOnCanvas(label, link, position, shiftX, shiftY, network) {
+	return network.body.data.nodes.add({
+		label:label,
+		link: link,
+		x: position.x + shiftX,
+		y: position.y + shiftY
+	});
+}
+
+function countSelectedNodesAndEdges() {
+	var nodes = objectToArray(network.body.data.nodes);
+	var edges = objectToArray(network.body.data.edges);
+	console.log("All nodes: " + nodes.length);
+	console.log("All edges: " + edges.length);
+	var selectedNodes = objectToArray(network.selectionHandler.selectionObj.nodes);
+	var selectedEdges = objectToArray(network.selectionHandler.selectionObj.edges);
+	console.log("Selected nodes: " + selectedNodes.length);
+	console.log("Selected edges: " + selectedEdges.length);
+}
+
+function help() {
+	console.log("localStorageSpace()");
+	console.log("countSelectedNodesAndEdges()");
 }
