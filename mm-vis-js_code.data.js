@@ -13410,7 +13410,7 @@ var schemeData =
           "id": "44401bba-5383-432e-b905-25e85a0b60ec",
           "x": 41017,
           "y": -15512,
-          "label": "cp application.js \\\nindex.html \\\nindex.data.js \\\nbase.html \\\nbase.data.js \\\nculture.html \\\nculture.data.js \\\nruby.html \\\nruby.data.js \\\njavascript.html \\\njavascript.data.js \\\nmusic.html \\\nmusic.data.js \\\nmm-vis-js_code.html \\\nmm-vis-js_code.data.js \\\nmath.html \\\nmath.data.js \\\npublic \\\npython.html \\\npython.data.js \\\n../../sushilshik.github.io/",
+          "label": "cp -r application.js \\\nindex.html \\\nindex.data.js \\\nbase.html \\\nbase.data.js \\\nculture.html \\\nculture.data.js \\\nruby.html \\\nruby.data.js \\\njavascript.html \\\njavascript.data.js \\\nmusic.html \\\nmusic.data.js \\\nmm-vis-js_code.html \\\nmm-vis-js_code.data.js \\\nmath.html \\\nmath.data.js \\\npublic \\\npython.html \\\npython.data.js \\\n../../sushilshik.github.io/",
           "shape": "box",
           "link": "",
           "font": {
@@ -35407,10 +35407,10 @@ var schemeData =
     }
   },
   "setup": {
-    "scale": 0.010096435466781468,
+    "scale": 0.01,
     "viewPosition": {
-      "x": 66466.33506082665,
-      "y": 16198.48109314131
+      "x": 65673,
+      "y": 17507.999999999993
     }
   }
 }
