@@ -19240,9 +19240,9 @@ var schemeData =
         },
         "16f0e17f-3f43-4af6-bb15-175f56043486": {
           "id": "16f0e17f-3f43-4af6-bb15-175f56043486",
-          "x": 82264,
-          "y": -3378,
-          "label": "Вопросы",
+          "x": 82314,
+          "y": -3354,
+          "label": "Вопросы, техподдержка",
           "shape": "box",
           "link": "",
           "font": {
@@ -19257,22 +19257,22 @@ var schemeData =
         },
         "5000e6b4-652f-41bf-99ef-ed974dc9eb8d": {
           "id": "5000e6b4-652f-41bf-99ef-ed974dc9eb8d",
-          "x": 82817,
-          "y": -3388,
+          "x": 82931,
+          "y": -3387,
           "label": "https://www.facebook.com/mike.ahundov",
           "link": "https://www.facebook.com/mike.ahundov"
         },
         "879f7031-d698-45d3-8225-8e6ace9d8232": {
           "id": "879f7031-d698-45d3-8225-8e6ace9d8232",
-          "x": 82762,
-          "y": -3361,
+          "x": 82876,
+          "y": -3360,
           "label": "https://vk.com/ahundov",
           "link": "https://vk.com/ahundov"
         },
         "dec22996-c5a7-45e9-8100-97ffc9d014ef": {
           "id": "dec22996-c5a7-45e9-8100-97ffc9d014ef",
-          "x": 82541,
-          "y": -3377,
+          "x": 82655,
+          "y": -3376,
           "label": "Пишите"
         },
         "1cbc5c87-627f-4c72-b827-b7033d64312a": {
@@ -20078,6 +20078,12 @@ var schemeData =
             "border": ""
           },
           "borderWidth": ""
+        },
+        "2d141747-1b21-4d56-bcc8-57f732cd1d1b": {
+          "id": "2d141747-1b21-4d56-bcc8-57f732cd1d1b",
+          "x": 82758,
+          "y": -3318,
+          "label": "Техподдержка без гарантий, еще бы =)"
         }
       },
       "length": 0,
@@ -43601,6 +43607,11 @@ var schemeData =
           "from": "d0651135-bb8a-4c28-b846-903339cecfae",
           "to": "a08cf0b6-be28-4c29-a931-a0109e438ad9",
           "id": "261e32e6-05d1-4cd0-b99b-5ab9fb49ea90"
+        },
+        "01e4bda9-826d-4238-9e33-5edebb626630": {
+          "from": "16f0e17f-3f43-4af6-bb15-175f56043486",
+          "to": "2d141747-1b21-4d56-bcc8-57f732cd1d1b",
+          "id": "01e4bda9-826d-4238-9e33-5edebb626630"
         }
       },
       "length": 0,
@@ -43639,8 +43650,8 @@ var schemeData =
   "setup": {
     "scale": 0.0145,
     "viewPosition": {
-      "x": 100403.0000013796,
-      "y": 10000.000003448285
+      "x": 100403.0000013791,
+      "y": 10000.000003448271
     }
   }
 }
