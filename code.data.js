@@ -36624,6 +36624,1772 @@ var schemeData =
           "shape": "box",
           "link": "",
           "borderWidth": ""
+        },
+        "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f": {
+          "label": "git",
+          "x": 88733,
+          "y": 11472,
+          "font": {
+            "size": 72,
+            "align": "left"
+          },
+          "color": {
+            "background": "red",
+            "border": ""
+          },
+          "id": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "shape": "box",
+          "link": "",
+          "borderWidth": ""
+        },
+        "e9a42e49-82b4-4af6-8ba2-1a5b00a91892": {
+          "label": "Development",
+          "x": 88964,
+          "y": 11922,
+          "id": "e9a42e49-82b4-4af6-8ba2-1a5b00a91892"
+        },
+        "b6f25aac-b08e-4a52-8769-eab16b74ab57": {
+          "label": "1/7/2020",
+          "x": 89089,
+          "y": 11922,
+          "id": "b6f25aac-b08e-4a52-8769-eab16b74ab57"
+        },
+        "d761a0d9-5bf6-4967-86b7-13f411819661": {
+          "label": "init",
+          "x": 89214,
+          "y": 11922,
+          "id": "d761a0d9-5bf6-4967-86b7-13f411819661"
+        },
+        "0cf00957-2cba-46ad-a1a1-58fb827a15fb": {
+          "label": "Notes",
+          "x": 88934,
+          "y": 10848,
+          "id": "0cf00957-2cba-46ad-a1a1-58fb827a15fb"
+        },
+        "f2de02b8-7146-498e-b0f1-7b26553c1c52": {
+          "label": "Dictionary of\nconcepts",
+          "x": 89094,
+          "y": 10427,
+          "id": "f2de02b8-7146-498e-b0f1-7b26553c1c52"
+        },
+        "63084023-9195-42c8-9dd0-49944ae3d260": {
+          "label": "Details, thoughts",
+          "x": 89108,
+          "y": 10848,
+          "id": "63084023-9195-42c8-9dd0-49944ae3d260"
+        },
+        "b65d6572-e1e0-4a68-a00f-8fdc219ea77c": {
+          "label": "Sections",
+          "x": 89088,
+          "y": 11322,
+          "id": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c"
+        },
+        "d192e939-6e17-479b-bc37-ba58979e7e95": {
+          "label": "Books",
+          "x": 89172,
+          "y": 10948,
+          "id": "d192e939-6e17-479b-bc37-ba58979e7e95"
+        },
+        "0afea430-924f-43d1-a8cc-59af4fb3b35b": {
+          "label": "R&D institutions",
+          "x": 89202,
+          "y": 10973,
+          "id": "0afea430-924f-43d1-a8cc-59af4fb3b35b"
+        },
+        "5d59c541-d0d4-46c7-841d-2582932d4d16": {
+          "label": "Sites",
+          "x": 89168,
+          "y": 10998,
+          "id": "5d59c541-d0d4-46c7-841d-2582932d4d16"
+        },
+        "53964fcc-2e1d-4ae5-af8a-d16d276cea0b": {
+          "label": "Magazines",
+          "x": 89187,
+          "y": 11023,
+          "id": "53964fcc-2e1d-4ae5-af8a-d16d276cea0b"
+        },
+        "c052e465-8f90-4496-904f-a0955fe2f373": {
+          "label": "Articles",
+          "x": 89175,
+          "y": 11048,
+          "id": "c052e465-8f90-4496-904f-a0955fe2f373"
+        },
+        "6f412306-f8de-43e6-933d-fa48901879e7": {
+          "label": "Media content",
+          "x": 89197,
+          "y": 11073,
+          "id": "6f412306-f8de-43e6-933d-fa48901879e7"
+        },
+        "b8a4d6ba-d3e3-451b-8f6f-3dc9caf26e5c": {
+          "label": "Misc. web links",
+          "x": 89208,
+          "y": 11201,
+          "id": "b8a4d6ba-d3e3-451b-8f6f-3dc9caf26e5c"
+        },
+        "dcb103eb-2315-4088-bfb9-40f90fb1432e": {
+          "label": "Projects",
+          "x": 89184,
+          "y": 11347,
+          "id": "dcb103eb-2315-4088-bfb9-40f90fb1432e"
+        },
+        "b515e3bc-e349-4b01-8896-401a7ba265b1": {
+          "label": "Tools",
+          "x": 89175,
+          "y": 11372,
+          "id": "b515e3bc-e349-4b01-8896-401a7ba265b1"
+        },
+        "24c498fa-6027-46df-8e02-ec00eb9b419f": {
+          "label": "Organizations",
+          "x": 89202,
+          "y": 11397,
+          "id": "24c498fa-6027-46df-8e02-ec00eb9b419f"
+        },
+        "1ca1b835-c8f9-4329-ae0f-ea3685fdf9d5": {
+          "label": "Standarts",
+          "x": 89189,
+          "y": 11422,
+          "id": "1ca1b835-c8f9-4329-ae0f-ea3685fdf9d5"
+        },
+        "c9d17e13-d1e0-4483-bf33-d490b0961456": {
+          "label": "Forums, Groups",
+          "x": 89210,
+          "y": 11447,
+          "id": "c9d17e13-d1e0-4483-bf33-d490b0961456"
+        },
+        "5eaef2a1-234f-43a9-8612-4fdee1711403": {
+          "label": "Laws",
+          "x": 89175,
+          "y": 11472,
+          "id": "5eaef2a1-234f-43a9-8612-4fdee1711403"
+        },
+        "28ba601b-4318-43c3-9e07-db0242118d86": {
+          "label": "Adjacent Themes",
+          "x": 89214,
+          "y": 11497,
+          "id": "28ba601b-4318-43c3-9e07-db0242118d86"
+        },
+        "1d5608c8-92c3-45d7-907e-980baa249cb5": {
+          "label": "Questions",
+          "x": 88954,
+          "y": 11622,
+          "id": "1d5608c8-92c3-45d7-907e-980baa249cb5"
+        },
+        "bb87e880-0154-4fe5-be87-df166d41006f": {
+          "label": "Problems",
+          "x": 88952,
+          "y": 11722,
+          "id": "bb87e880-0154-4fe5-be87-df166d41006f"
+        },
+        "de971ab3-fb0d-4ccc-829f-5414672a9f3a": {
+          "label": "Goals",
+          "x": 88940,
+          "y": 11822,
+          "id": "de971ab3-fb0d-4ccc-829f-5414672a9f3a"
+        },
+        "8a7f3250-243f-4751-858e-c9632f751656": {
+          "id": "8a7f3250-243f-4751-858e-c9632f751656",
+          "x": 91633,
+          "y": 10613,
+          "label": "Git",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 1000,
+            "align": "left"
+          },
+          "color": {
+            "background": "#ffc63b",
+            "border": ""
+          },
+          "borderWidth": ""
+        },
+        "325d235d-4405-4dc4-8118-3cc1473ae042": {
+          "id": "325d235d-4405-4dc4-8118-3cc1473ae042",
+          "x": 89534,
+          "y": 11172,
+          "label": "https://en.wikipedia.org/wiki/Git",
+          "link": "https://en.wikipedia.org/wiki/Git"
+        },
+        "be7b4abb-4c2f-4faf-ad9b-6f32ba71d951": {
+          "id": "be7b4abb-4c2f-4faf-ad9b-6f32ba71d951",
+          "x": 89498,
+          "y": 11201,
+          "label": "https://git-scm.com/",
+          "link": "https://git-scm.com/"
+        },
+        "491b2df8-14c1-44f3-aac5-d405a6a7b3b4": {
+          "id": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "x": 89304,
+          "y": 10476,
+          "label": "Cancel action"
+        },
+        "00d8e781-c70e-4e63-bd0d-a36217727036": {
+          "id": "00d8e781-c70e-4e63-bd0d-a36217727036",
+          "x": 89531,
+          "y": 10345,
+          "label": "Remove uncommitted actions"
+        },
+        "c37a1698-93c5-4f0d-b6bb-1897b1336659": {
+          "label": "git reset --hard",
+          "link": "",
+          "x": 89757,
+          "y": 10326,
+          "id": "c37a1698-93c5-4f0d-b6bb-1897b1336659",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "63a9c7a9-41ba-415e-ad29-6492f305365f": {
+          "label": "revert changes to modified files",
+          "link": "",
+          "x": 90026,
+          "y": 10325,
+          "id": "63a9c7a9-41ba-415e-ad29-6492f305365f",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "741f09bb-9dd0-46f8-85e4-77e6008c4fbb": {
+          "label": "git clean -fd",
+          "link": "",
+          "x": 89747,
+          "y": 10369,
+          "id": "741f09bb-9dd0-46f8-85e4-77e6008c4fbb",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "31908ef4-9ff6-431f-ab33-a931ca28c6fe": {
+          "label": "remove all untracked files and directories (-f force, -d remove dirs)",
+          "link": "",
+          "x": 90136,
+          "y": 10379,
+          "id": "31908ef4-9ff6-431f-ab33-a931ca28c6fe",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "9eb0221d-52ea-4056-a597-da218521b7e5": {
+          "label": "git reset --soft HEAD^1",
+          "link": "",
+          "x": 89510,
+          "y": 10466,
+          "id": "9eb0221d-52ea-4056-a597-da218521b7e5",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "f349dd59-11a3-42f5-8961-2c3df3f516bc": {
+          "label": "Cancel last commit command",
+          "link": "",
+          "x": 89804,
+          "y": 10446,
+          "id": "f349dd59-11a3-42f5-8961-2c3df3f516bc",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "ae87c0d7-3ccf-419a-88e4-13b18913ee8c": {
+          "label": "Data will stay as before commit",
+          "link": "",
+          "x": 89809,
+          "y": 10473,
+          "id": "ae87c0d7-3ccf-419a-88e4-13b18913ee8c",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "cb0a2d03-2aac-4757-8716-f9e8e6d5bad9": {
+          "label": "Results of \"git add\" also will stay as before commit",
+          "link": "",
+          "x": 89869,
+          "y": 10497,
+          "id": "cb0a2d03-2aac-4757-8716-f9e8e6d5bad9",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": ""
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {},
+            "size": 14,
+            "align": "left"
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {},
+          "shape": "box",
+          "borderWidth": ""
+        },
+        "b98b62b1-e2ad-4b89-a966-95a42a699dca": {
+          "label": "git reset HEAD",
+          "link": "",
+          "x": 89484,
+          "y": 10546,
+          "id": "b98b62b1-e2ad-4b89-a966-95a42a699dca",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "2a07abc8-bda8-4446-9d7d-9ad33ddaf793": {
+          "label": "cancel last stage (add ?)",
+          "link": "",
+          "x": 89788,
+          "y": 10542,
+          "id": "2a07abc8-bda8-4446-9d7d-9ad33ddaf793",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "b1ac380f-2525-4a5a-8862-c0590c04d957": {
+          "label": "Sequent cancel",
+          "link": "",
+          "x": 89486,
+          "y": 10638,
+          "id": "b1ac380f-2525-4a5a-8862-c0590c04d957",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "39a698d4-63cd-4db0-812d-df5753da1953": {
+          "label": "git reset --soft HEAD^1",
+          "link": "",
+          "x": 89783,
+          "y": 10596,
+          "id": "39a698d4-63cd-4db0-812d-df5753da1953",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "d89d0833-8d89-41d7-a5c7-efa89fb8619b": {
+          "label": "cancel last commit",
+          "link": "",
+          "x": 89985,
+          "y": 10595,
+          "id": "d89d0833-8d89-41d7-a5c7-efa89fb8619b",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "7c1d16d2-88bd-4b91-ba2a-9b9eb6ba316c": {
+          "label": "git reset HEAD",
+          "link": "",
+          "x": 89757,
+          "y": 10647,
+          "id": "7c1d16d2-88bd-4b91-ba2a-9b9eb6ba316c",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "9da8eaf3-7145-4194-be17-e0c22e60d73a": {
+          "label": "cancel last stage (add)",
+          "link": "",
+          "x": 89999,
+          "y": 10644,
+          "id": "9da8eaf3-7145-4194-be17-e0c22e60d73a",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "29873366-b2d2-4110-9f48-9580825c1241": {
+          "label": "git reset --hard",
+          "link": "",
+          "x": 89757,
+          "y": 10695,
+          "id": "29873366-b2d2-4110-9f48-9580825c1241",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "0dbeda2b-f6e6-499f-890a-9335f64c9de5": {
+          "label": "remove all uncommitted code changes",
+          "link": "",
+          "x": 90049,
+          "y": 10693,
+          "id": "0dbeda2b-f6e6-499f-890a-9335f64c9de5",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "cb3a8991-6b98-44da-9b83-ff0ba65aff1e": {
+          "id": "cb3a8991-6b98-44da-9b83-ff0ba65aff1e",
+          "x": 89271,
+          "y": 10080,
+          "label": "git init"
+        },
+        "ff9e95d9-d176-4cb0-af1d-0821258bf897": {
+          "label": "git commit -a -m \"commit comment\"",
+          "link": "",
+          "x": 89363,
+          "y": 10127,
+          "id": "ff9e95d9-d176-4cb0-af1d-0821258bf897",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "266b27a5-028b-41cb-8922-dda2d3867f10": {
+          "label": "git clone",
+          "link": "",
+          "x": 89277,
+          "y": 10166,
+          "id": "266b27a5-028b-41cb-8922-dda2d3867f10",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "c17863ff-0b89-40fa-800b-d6e4b9b028b0": {
+          "label": "git push",
+          "link": "",
+          "x": 89280,
+          "y": 10211,
+          "id": "c17863ff-0b89-40fa-800b-d6e4b9b028b0",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "62088b4e-e06e-437b-b06c-dc1b8b5073af": {
+          "label": "git push origin master",
+          "link": "",
+          "x": 89498,
+          "y": 10210,
+          "id": "62088b4e-e06e-437b-b06c-dc1b8b5073af",
+          "color": {
+            "highlight": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "hover": {
+              "border": "#2B7CE9",
+              "background": "#D2E5FF"
+            },
+            "background": "#ffd570",
+            "border": "#2B7CE9"
+          },
+          "fixed": {
+            "x": false,
+            "y": false
+          },
+          "font": {
+            "bold": {},
+            "boldital": {},
+            "ital": {},
+            "mono": {}
+          },
+          "icon": {},
+          "imagePadding": {},
+          "margin": {},
+          "scaling": {
+            "label": {
+              "enabled": false
+            }
+          },
+          "shadow": {
+            "enabled": false
+          },
+          "shapeProperties": {}
+        },
+        "2685bf7e-2582-44c9-ad23-1ac3b23ee52c": {
+          "label": "New Theme Name",
+          "x": 89251,
+          "y": 13621,
+          "font": {
+            "size": 72
+          },
+          "color": {
+            "background": "red"
+          },
+          "id": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c"
+        },
+        "e56f9ae9-1253-44a4-8f69-9e6c120b850c": {
+          "label": "Development",
+          "x": 89551,
+          "y": 14071,
+          "id": "e56f9ae9-1253-44a4-8f69-9e6c120b850c"
+        },
+        "797edd47-0da0-4b4e-ac97-8c9be5f9f666": {
+          "label": "1/10/2020",
+          "x": 89680,
+          "y": 14071,
+          "id": "797edd47-0da0-4b4e-ac97-8c9be5f9f666"
+        },
+        "dd33b039-ac50-4688-b6a3-b0adf31a077f": {
+          "label": "init",
+          "x": 89801,
+          "y": 14071,
+          "id": "dd33b039-ac50-4688-b6a3-b0adf31a077f"
+        },
+        "883ed669-792b-4b17-9dbc-580141028eef": {
+          "label": "Notes",
+          "x": 89528,
+          "y": 13221,
+          "id": "883ed669-792b-4b17-9dbc-580141028eef"
+        },
+        "ad8a3162-0fba-4bfd-bc77-3eaf9332db05": {
+          "label": "Dictionary of\nconcepts",
+          "x": 89688,
+          "y": 12971,
+          "id": "ad8a3162-0fba-4bfd-bc77-3eaf9332db05"
+        },
+        "2b34a31d-39a1-47e8-add3-ffd4ba033d9f": {
+          "label": "Details, thoughts",
+          "x": 89701,
+          "y": 13221,
+          "id": "2b34a31d-39a1-47e8-add3-ffd4ba033d9f"
+        },
+        "6cd5ef2c-bd33-42cb-a566-4f27199855a8": {
+          "label": "Sections",
+          "x": 89675,
+          "y": 13471,
+          "id": "6cd5ef2c-bd33-42cb-a566-4f27199855a8"
+        },
+        "72a5afee-fee8-478e-91d6-45b966fc146b": {
+          "label": "Books",
+          "x": 89765,
+          "y": 13321,
+          "id": "72a5afee-fee8-478e-91d6-45b966fc146b"
+        },
+        "c9669cb9-7e2a-46d9-9c99-2c8679027ea8": {
+          "label": "R&D institutions",
+          "x": 89796,
+          "y": 13346,
+          "id": "c9669cb9-7e2a-46d9-9c99-2c8679027ea8"
+        },
+        "64ede3ea-4833-4760-85ae-2cf9b020be2f": {
+          "label": "Sites",
+          "x": 89761,
+          "y": 13371,
+          "id": "64ede3ea-4833-4760-85ae-2cf9b020be2f"
+        },
+        "c7cd5426-a242-4f0c-ae64-9cd8a4af015e": {
+          "label": "Magazines",
+          "x": 89780,
+          "y": 13396,
+          "id": "c7cd5426-a242-4f0c-ae64-9cd8a4af015e"
+        },
+        "0b8eb231-dab9-4ba2-b157-8689b65fc6c9": {
+          "label": "Articles",
+          "x": 89769,
+          "y": 13421,
+          "id": "0b8eb231-dab9-4ba2-b157-8689b65fc6c9"
+        },
+        "506326d7-5789-4ecd-bd32-f82d009015f8": {
+          "label": "Media content",
+          "x": 89791,
+          "y": 13446,
+          "id": "506326d7-5789-4ecd-bd32-f82d009015f8"
+        },
+        "5ef3c040-55e9-4591-a444-a511d949d174": {
+          "label": "Misc. web links",
+          "x": 89793,
+          "y": 13471,
+          "id": "5ef3c040-55e9-4591-a444-a511d949d174"
+        },
+        "ff84de33-494b-40a7-ad0b-6fd9253a0c69": {
+          "label": "Projects",
+          "x": 89771,
+          "y": 13496,
+          "id": "ff84de33-494b-40a7-ad0b-6fd9253a0c69"
+        },
+        "804cd9fc-3305-4ce9-a701-18f8ebd5fc16": {
+          "label": "Tools",
+          "x": 89762,
+          "y": 13521,
+          "id": "804cd9fc-3305-4ce9-a701-18f8ebd5fc16"
+        },
+        "bb39e311-fc02-4705-909c-07c7adce33f4": {
+          "label": "Organizations",
+          "x": 89790,
+          "y": 13546,
+          "id": "bb39e311-fc02-4705-909c-07c7adce33f4"
+        },
+        "87196d4a-1e8e-4acd-aecd-ca2037278b36": {
+          "label": "Standarts",
+          "x": 89776,
+          "y": 13571,
+          "id": "87196d4a-1e8e-4acd-aecd-ca2037278b36"
+        },
+        "3e612603-0fde-4536-bf39-a7abbaa1bc6c": {
+          "label": "Forums, Groups",
+          "x": 89798,
+          "y": 13596,
+          "id": "3e612603-0fde-4536-bf39-a7abbaa1bc6c"
+        },
+        "42d4a4ac-0f96-4e1b-a088-5f459e866e56": {
+          "label": "Laws",
+          "x": 89762,
+          "y": 13621,
+          "id": "42d4a4ac-0f96-4e1b-a088-5f459e866e56"
+        },
+        "df2c7e64-1b8e-4682-9fe6-508cadf95ad3": {
+          "label": "Adjacent Themes",
+          "x": 89801,
+          "y": 13646,
+          "id": "df2c7e64-1b8e-4682-9fe6-508cadf95ad3"
+        },
+        "f5d5859c-37aa-4d44-838e-04e4a9a7e2c0": {
+          "label": "Questions",
+          "x": 89541,
+          "y": 13771,
+          "id": "f5d5859c-37aa-4d44-838e-04e4a9a7e2c0"
+        },
+        "996c0670-cbb7-4508-9408-e34de5561708": {
+          "label": "Problems",
+          "x": 89539,
+          "y": 13871,
+          "id": "996c0670-cbb7-4508-9408-e34de5561708"
+        },
+        "bf093989-7152-4d29-aa9f-185283b01081": {
+          "label": "Goals",
+          "x": 89528,
+          "y": 13971,
+          "id": "bf093989-7152-4d29-aa9f-185283b01081"
+        },
+        "b4fe9f5b-350f-4be1-b789-0259148d25c8": {
+          "label": "New Theme Name",
+          "x": 89512,
+          "y": 15324,
+          "font": {
+            "size": 72
+          },
+          "color": {
+            "background": "red"
+          },
+          "id": "b4fe9f5b-350f-4be1-b789-0259148d25c8"
+        },
+        "73f7a7c5-4f6a-46b3-a68a-4f0ccbb03c4b": {
+          "label": "Development",
+          "x": 89812,
+          "y": 15774,
+          "id": "73f7a7c5-4f6a-46b3-a68a-4f0ccbb03c4b"
+        },
+        "4dd9e838-181f-4a12-8ca3-b325aecef171": {
+          "label": "1/10/2020",
+          "x": 89941,
+          "y": 15774,
+          "id": "4dd9e838-181f-4a12-8ca3-b325aecef171"
+        },
+        "61489a1e-34ab-4032-8b4f-bc586bcb862b": {
+          "label": "init",
+          "x": 90062,
+          "y": 15774,
+          "id": "61489a1e-34ab-4032-8b4f-bc586bcb862b"
+        },
+        "088227e6-c44d-439c-8c33-b4898988e129": {
+          "label": "Notes",
+          "x": 89789,
+          "y": 14924,
+          "id": "088227e6-c44d-439c-8c33-b4898988e129"
+        },
+        "91e3a720-4f39-44b3-9efa-60b6ed020869": {
+          "label": "Dictionary of\nconcepts",
+          "x": 89949,
+          "y": 14674,
+          "id": "91e3a720-4f39-44b3-9efa-60b6ed020869"
+        },
+        "5f3fe5e2-13c9-4091-953d-dc61f8237ac7": {
+          "label": "Details, thoughts",
+          "x": 89962,
+          "y": 14924,
+          "id": "5f3fe5e2-13c9-4091-953d-dc61f8237ac7"
+        },
+        "68d19571-9895-4644-8f82-a7d5e18a39cd": {
+          "label": "Sections",
+          "x": 89936,
+          "y": 15174,
+          "id": "68d19571-9895-4644-8f82-a7d5e18a39cd"
+        },
+        "4550ab12-1c05-40c4-bd38-118a56d05ee6": {
+          "label": "Books",
+          "x": 90026,
+          "y": 15024,
+          "id": "4550ab12-1c05-40c4-bd38-118a56d05ee6"
+        },
+        "ae4c6e5c-1513-4368-afd0-ff98fcc312e8": {
+          "label": "R&D institutions",
+          "x": 90057,
+          "y": 15049,
+          "id": "ae4c6e5c-1513-4368-afd0-ff98fcc312e8"
+        },
+        "bf096c1d-01ee-4849-aa9a-d608b91074b5": {
+          "label": "Sites",
+          "x": 90022,
+          "y": 15074,
+          "id": "bf096c1d-01ee-4849-aa9a-d608b91074b5"
+        },
+        "05ba8b40-993e-4bb3-9855-6bb29ac2ee81": {
+          "label": "Magazines",
+          "x": 90041,
+          "y": 15099,
+          "id": "05ba8b40-993e-4bb3-9855-6bb29ac2ee81"
+        },
+        "521f74d2-5fef-401c-8289-dd690bb67cfc": {
+          "label": "Articles",
+          "x": 90030,
+          "y": 15124,
+          "id": "521f74d2-5fef-401c-8289-dd690bb67cfc"
+        },
+        "8970d996-4910-4caf-8ea4-7671f06a6f0f": {
+          "label": "Media content",
+          "x": 90052,
+          "y": 15149,
+          "id": "8970d996-4910-4caf-8ea4-7671f06a6f0f"
+        },
+        "c4fb56cd-4f36-464f-a45b-37ec748576cb": {
+          "label": "Misc. web links",
+          "x": 90054,
+          "y": 15174,
+          "id": "c4fb56cd-4f36-464f-a45b-37ec748576cb"
+        },
+        "830d4423-f953-4cb0-ae98-73c8e25a384b": {
+          "label": "Projects",
+          "x": 90032,
+          "y": 15199,
+          "id": "830d4423-f953-4cb0-ae98-73c8e25a384b"
+        },
+        "45419de3-27df-447f-97af-37b2ddefe185": {
+          "label": "Tools",
+          "x": 90023,
+          "y": 15224,
+          "id": "45419de3-27df-447f-97af-37b2ddefe185"
+        },
+        "d5e5df01-554b-4ed6-bc82-6313a95f032b": {
+          "label": "Organizations",
+          "x": 90051,
+          "y": 15249,
+          "id": "d5e5df01-554b-4ed6-bc82-6313a95f032b"
+        },
+        "209cbfd6-071a-4e4b-a0e6-2d993a05df14": {
+          "label": "Standarts",
+          "x": 90037,
+          "y": 15274,
+          "id": "209cbfd6-071a-4e4b-a0e6-2d993a05df14"
+        },
+        "e306e343-62a6-4e32-bdf8-56c53e62ecf9": {
+          "label": "Forums, Groups",
+          "x": 90059,
+          "y": 15299,
+          "id": "e306e343-62a6-4e32-bdf8-56c53e62ecf9"
+        },
+        "3b47d897-d482-4234-99be-c0370b59d532": {
+          "label": "Laws",
+          "x": 90023,
+          "y": 15324,
+          "id": "3b47d897-d482-4234-99be-c0370b59d532"
+        },
+        "f7904e9b-3b37-48df-9b66-ab525ac38da0": {
+          "label": "Adjacent Themes",
+          "x": 90062,
+          "y": 15349,
+          "id": "f7904e9b-3b37-48df-9b66-ab525ac38da0"
+        },
+        "d97153bf-17c5-42f2-ad0e-3b30e8474bc2": {
+          "label": "Questions",
+          "x": 89802,
+          "y": 15474,
+          "id": "d97153bf-17c5-42f2-ad0e-3b30e8474bc2"
+        },
+        "56cd5264-7508-4f4d-9cf4-ee21f95da090": {
+          "label": "Problems",
+          "x": 89800,
+          "y": 15574,
+          "id": "56cd5264-7508-4f4d-9cf4-ee21f95da090"
+        },
+        "264fa251-6e11-43a0-a3ba-54eb77745e62": {
+          "label": "Goals",
+          "x": 89789,
+          "y": 15674,
+          "id": "264fa251-6e11-43a0-a3ba-54eb77745e62"
+        },
+        "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2": {
+          "label": "Adobe Audition",
+          "x": 89579,
+          "y": 17640,
+          "font": {
+            "size": 72,
+            "align": "left"
+          },
+          "color": {
+            "background": "red",
+            "border": ""
+          },
+          "id": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "shape": "box",
+          "link": "",
+          "borderWidth": ""
+        },
+        "7d8618fa-2a66-438b-9e53-2d382f7401ce": {
+          "label": "Development",
+          "x": 89879,
+          "y": 18090,
+          "id": "7d8618fa-2a66-438b-9e53-2d382f7401ce"
+        },
+        "627c74c9-48d7-4be7-a382-076806be8e55": {
+          "label": "1/10/2020",
+          "x": 90008,
+          "y": 18090,
+          "id": "627c74c9-48d7-4be7-a382-076806be8e55"
+        },
+        "82497cc7-b014-4dd5-b67e-fd44fc9c6e1f": {
+          "label": "init",
+          "x": 90129,
+          "y": 18090,
+          "id": "82497cc7-b014-4dd5-b67e-fd44fc9c6e1f"
+        },
+        "54a923a0-9569-44d5-a8a9-b484a5b582bb": {
+          "label": "Notes",
+          "x": 89843,
+          "y": 16968,
+          "id": "54a923a0-9569-44d5-a8a9-b484a5b582bb"
+        },
+        "a6ae4826-8417-4c5e-8a50-92d87e4553f1": {
+          "label": "Dictionary of\nconcepts",
+          "x": 90003,
+          "y": 16718,
+          "id": "a6ae4826-8417-4c5e-8a50-92d87e4553f1"
+        },
+        "98da35da-8cf2-4177-926a-7aab45f82c2c": {
+          "label": "Details, thoughts",
+          "x": 90016,
+          "y": 16968,
+          "id": "98da35da-8cf2-4177-926a-7aab45f82c2c"
+        },
+        "e6b09cda-85a6-4188-bfee-5a68bd089318": {
+          "label": "Sections",
+          "x": 89990,
+          "y": 17218,
+          "id": "e6b09cda-85a6-4188-bfee-5a68bd089318"
+        },
+        "8af87a12-5d51-43c8-84e4-f3ccc89136a1": {
+          "label": "Books",
+          "x": 90080,
+          "y": 17068,
+          "id": "8af87a12-5d51-43c8-84e4-f3ccc89136a1"
+        },
+        "a5bbde2b-504b-42ac-b0c5-1eb463dc51da": {
+          "label": "R&D institutions",
+          "x": 90111,
+          "y": 17093,
+          "id": "a5bbde2b-504b-42ac-b0c5-1eb463dc51da"
+        },
+        "ecfcec8a-1ff3-4838-bb48-68487b05b18f": {
+          "label": "Sites",
+          "x": 90076,
+          "y": 17118,
+          "id": "ecfcec8a-1ff3-4838-bb48-68487b05b18f"
+        },
+        "0f75b39d-82fa-4c5a-b905-e042847b1527": {
+          "label": "Magazines",
+          "x": 90095,
+          "y": 17143,
+          "id": "0f75b39d-82fa-4c5a-b905-e042847b1527"
+        },
+        "54212b75-c685-4e33-9c93-646360868777": {
+          "label": "Articles",
+          "x": 90084,
+          "y": 17168,
+          "id": "54212b75-c685-4e33-9c93-646360868777"
+        },
+        "47e4f1b0-13b0-48e1-b421-e5b9dd41c6ab": {
+          "label": "Media content",
+          "x": 90106,
+          "y": 17193,
+          "id": "47e4f1b0-13b0-48e1-b421-e5b9dd41c6ab"
+        },
+        "fff82c14-d90f-474d-88a7-cc73e395e0a9": {
+          "label": "Misc. web links",
+          "x": 90108,
+          "y": 17218,
+          "id": "fff82c14-d90f-474d-88a7-cc73e395e0a9"
+        },
+        "d74bf4fc-2f76-445e-84ea-312daf22d470": {
+          "label": "Projects",
+          "x": 90086,
+          "y": 17243,
+          "id": "d74bf4fc-2f76-445e-84ea-312daf22d470"
+        },
+        "f33e9482-2a72-4ae6-9397-0949622030d7": {
+          "label": "Tools",
+          "x": 90077,
+          "y": 17268,
+          "id": "f33e9482-2a72-4ae6-9397-0949622030d7"
+        },
+        "b9ef87d5-2f01-427a-93df-0ca4e5a3c6e2": {
+          "label": "Organizations",
+          "x": 90105,
+          "y": 17293,
+          "id": "b9ef87d5-2f01-427a-93df-0ca4e5a3c6e2"
+        },
+        "7387961f-0da8-4c02-9a38-9bf0fcdc3b95": {
+          "label": "Standarts",
+          "x": 90091,
+          "y": 17318,
+          "id": "7387961f-0da8-4c02-9a38-9bf0fcdc3b95"
+        },
+        "56a0a82c-1c42-4da8-9b03-d952db168936": {
+          "label": "Forums, Groups",
+          "x": 90121,
+          "y": 17487,
+          "id": "56a0a82c-1c42-4da8-9b03-d952db168936"
+        },
+        "9b5d382e-3877-411c-81f4-ea8a68bfccde": {
+          "label": "Laws",
+          "x": 90090,
+          "y": 17640,
+          "id": "9b5d382e-3877-411c-81f4-ea8a68bfccde"
+        },
+        "f6a23f4e-5ddb-4ce8-806a-be5d0a45c442": {
+          "label": "Adjacent Themes",
+          "x": 90129,
+          "y": 17665,
+          "id": "f6a23f4e-5ddb-4ce8-806a-be5d0a45c442"
+        },
+        "a4115e65-a3a1-44e0-bbce-ed3b6726bf8f": {
+          "label": "Questions",
+          "x": 89869,
+          "y": 17790,
+          "id": "a4115e65-a3a1-44e0-bbce-ed3b6726bf8f"
+        },
+        "16322821-c182-43f4-947d-584025d894b6": {
+          "label": "Problems",
+          "x": 89867,
+          "y": 17890,
+          "id": "16322821-c182-43f4-947d-584025d894b6"
+        },
+        "3e8b7727-fd05-4f38-aa67-dc46b9018762": {
+          "label": "Goals",
+          "x": 89856,
+          "y": 17990,
+          "id": "3e8b7727-fd05-4f38-aa67-dc46b9018762"
+        },
+        "7ec6a432-f965-4920-baef-e81cb0b47cb7": {
+          "label": "New Theme Name",
+          "x": 89447,
+          "y": 20870,
+          "font": {
+            "size": 72
+          },
+          "color": {
+            "background": "red"
+          },
+          "id": "7ec6a432-f965-4920-baef-e81cb0b47cb7"
+        },
+        "096f3868-cb4d-4c92-a9e9-671784eec6f6": {
+          "label": "Development",
+          "x": 89747,
+          "y": 21320,
+          "id": "096f3868-cb4d-4c92-a9e9-671784eec6f6"
+        },
+        "323f59ad-0467-4e5c-ac60-bed203899b8d": {
+          "label": "1/10/2020",
+          "x": 89876,
+          "y": 21320,
+          "id": "323f59ad-0467-4e5c-ac60-bed203899b8d"
+        },
+        "58d53d5f-e607-4017-9c6b-ae42108f627f": {
+          "label": "init",
+          "x": 89997,
+          "y": 21320,
+          "id": "58d53d5f-e607-4017-9c6b-ae42108f627f"
+        },
+        "1d0e11e3-afc4-4a5f-9513-67d482555011": {
+          "label": "Notes",
+          "x": 89724,
+          "y": 20470,
+          "id": "1d0e11e3-afc4-4a5f-9513-67d482555011"
+        },
+        "d87bf8e8-806d-4852-9909-484a11816b6c": {
+          "label": "Dictionary of\nconcepts",
+          "x": 89884,
+          "y": 20220,
+          "id": "d87bf8e8-806d-4852-9909-484a11816b6c"
+        },
+        "eaf77ecb-3b89-4d28-ba6c-a5dc58225871": {
+          "label": "Details, thoughts",
+          "x": 89897,
+          "y": 20470,
+          "id": "eaf77ecb-3b89-4d28-ba6c-a5dc58225871"
+        },
+        "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5": {
+          "label": "Sections",
+          "x": 89871,
+          "y": 20720,
+          "id": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5"
+        },
+        "18e990d4-10ab-47a7-ab03-914a0564fc51": {
+          "label": "Books",
+          "x": 89961,
+          "y": 20570,
+          "id": "18e990d4-10ab-47a7-ab03-914a0564fc51"
+        },
+        "93bbaf7b-e1e2-4bc5-8372-9f16dca6569b": {
+          "label": "R&D institutions",
+          "x": 89992,
+          "y": 20595,
+          "id": "93bbaf7b-e1e2-4bc5-8372-9f16dca6569b"
+        },
+        "dbd418b9-2bb9-447e-9e57-ede55ce9ec4e": {
+          "label": "Sites",
+          "x": 89957,
+          "y": 20620,
+          "id": "dbd418b9-2bb9-447e-9e57-ede55ce9ec4e"
+        },
+        "c9e30088-2481-4d3b-8f55-c0f53d973093": {
+          "label": "Magazines",
+          "x": 89976,
+          "y": 20645,
+          "id": "c9e30088-2481-4d3b-8f55-c0f53d973093"
+        },
+        "bbbf1610-3848-4df0-8213-cd26ef767b61": {
+          "label": "Articles",
+          "x": 89965,
+          "y": 20670,
+          "id": "bbbf1610-3848-4df0-8213-cd26ef767b61"
+        },
+        "4c7483d9-9c9d-4f8b-815a-36b1cccb7a9c": {
+          "label": "Media content",
+          "x": 89987,
+          "y": 20695,
+          "id": "4c7483d9-9c9d-4f8b-815a-36b1cccb7a9c"
+        },
+        "4fd6bbda-def6-4e44-a8f7-259d815ff1c8": {
+          "label": "Misc. web links",
+          "x": 89989,
+          "y": 20720,
+          "id": "4fd6bbda-def6-4e44-a8f7-259d815ff1c8"
+        },
+        "81ff0a6f-5206-48c8-80c8-12fae3a9bec8": {
+          "label": "Projects",
+          "x": 89967,
+          "y": 20745,
+          "id": "81ff0a6f-5206-48c8-80c8-12fae3a9bec8"
+        },
+        "600e3a1a-ac9c-43d2-ad19-90522d894b4a": {
+          "label": "Tools",
+          "x": 89958,
+          "y": 20770,
+          "id": "600e3a1a-ac9c-43d2-ad19-90522d894b4a"
+        },
+        "16a3695f-18d5-4bc4-9cd5-f4d8fa2402d9": {
+          "label": "Organizations",
+          "x": 89986,
+          "y": 20795,
+          "id": "16a3695f-18d5-4bc4-9cd5-f4d8fa2402d9"
+        },
+        "0e105f43-1044-4e70-b0a9-081ac1bdb537": {
+          "label": "Standarts",
+          "x": 89972,
+          "y": 20820,
+          "id": "0e105f43-1044-4e70-b0a9-081ac1bdb537"
+        },
+        "c5cdb07c-4ab1-4c2c-a874-18dc2331b907": {
+          "label": "Forums, Groups",
+          "x": 89994,
+          "y": 20845,
+          "id": "c5cdb07c-4ab1-4c2c-a874-18dc2331b907"
+        },
+        "279a662d-baef-42bb-ad1b-01b4925755c8": {
+          "label": "Laws",
+          "x": 89958,
+          "y": 20870,
+          "id": "279a662d-baef-42bb-ad1b-01b4925755c8"
+        },
+        "855c4749-6bc2-4599-8c29-2ee7d8a2ac6b": {
+          "label": "Adjacent Themes",
+          "x": 89997,
+          "y": 20895,
+          "id": "855c4749-6bc2-4599-8c29-2ee7d8a2ac6b"
+        },
+        "26aabacd-980e-4c3c-bd65-087ddb1ca2c1": {
+          "label": "Questions",
+          "x": 89737,
+          "y": 21020,
+          "id": "26aabacd-980e-4c3c-bd65-087ddb1ca2c1"
+        },
+        "d9f2c7ed-def5-44bb-8517-16befd7c99b6": {
+          "label": "Problems",
+          "x": 89735,
+          "y": 21120,
+          "id": "d9f2c7ed-def5-44bb-8517-16befd7c99b6"
+        },
+        "4ae47266-5a47-49ce-ba3e-5920c87f6306": {
+          "label": "Goals",
+          "x": 89724,
+          "y": 21220,
+          "id": "4ae47266-5a47-49ce-ba3e-5920c87f6306"
+        },
+        "c32155df-4b2a-4a56-8ff7-ee40730c416d": {
+          "id": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "x": 90320,
+          "y": 17456,
+          "label": "Vk"
+        },
+        "b3e7ed2f-d413-449d-956e-f8c66ec6c639": {
+          "label": "Adobe Audition| Cubase | FL Studio",
+          "link": "https://vk.com/club15883340",
+          "x": 90507,
+          "y": 17377,
+          "id": "b3e7ed2f-d413-449d-956e-f8c66ec6c639"
+        },
+        "44bace76-f6c2-43a4-97f4-8f9ce940f4c9": {
+          "label": "Adobe Audition v 3.0",
+          "link": "https://vk.com/club15486508",
+          "x": 90460,
+          "y": 17402,
+          "id": "44bace76-f6c2-43a4-97f4-8f9ce940f4c9"
+        },
+        "9098d69c-33ae-45d6-ad5a-4c7b7bbd515d": {
+          "label": "Adobe Audition CS6",
+          "link": "https://vk.com/auditioncs6",
+          "x": 90458,
+          "y": 17427,
+          "id": "9098d69c-33ae-45d6-ad5a-4c7b7bbd515d"
+        },
+        "1e5e28d9-e1cf-4e76-a15e-5869f12cdf62": {
+          "label": "Adobe Audition 1.5",
+          "link": "https://vk.com/club19119870",
+          "x": 90454,
+          "y": 17452,
+          "id": "1e5e28d9-e1cf-4e76-a15e-5869f12cdf62"
+        },
+        "6ad5a9b8-2ba5-449f-bbf1-ae79a2eb0bc0": {
+          "label": "Adobe Audition 3.0",
+          "link": "https://vk.com/adobeaudition3",
+          "x": 90454,
+          "y": 17477,
+          "id": "6ad5a9b8-2ba5-449f-bbf1-ae79a2eb0bc0"
+        },
+        "35104863-e090-4d0c-880a-3e6d6a211061": {
+          "label": "Adobe Audition",
+          "link": "https://vk.com/adobe_audition_1",
+          "x": 90442,
+          "y": 17502,
+          "id": "35104863-e090-4d0c-880a-3e6d6a211061"
+        },
+        "5ba904bf-7a7b-426c-924d-2117bd440f31": {
+          "label": "Adobe Audition",
+          "link": "https://vk.com/adobe_audition_raznye",
+          "x": 90442,
+          "y": 17527,
+          "id": "5ba904bf-7a7b-426c-924d-2117bd440f31"
+        },
+        "ba4e0e46-fd3c-4ce4-95aa-f3ae2bc04909": {
+          "label": "Все ответы на вопросы по Adobe Audition 3.0,Adob",
+          "link": "https://vk.com/adobeaudition",
+          "x": 90561,
+          "y": 17552,
+          "id": "ba4e0e46-fd3c-4ce4-95aa-f3ae2bc04909"
         }
       },
       "length": 0,
@@ -75605,6 +77371,781 @@ var schemeData =
           "id": "439e12e0-81c6-4fd3-b020-ffcdbe601bbc519",
           "from": "b047bcbf-af24-4252-9beb-ba49f0ab260a519",
           "to": "ecdf73ee-78b7-449f-a886-8959261f1c1a519"
+        },
+        "12d83b10-c0ae-4859-9645-a5b0db216c66": {
+          "from": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "to": "e9a42e49-82b4-4af6-8ba2-1a5b00a91892",
+          "id": "12d83b10-c0ae-4859-9645-a5b0db216c66"
+        },
+        "b60c7305-a8f6-42c1-986f-9fc9b444b6c1": {
+          "from": "e9a42e49-82b4-4af6-8ba2-1a5b00a91892",
+          "to": "b6f25aac-b08e-4a52-8769-eab16b74ab57",
+          "id": "b60c7305-a8f6-42c1-986f-9fc9b444b6c1"
+        },
+        "ed59ceab-570e-4c94-88a7-48a491f05f94": {
+          "from": "b6f25aac-b08e-4a52-8769-eab16b74ab57",
+          "to": "d761a0d9-5bf6-4967-86b7-13f411819661",
+          "id": "ed59ceab-570e-4c94-88a7-48a491f05f94"
+        },
+        "32404f0a-0efd-4f87-819b-6a809c7aed83": {
+          "from": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "to": "0cf00957-2cba-46ad-a1a1-58fb827a15fb",
+          "id": "32404f0a-0efd-4f87-819b-6a809c7aed83"
+        },
+        "070d6620-5b75-495f-9a02-f738d925a34d": {
+          "from": "0cf00957-2cba-46ad-a1a1-58fb827a15fb",
+          "to": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "id": "070d6620-5b75-495f-9a02-f738d925a34d"
+        },
+        "29642c8c-a3ae-4aac-8ae5-82a103fa6275": {
+          "from": "0cf00957-2cba-46ad-a1a1-58fb827a15fb",
+          "to": "63084023-9195-42c8-9dd0-49944ae3d260",
+          "id": "29642c8c-a3ae-4aac-8ae5-82a103fa6275"
+        },
+        "49f57085-978f-4f7c-9f61-688e7e6d2c50": {
+          "from": "0cf00957-2cba-46ad-a1a1-58fb827a15fb",
+          "to": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "id": "49f57085-978f-4f7c-9f61-688e7e6d2c50"
+        },
+        "ded3a6aa-e19b-4ae3-84bd-6d66e4a49cce": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "d192e939-6e17-479b-bc37-ba58979e7e95",
+          "id": "ded3a6aa-e19b-4ae3-84bd-6d66e4a49cce"
+        },
+        "6d7c570f-4caa-4582-bc10-e5dd7e563989": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "0afea430-924f-43d1-a8cc-59af4fb3b35b",
+          "id": "6d7c570f-4caa-4582-bc10-e5dd7e563989"
+        },
+        "b9255613-0a50-459d-bae2-fbd6d2bba7e6": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "5d59c541-d0d4-46c7-841d-2582932d4d16",
+          "id": "b9255613-0a50-459d-bae2-fbd6d2bba7e6"
+        },
+        "a1c0ec01-1225-4ed3-87a7-22533a633ae9": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "53964fcc-2e1d-4ae5-af8a-d16d276cea0b",
+          "id": "a1c0ec01-1225-4ed3-87a7-22533a633ae9"
+        },
+        "7f9b6d54-f5cb-45b1-beed-ab6746bdbb1c": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "c052e465-8f90-4496-904f-a0955fe2f373",
+          "id": "7f9b6d54-f5cb-45b1-beed-ab6746bdbb1c"
+        },
+        "e9fb17d3-f754-4979-9e28-7ff49b2f261e": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "6f412306-f8de-43e6-933d-fa48901879e7",
+          "id": "e9fb17d3-f754-4979-9e28-7ff49b2f261e"
+        },
+        "5ef2f47c-ce3d-46f7-acf8-84317469e4b9": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "b8a4d6ba-d3e3-451b-8f6f-3dc9caf26e5c",
+          "id": "5ef2f47c-ce3d-46f7-acf8-84317469e4b9"
+        },
+        "bfe1834d-7c8d-4406-9cab-02ed42a0e890": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "dcb103eb-2315-4088-bfb9-40f90fb1432e",
+          "id": "bfe1834d-7c8d-4406-9cab-02ed42a0e890"
+        },
+        "070223dd-d597-4818-b545-637ba751a9ef": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "b515e3bc-e349-4b01-8896-401a7ba265b1",
+          "id": "070223dd-d597-4818-b545-637ba751a9ef"
+        },
+        "1be233ad-f8fa-48a6-a4b0-3760b94305a3": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "24c498fa-6027-46df-8e02-ec00eb9b419f",
+          "id": "1be233ad-f8fa-48a6-a4b0-3760b94305a3"
+        },
+        "3b0ee76a-6d80-4bfd-b4bd-d288e7550ccd": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "1ca1b835-c8f9-4329-ae0f-ea3685fdf9d5",
+          "id": "3b0ee76a-6d80-4bfd-b4bd-d288e7550ccd"
+        },
+        "79ab4165-f6ed-48bb-8bc1-25a724e0fbc8": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "c9d17e13-d1e0-4483-bf33-d490b0961456",
+          "id": "79ab4165-f6ed-48bb-8bc1-25a724e0fbc8"
+        },
+        "e6abfc82-b7e7-424c-bdf0-9e0275ef38e2": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "5eaef2a1-234f-43a9-8612-4fdee1711403",
+          "id": "e6abfc82-b7e7-424c-bdf0-9e0275ef38e2"
+        },
+        "7de5dc2b-1240-4fe0-a446-eb3ac876df71": {
+          "from": "b65d6572-e1e0-4a68-a00f-8fdc219ea77c",
+          "to": "28ba601b-4318-43c3-9e07-db0242118d86",
+          "id": "7de5dc2b-1240-4fe0-a446-eb3ac876df71"
+        },
+        "88a751c4-27df-4ec7-813b-152b3c4337ab": {
+          "from": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "to": "1d5608c8-92c3-45d7-907e-980baa249cb5",
+          "id": "88a751c4-27df-4ec7-813b-152b3c4337ab"
+        },
+        "e819ec5a-1d04-4501-9d48-471dfa6f2ef9": {
+          "from": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "to": "bb87e880-0154-4fe5-be87-df166d41006f",
+          "id": "e819ec5a-1d04-4501-9d48-471dfa6f2ef9"
+        },
+        "691d10a6-f9e8-457e-abb3-005014bc18ab": {
+          "from": "ebfdfcf1-2ffc-4dbc-ab89-e02e43d37f5f",
+          "to": "de971ab3-fb0d-4ccc-829f-5414672a9f3a",
+          "id": "691d10a6-f9e8-457e-abb3-005014bc18ab"
+        },
+        "a13f1e38-3bc0-40f4-a0c2-f554ccad635d": {
+          "from": "b8a4d6ba-d3e3-451b-8f6f-3dc9caf26e5c",
+          "to": "325d235d-4405-4dc4-8118-3cc1473ae042",
+          "id": "a13f1e38-3bc0-40f4-a0c2-f554ccad635d"
+        },
+        "1b17fec1-5d65-4024-9949-1787b3b088eb": {
+          "from": "b8a4d6ba-d3e3-451b-8f6f-3dc9caf26e5c",
+          "to": "be7b4abb-4c2f-4faf-ad9b-6f32ba71d951",
+          "id": "1b17fec1-5d65-4024-9949-1787b3b088eb"
+        },
+        "558fd406-75ab-4cdb-b839-f443d588923f": {
+          "from": "29873366-b2d2-4110-9f48-9580825c1241",
+          "to": "0dbeda2b-f6e6-499f-890a-9335f64c9de5",
+          "id": "558fd406-75ab-4cdb-b839-f443d588923f"
+        },
+        "303bcb8b-2f13-4384-9b17-0d7605ce1b85": {
+          "from": "7c1d16d2-88bd-4b91-ba2a-9b9eb6ba316c",
+          "to": "9da8eaf3-7145-4194-be17-e0c22e60d73a",
+          "id": "303bcb8b-2f13-4384-9b17-0d7605ce1b85"
+        },
+        "ed20083d-d4ae-4fe6-8c50-d6893fc9bffc": {
+          "from": "39a698d4-63cd-4db0-812d-df5753da1953",
+          "to": "d89d0833-8d89-41d7-a5c7-efa89fb8619b",
+          "id": "ed20083d-d4ae-4fe6-8c50-d6893fc9bffc"
+        },
+        "9799bc91-dc5d-4e14-b012-42ff3a0628f7": {
+          "from": "b1ac380f-2525-4a5a-8862-c0590c04d957",
+          "to": "39a698d4-63cd-4db0-812d-df5753da1953",
+          "id": "9799bc91-dc5d-4e14-b012-42ff3a0628f7"
+        },
+        "d358c8a0-b209-4a58-89bf-25a6380d12a1": {
+          "from": "b1ac380f-2525-4a5a-8862-c0590c04d957",
+          "to": "7c1d16d2-88bd-4b91-ba2a-9b9eb6ba316c",
+          "id": "d358c8a0-b209-4a58-89bf-25a6380d12a1"
+        },
+        "9b461c1f-e32c-4838-aec5-584ed9b93ce1": {
+          "from": "b1ac380f-2525-4a5a-8862-c0590c04d957",
+          "to": "29873366-b2d2-4110-9f48-9580825c1241",
+          "id": "9b461c1f-e32c-4838-aec5-584ed9b93ce1"
+        },
+        "e920b4cb-da47-466f-80ca-57f8fd8179a1": {
+          "from": "b98b62b1-e2ad-4b89-a966-95a42a699dca",
+          "to": "2a07abc8-bda8-4446-9d7d-9ad33ddaf793",
+          "id": "e920b4cb-da47-466f-80ca-57f8fd8179a1"
+        },
+        "07fdc1b3-d5a0-41c4-8d91-5610e9f3f1a6": {
+          "from": "9eb0221d-52ea-4056-a597-da218521b7e5",
+          "to": "f349dd59-11a3-42f5-8961-2c3df3f516bc",
+          "id": "07fdc1b3-d5a0-41c4-8d91-5610e9f3f1a6"
+        },
+        "b896895f-1b3c-4d7c-8d87-168867d0e280": {
+          "from": "9eb0221d-52ea-4056-a597-da218521b7e5",
+          "to": "ae87c0d7-3ccf-419a-88e4-13b18913ee8c",
+          "id": "b896895f-1b3c-4d7c-8d87-168867d0e280"
+        },
+        "9f59ab3a-45ae-4dc6-98e3-f38f4612a96e": {
+          "from": "9eb0221d-52ea-4056-a597-da218521b7e5",
+          "to": "cb0a2d03-2aac-4757-8716-f9e8e6d5bad9",
+          "id": "9f59ab3a-45ae-4dc6-98e3-f38f4612a96e"
+        },
+        "6d42bab6-f9cc-4acd-9f39-1057a1bd1f9f": {
+          "from": "741f09bb-9dd0-46f8-85e4-77e6008c4fbb",
+          "to": "31908ef4-9ff6-431f-ab33-a931ca28c6fe",
+          "id": "6d42bab6-f9cc-4acd-9f39-1057a1bd1f9f"
+        },
+        "8681c927-c2a3-463b-a834-f369484e3a0f": {
+          "from": "c37a1698-93c5-4f0d-b6bb-1897b1336659",
+          "to": "63a9c7a9-41ba-415e-ad29-6492f305365f",
+          "id": "8681c927-c2a3-463b-a834-f369484e3a0f"
+        },
+        "d951f1e1-43d4-4d8c-9760-7620a8bda938": {
+          "from": "00d8e781-c70e-4e63-bd0d-a36217727036",
+          "to": "c37a1698-93c5-4f0d-b6bb-1897b1336659",
+          "id": "d951f1e1-43d4-4d8c-9760-7620a8bda938"
+        },
+        "43cea1c3-cf0d-4c76-a728-f960588d591c": {
+          "from": "00d8e781-c70e-4e63-bd0d-a36217727036",
+          "to": "741f09bb-9dd0-46f8-85e4-77e6008c4fbb",
+          "id": "43cea1c3-cf0d-4c76-a728-f960588d591c"
+        },
+        "91eaae7f-2c78-4ba8-9966-5b8fc6359891": {
+          "from": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "to": "00d8e781-c70e-4e63-bd0d-a36217727036",
+          "id": "91eaae7f-2c78-4ba8-9966-5b8fc6359891"
+        },
+        "a45233dc-15b5-4aa3-a43e-bb296c1f8096": {
+          "from": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "to": "9eb0221d-52ea-4056-a597-da218521b7e5",
+          "id": "a45233dc-15b5-4aa3-a43e-bb296c1f8096"
+        },
+        "31bade00-709e-4ed5-90a4-a86082d29d3e": {
+          "from": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "to": "b98b62b1-e2ad-4b89-a966-95a42a699dca",
+          "id": "31bade00-709e-4ed5-90a4-a86082d29d3e"
+        },
+        "12b014ea-293b-4520-8ee8-f5304ad0b356": {
+          "from": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "to": "b1ac380f-2525-4a5a-8862-c0590c04d957",
+          "id": "12b014ea-293b-4520-8ee8-f5304ad0b356"
+        },
+        "d4ee4fd2-5527-4d5b-ae8e-8b5a538b9525": {
+          "from": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "to": "491b2df8-14c1-44f3-aac5-d405a6a7b3b4",
+          "id": "d4ee4fd2-5527-4d5b-ae8e-8b5a538b9525"
+        },
+        "fa1f0cf7-b89f-4c4e-863b-62429edeae63": {
+          "from": "c17863ff-0b89-40fa-800b-d6e4b9b028b0",
+          "to": "62088b4e-e06e-437b-b06c-dc1b8b5073af",
+          "id": "fa1f0cf7-b89f-4c4e-863b-62429edeae63"
+        },
+        "7fa62291-837a-429c-a774-66aeec86c111": {
+          "from": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "to": "cb3a8991-6b98-44da-9b83-ff0ba65aff1e",
+          "id": "7fa62291-837a-429c-a774-66aeec86c111"
+        },
+        "42cf2369-9b10-4280-8b41-48434098034b": {
+          "from": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "to": "ff9e95d9-d176-4cb0-af1d-0821258bf897",
+          "id": "42cf2369-9b10-4280-8b41-48434098034b"
+        },
+        "4e969e3c-ebda-40de-88d0-bbb5745d7b04": {
+          "from": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "to": "266b27a5-028b-41cb-8922-dda2d3867f10",
+          "id": "4e969e3c-ebda-40de-88d0-bbb5745d7b04"
+        },
+        "a90504be-0180-497a-999a-14075d6e2430": {
+          "from": "f2de02b8-7146-498e-b0f1-7b26553c1c52",
+          "to": "c17863ff-0b89-40fa-800b-d6e4b9b028b0",
+          "id": "a90504be-0180-497a-999a-14075d6e2430"
+        },
+        "1b8d985a-5ff2-4879-b4d3-3bb86b63402e": {
+          "from": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c",
+          "to": "e56f9ae9-1253-44a4-8f69-9e6c120b850c",
+          "id": "1b8d985a-5ff2-4879-b4d3-3bb86b63402e"
+        },
+        "3996d5ed-40c5-4378-9494-7c9ba43f58c1": {
+          "from": "e56f9ae9-1253-44a4-8f69-9e6c120b850c",
+          "to": "797edd47-0da0-4b4e-ac97-8c9be5f9f666",
+          "id": "3996d5ed-40c5-4378-9494-7c9ba43f58c1"
+        },
+        "1f33f336-01f4-44b0-a4d5-742c96ed33b9": {
+          "from": "797edd47-0da0-4b4e-ac97-8c9be5f9f666",
+          "to": "dd33b039-ac50-4688-b6a3-b0adf31a077f",
+          "id": "1f33f336-01f4-44b0-a4d5-742c96ed33b9"
+        },
+        "64ec6279-f208-47c2-84e2-643949adbe05": {
+          "from": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c",
+          "to": "883ed669-792b-4b17-9dbc-580141028eef",
+          "id": "64ec6279-f208-47c2-84e2-643949adbe05"
+        },
+        "c03db698-bee1-4e17-b8ce-097d81ad4622": {
+          "from": "883ed669-792b-4b17-9dbc-580141028eef",
+          "to": "ad8a3162-0fba-4bfd-bc77-3eaf9332db05",
+          "id": "c03db698-bee1-4e17-b8ce-097d81ad4622"
+        },
+        "e8802cd6-8252-46ce-a959-5f3a236d1a6e": {
+          "from": "883ed669-792b-4b17-9dbc-580141028eef",
+          "to": "2b34a31d-39a1-47e8-add3-ffd4ba033d9f",
+          "id": "e8802cd6-8252-46ce-a959-5f3a236d1a6e"
+        },
+        "b4b4c0f2-5104-4ad5-9b9a-16dec48f9e46": {
+          "from": "883ed669-792b-4b17-9dbc-580141028eef",
+          "to": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "id": "b4b4c0f2-5104-4ad5-9b9a-16dec48f9e46"
+        },
+        "cc9bcf7e-e6bf-4072-bbcc-dcd3a7be66ef": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "72a5afee-fee8-478e-91d6-45b966fc146b",
+          "id": "cc9bcf7e-e6bf-4072-bbcc-dcd3a7be66ef"
+        },
+        "0c016350-4c85-4e3b-95e4-d61bf1271660": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "c9669cb9-7e2a-46d9-9c99-2c8679027ea8",
+          "id": "0c016350-4c85-4e3b-95e4-d61bf1271660"
+        },
+        "6d541223-931a-4cf9-af69-071078412bdc": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "64ede3ea-4833-4760-85ae-2cf9b020be2f",
+          "id": "6d541223-931a-4cf9-af69-071078412bdc"
+        },
+        "58cf7ffe-7af1-4f47-bb35-1aae1e1ebb8f": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "c7cd5426-a242-4f0c-ae64-9cd8a4af015e",
+          "id": "58cf7ffe-7af1-4f47-bb35-1aae1e1ebb8f"
+        },
+        "e4511fc8-a1f2-41ce-8afc-d2a454eb6511": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "0b8eb231-dab9-4ba2-b157-8689b65fc6c9",
+          "id": "e4511fc8-a1f2-41ce-8afc-d2a454eb6511"
+        },
+        "47957c49-b71d-4a4b-8744-08bef159fb2d": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "506326d7-5789-4ecd-bd32-f82d009015f8",
+          "id": "47957c49-b71d-4a4b-8744-08bef159fb2d"
+        },
+        "79c201ce-9cce-430e-9480-41c211579706": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "5ef3c040-55e9-4591-a444-a511d949d174",
+          "id": "79c201ce-9cce-430e-9480-41c211579706"
+        },
+        "9377b630-ee48-4fb3-807d-6a97ba5c00f4": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "ff84de33-494b-40a7-ad0b-6fd9253a0c69",
+          "id": "9377b630-ee48-4fb3-807d-6a97ba5c00f4"
+        },
+        "15d276f2-058a-43bb-9f99-759168da898b": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "804cd9fc-3305-4ce9-a701-18f8ebd5fc16",
+          "id": "15d276f2-058a-43bb-9f99-759168da898b"
+        },
+        "822af07c-da9c-4e36-aa3e-b280fd02f01c": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "bb39e311-fc02-4705-909c-07c7adce33f4",
+          "id": "822af07c-da9c-4e36-aa3e-b280fd02f01c"
+        },
+        "724c47ce-edaf-4263-8708-f8d50293bf03": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "87196d4a-1e8e-4acd-aecd-ca2037278b36",
+          "id": "724c47ce-edaf-4263-8708-f8d50293bf03"
+        },
+        "9f7f0fda-f9eb-493e-b1cb-75977d0afb92": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "3e612603-0fde-4536-bf39-a7abbaa1bc6c",
+          "id": "9f7f0fda-f9eb-493e-b1cb-75977d0afb92"
+        },
+        "dfd4004e-5cc6-4a68-92a9-e392e17916ef": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "42d4a4ac-0f96-4e1b-a088-5f459e866e56",
+          "id": "dfd4004e-5cc6-4a68-92a9-e392e17916ef"
+        },
+        "4745ee16-8cd7-43fb-890f-57bcd20361f0": {
+          "from": "6cd5ef2c-bd33-42cb-a566-4f27199855a8",
+          "to": "df2c7e64-1b8e-4682-9fe6-508cadf95ad3",
+          "id": "4745ee16-8cd7-43fb-890f-57bcd20361f0"
+        },
+        "22c36549-8861-4e97-ab6b-5aa5b8f9967b": {
+          "from": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c",
+          "to": "f5d5859c-37aa-4d44-838e-04e4a9a7e2c0",
+          "id": "22c36549-8861-4e97-ab6b-5aa5b8f9967b"
+        },
+        "c15d48c9-b17d-4619-8953-6387c5f7162e": {
+          "from": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c",
+          "to": "996c0670-cbb7-4508-9408-e34de5561708",
+          "id": "c15d48c9-b17d-4619-8953-6387c5f7162e"
+        },
+        "9de5e1a6-3c3a-4d49-94dd-9750e7e2d79d": {
+          "from": "2685bf7e-2582-44c9-ad23-1ac3b23ee52c",
+          "to": "bf093989-7152-4d29-aa9f-185283b01081",
+          "id": "9de5e1a6-3c3a-4d49-94dd-9750e7e2d79d"
+        },
+        "8cffaa87-1c12-4bc2-8b63-c3bce7c52561": {
+          "from": "b4fe9f5b-350f-4be1-b789-0259148d25c8",
+          "to": "73f7a7c5-4f6a-46b3-a68a-4f0ccbb03c4b",
+          "id": "8cffaa87-1c12-4bc2-8b63-c3bce7c52561"
+        },
+        "2f4e634f-c249-4dc6-af7b-8c70d3fec5c5": {
+          "from": "73f7a7c5-4f6a-46b3-a68a-4f0ccbb03c4b",
+          "to": "4dd9e838-181f-4a12-8ca3-b325aecef171",
+          "id": "2f4e634f-c249-4dc6-af7b-8c70d3fec5c5"
+        },
+        "dde0573e-70a3-4612-a913-cfa0f5dba037": {
+          "from": "4dd9e838-181f-4a12-8ca3-b325aecef171",
+          "to": "61489a1e-34ab-4032-8b4f-bc586bcb862b",
+          "id": "dde0573e-70a3-4612-a913-cfa0f5dba037"
+        },
+        "08deabb3-244f-46ba-9370-91fa95bc4654": {
+          "from": "b4fe9f5b-350f-4be1-b789-0259148d25c8",
+          "to": "088227e6-c44d-439c-8c33-b4898988e129",
+          "id": "08deabb3-244f-46ba-9370-91fa95bc4654"
+        },
+        "9d329931-af40-4dfe-96e9-d7f9641690e1": {
+          "from": "088227e6-c44d-439c-8c33-b4898988e129",
+          "to": "91e3a720-4f39-44b3-9efa-60b6ed020869",
+          "id": "9d329931-af40-4dfe-96e9-d7f9641690e1"
+        },
+        "1a9c1fee-e18f-4933-9e6d-1de6e1f8ee47": {
+          "from": "088227e6-c44d-439c-8c33-b4898988e129",
+          "to": "5f3fe5e2-13c9-4091-953d-dc61f8237ac7",
+          "id": "1a9c1fee-e18f-4933-9e6d-1de6e1f8ee47"
+        },
+        "d98c49e1-c602-427c-a058-bcfb8832098d": {
+          "from": "088227e6-c44d-439c-8c33-b4898988e129",
+          "to": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "id": "d98c49e1-c602-427c-a058-bcfb8832098d"
+        },
+        "58116561-5554-48c0-8b26-e4c061ccdb0f": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "4550ab12-1c05-40c4-bd38-118a56d05ee6",
+          "id": "58116561-5554-48c0-8b26-e4c061ccdb0f"
+        },
+        "353a1132-ff91-4159-9917-21b9ef9873fb": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "ae4c6e5c-1513-4368-afd0-ff98fcc312e8",
+          "id": "353a1132-ff91-4159-9917-21b9ef9873fb"
+        },
+        "0051c869-b63d-46da-ad12-46d33a307e39": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "bf096c1d-01ee-4849-aa9a-d608b91074b5",
+          "id": "0051c869-b63d-46da-ad12-46d33a307e39"
+        },
+        "1c07fe48-456a-458e-8411-e0c41086d4e5": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "05ba8b40-993e-4bb3-9855-6bb29ac2ee81",
+          "id": "1c07fe48-456a-458e-8411-e0c41086d4e5"
+        },
+        "48988064-507e-4444-ac72-1804b0114bde": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "521f74d2-5fef-401c-8289-dd690bb67cfc",
+          "id": "48988064-507e-4444-ac72-1804b0114bde"
+        },
+        "592baf9b-05e4-4e38-b4f3-80e2c0163338": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "8970d996-4910-4caf-8ea4-7671f06a6f0f",
+          "id": "592baf9b-05e4-4e38-b4f3-80e2c0163338"
+        },
+        "b6f342da-000f-43b3-9d40-4ac42ee8853a": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "c4fb56cd-4f36-464f-a45b-37ec748576cb",
+          "id": "b6f342da-000f-43b3-9d40-4ac42ee8853a"
+        },
+        "2d533009-cb2c-4507-a57b-c9a82d9172b2": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "830d4423-f953-4cb0-ae98-73c8e25a384b",
+          "id": "2d533009-cb2c-4507-a57b-c9a82d9172b2"
+        },
+        "fd2bb38d-f5bf-4f27-a41c-8fcf62e75b65": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "45419de3-27df-447f-97af-37b2ddefe185",
+          "id": "fd2bb38d-f5bf-4f27-a41c-8fcf62e75b65"
+        },
+        "cb7973c5-a4f9-4f09-bacd-e0771a7ebd9f": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "d5e5df01-554b-4ed6-bc82-6313a95f032b",
+          "id": "cb7973c5-a4f9-4f09-bacd-e0771a7ebd9f"
+        },
+        "6eb3f61d-dbcf-4302-894b-af7f96f5bfbf": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "209cbfd6-071a-4e4b-a0e6-2d993a05df14",
+          "id": "6eb3f61d-dbcf-4302-894b-af7f96f5bfbf"
+        },
+        "70947acf-fd1d-40b9-8da6-c8f9772c8a7e": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "e306e343-62a6-4e32-bdf8-56c53e62ecf9",
+          "id": "70947acf-fd1d-40b9-8da6-c8f9772c8a7e"
+        },
+        "bee1aa1b-73f7-415c-9003-e682dc1ec122": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "3b47d897-d482-4234-99be-c0370b59d532",
+          "id": "bee1aa1b-73f7-415c-9003-e682dc1ec122"
+        },
+        "4aa561ec-b15d-4804-819e-fcf13594703f": {
+          "from": "68d19571-9895-4644-8f82-a7d5e18a39cd",
+          "to": "f7904e9b-3b37-48df-9b66-ab525ac38da0",
+          "id": "4aa561ec-b15d-4804-819e-fcf13594703f"
+        },
+        "ede3956e-0a8c-469d-8714-bf79d9965bc9": {
+          "from": "b4fe9f5b-350f-4be1-b789-0259148d25c8",
+          "to": "d97153bf-17c5-42f2-ad0e-3b30e8474bc2",
+          "id": "ede3956e-0a8c-469d-8714-bf79d9965bc9"
+        },
+        "3e9a87eb-56bd-4bd3-b688-d9647e287dc0": {
+          "from": "b4fe9f5b-350f-4be1-b789-0259148d25c8",
+          "to": "56cd5264-7508-4f4d-9cf4-ee21f95da090",
+          "id": "3e9a87eb-56bd-4bd3-b688-d9647e287dc0"
+        },
+        "fb1e7cd0-0abd-4a70-95d9-588b8cbaf098": {
+          "from": "b4fe9f5b-350f-4be1-b789-0259148d25c8",
+          "to": "264fa251-6e11-43a0-a3ba-54eb77745e62",
+          "id": "fb1e7cd0-0abd-4a70-95d9-588b8cbaf098"
+        },
+        "0262a8eb-c65a-40bf-9e1c-47dbfdc6245b": {
+          "from": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "to": "7d8618fa-2a66-438b-9e53-2d382f7401ce",
+          "id": "0262a8eb-c65a-40bf-9e1c-47dbfdc6245b"
+        },
+        "42ad2db4-5bb2-45aa-a05a-35bad6b00185": {
+          "from": "7d8618fa-2a66-438b-9e53-2d382f7401ce",
+          "to": "627c74c9-48d7-4be7-a382-076806be8e55",
+          "id": "42ad2db4-5bb2-45aa-a05a-35bad6b00185"
+        },
+        "b71833aa-aa41-4fc6-af62-532d59d7c419": {
+          "from": "627c74c9-48d7-4be7-a382-076806be8e55",
+          "to": "82497cc7-b014-4dd5-b67e-fd44fc9c6e1f",
+          "id": "b71833aa-aa41-4fc6-af62-532d59d7c419"
+        },
+        "9222acb7-a4a9-4d11-9302-bbf23e9acbaf": {
+          "from": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "to": "54a923a0-9569-44d5-a8a9-b484a5b582bb",
+          "id": "9222acb7-a4a9-4d11-9302-bbf23e9acbaf"
+        },
+        "ce798517-7a40-44b0-a764-9a139f09ff7c": {
+          "from": "54a923a0-9569-44d5-a8a9-b484a5b582bb",
+          "to": "a6ae4826-8417-4c5e-8a50-92d87e4553f1",
+          "id": "ce798517-7a40-44b0-a764-9a139f09ff7c"
+        },
+        "7fb2ca43-14c4-43e0-9d72-c26cf967080d": {
+          "from": "54a923a0-9569-44d5-a8a9-b484a5b582bb",
+          "to": "98da35da-8cf2-4177-926a-7aab45f82c2c",
+          "id": "7fb2ca43-14c4-43e0-9d72-c26cf967080d"
+        },
+        "c7d50970-533c-4584-b29a-21c706e5622d": {
+          "from": "54a923a0-9569-44d5-a8a9-b484a5b582bb",
+          "to": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "id": "c7d50970-533c-4584-b29a-21c706e5622d"
+        },
+        "b8cee7db-513e-4e27-a06e-3ca5a4b85e51": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "8af87a12-5d51-43c8-84e4-f3ccc89136a1",
+          "id": "b8cee7db-513e-4e27-a06e-3ca5a4b85e51"
+        },
+        "67dc82a7-ad9b-4802-bebc-5534ed1428d4": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "a5bbde2b-504b-42ac-b0c5-1eb463dc51da",
+          "id": "67dc82a7-ad9b-4802-bebc-5534ed1428d4"
+        },
+        "0635eebb-77ee-44ef-bef5-237a020ec4b4": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "ecfcec8a-1ff3-4838-bb48-68487b05b18f",
+          "id": "0635eebb-77ee-44ef-bef5-237a020ec4b4"
+        },
+        "075a0016-6c19-4a55-b436-84657c6e78ba": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "0f75b39d-82fa-4c5a-b905-e042847b1527",
+          "id": "075a0016-6c19-4a55-b436-84657c6e78ba"
+        },
+        "04dde965-781e-4d61-af23-f2115ea873c1": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "54212b75-c685-4e33-9c93-646360868777",
+          "id": "04dde965-781e-4d61-af23-f2115ea873c1"
+        },
+        "078c7d1e-b77a-40f5-959e-ecb7a1038b8d": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "47e4f1b0-13b0-48e1-b421-e5b9dd41c6ab",
+          "id": "078c7d1e-b77a-40f5-959e-ecb7a1038b8d"
+        },
+        "d724f6bb-9204-4cf9-a99a-e5b674afd662": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "fff82c14-d90f-474d-88a7-cc73e395e0a9",
+          "id": "d724f6bb-9204-4cf9-a99a-e5b674afd662"
+        },
+        "e85bc02a-85fb-4544-b0e5-4a51fad4f74e": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "d74bf4fc-2f76-445e-84ea-312daf22d470",
+          "id": "e85bc02a-85fb-4544-b0e5-4a51fad4f74e"
+        },
+        "9a108c5b-22f7-4eae-85f3-e05362039105": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "f33e9482-2a72-4ae6-9397-0949622030d7",
+          "id": "9a108c5b-22f7-4eae-85f3-e05362039105"
+        },
+        "30210db7-54e3-4f52-be89-c612d60e4ed3": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "b9ef87d5-2f01-427a-93df-0ca4e5a3c6e2",
+          "id": "30210db7-54e3-4f52-be89-c612d60e4ed3"
+        },
+        "88985a0c-2db2-4578-8f0d-63a73dd3b632": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "7387961f-0da8-4c02-9a38-9bf0fcdc3b95",
+          "id": "88985a0c-2db2-4578-8f0d-63a73dd3b632"
+        },
+        "01e1186a-45d2-4a89-8e1e-faa52a2e923c": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "56a0a82c-1c42-4da8-9b03-d952db168936",
+          "id": "01e1186a-45d2-4a89-8e1e-faa52a2e923c"
+        },
+        "1d52ace0-850c-4ff8-8277-af3215b0f972": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "9b5d382e-3877-411c-81f4-ea8a68bfccde",
+          "id": "1d52ace0-850c-4ff8-8277-af3215b0f972"
+        },
+        "452dfa95-b65d-4316-9890-c91dec69cc9f": {
+          "from": "e6b09cda-85a6-4188-bfee-5a68bd089318",
+          "to": "f6a23f4e-5ddb-4ce8-806a-be5d0a45c442",
+          "id": "452dfa95-b65d-4316-9890-c91dec69cc9f"
+        },
+        "9519f09b-126e-46c1-b1f2-b8d02ff24e2e": {
+          "from": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "to": "a4115e65-a3a1-44e0-bbce-ed3b6726bf8f",
+          "id": "9519f09b-126e-46c1-b1f2-b8d02ff24e2e"
+        },
+        "053b51a1-870b-4281-a40d-aab900bcd3fd": {
+          "from": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "to": "16322821-c182-43f4-947d-584025d894b6",
+          "id": "053b51a1-870b-4281-a40d-aab900bcd3fd"
+        },
+        "b790a479-1429-4aec-a03b-c6b0ff964868": {
+          "from": "f1e7d6ae-d8b2-4977-a70f-551ca60bdbc2",
+          "to": "3e8b7727-fd05-4f38-aa67-dc46b9018762",
+          "id": "b790a479-1429-4aec-a03b-c6b0ff964868"
+        },
+        "b4026981-4712-4b26-83fc-6288b544fdcd": {
+          "from": "7ec6a432-f965-4920-baef-e81cb0b47cb7",
+          "to": "096f3868-cb4d-4c92-a9e9-671784eec6f6",
+          "id": "b4026981-4712-4b26-83fc-6288b544fdcd"
+        },
+        "71c77f7d-5dfd-49f5-b61e-76d4e1daf012": {
+          "from": "096f3868-cb4d-4c92-a9e9-671784eec6f6",
+          "to": "323f59ad-0467-4e5c-ac60-bed203899b8d",
+          "id": "71c77f7d-5dfd-49f5-b61e-76d4e1daf012"
+        },
+        "cf6fadf9-f5b8-4a1d-b7e5-85c4d5837575": {
+          "from": "323f59ad-0467-4e5c-ac60-bed203899b8d",
+          "to": "58d53d5f-e607-4017-9c6b-ae42108f627f",
+          "id": "cf6fadf9-f5b8-4a1d-b7e5-85c4d5837575"
+        },
+        "0e224428-132d-4160-a23c-cf15d6cf10e5": {
+          "from": "7ec6a432-f965-4920-baef-e81cb0b47cb7",
+          "to": "1d0e11e3-afc4-4a5f-9513-67d482555011",
+          "id": "0e224428-132d-4160-a23c-cf15d6cf10e5"
+        },
+        "304222d4-9ffa-4a0f-b3b1-f918a3944d23": {
+          "from": "1d0e11e3-afc4-4a5f-9513-67d482555011",
+          "to": "d87bf8e8-806d-4852-9909-484a11816b6c",
+          "id": "304222d4-9ffa-4a0f-b3b1-f918a3944d23"
+        },
+        "74b4546e-6c7c-4db1-8c37-2e6db6efd4b4": {
+          "from": "1d0e11e3-afc4-4a5f-9513-67d482555011",
+          "to": "eaf77ecb-3b89-4d28-ba6c-a5dc58225871",
+          "id": "74b4546e-6c7c-4db1-8c37-2e6db6efd4b4"
+        },
+        "3124b7f1-843f-4538-93e2-257b9e1707b0": {
+          "from": "1d0e11e3-afc4-4a5f-9513-67d482555011",
+          "to": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "id": "3124b7f1-843f-4538-93e2-257b9e1707b0"
+        },
+        "54a8cb86-1482-4b36-9f70-b1c60b7e34ec": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "18e990d4-10ab-47a7-ab03-914a0564fc51",
+          "id": "54a8cb86-1482-4b36-9f70-b1c60b7e34ec"
+        },
+        "e5005db2-321a-4017-bdc9-375ef0f02ddf": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "93bbaf7b-e1e2-4bc5-8372-9f16dca6569b",
+          "id": "e5005db2-321a-4017-bdc9-375ef0f02ddf"
+        },
+        "189d9c2b-5455-421e-8c7c-a12c65624538": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "dbd418b9-2bb9-447e-9e57-ede55ce9ec4e",
+          "id": "189d9c2b-5455-421e-8c7c-a12c65624538"
+        },
+        "ba06b091-5b04-43f2-a986-6a7877ebe1ce": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "c9e30088-2481-4d3b-8f55-c0f53d973093",
+          "id": "ba06b091-5b04-43f2-a986-6a7877ebe1ce"
+        },
+        "0a90ed3c-4985-4a9e-882b-d68060a810bc": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "bbbf1610-3848-4df0-8213-cd26ef767b61",
+          "id": "0a90ed3c-4985-4a9e-882b-d68060a810bc"
+        },
+        "402f60a5-4a03-4c8b-bbae-cc4a28f3fcc5": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "4c7483d9-9c9d-4f8b-815a-36b1cccb7a9c",
+          "id": "402f60a5-4a03-4c8b-bbae-cc4a28f3fcc5"
+        },
+        "676427ba-0649-4eb7-b41e-92beb873bc4e": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "4fd6bbda-def6-4e44-a8f7-259d815ff1c8",
+          "id": "676427ba-0649-4eb7-b41e-92beb873bc4e"
+        },
+        "5a164882-0170-431c-8522-21a9171bb651": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "81ff0a6f-5206-48c8-80c8-12fae3a9bec8",
+          "id": "5a164882-0170-431c-8522-21a9171bb651"
+        },
+        "3bc02340-a05f-4af7-a9b4-f62f9e44c666": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "600e3a1a-ac9c-43d2-ad19-90522d894b4a",
+          "id": "3bc02340-a05f-4af7-a9b4-f62f9e44c666"
+        },
+        "0776b89b-75d2-4839-bbb1-d204a36d00be": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "16a3695f-18d5-4bc4-9cd5-f4d8fa2402d9",
+          "id": "0776b89b-75d2-4839-bbb1-d204a36d00be"
+        },
+        "4cd4823d-30c6-4d42-ad51-be08b1d81a5c": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "0e105f43-1044-4e70-b0a9-081ac1bdb537",
+          "id": "4cd4823d-30c6-4d42-ad51-be08b1d81a5c"
+        },
+        "f663c7fe-0b01-43f7-8c5f-9055eddba7bb": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "c5cdb07c-4ab1-4c2c-a874-18dc2331b907",
+          "id": "f663c7fe-0b01-43f7-8c5f-9055eddba7bb"
+        },
+        "f2cb9c08-d07b-4bc0-ab66-8163a1a6d0b7": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "279a662d-baef-42bb-ad1b-01b4925755c8",
+          "id": "f2cb9c08-d07b-4bc0-ab66-8163a1a6d0b7"
+        },
+        "74326a85-6322-40b5-af29-889e8e443945": {
+          "from": "0ee2345d-42c9-4afe-998d-e20f1b8ecbc5",
+          "to": "855c4749-6bc2-4599-8c29-2ee7d8a2ac6b",
+          "id": "74326a85-6322-40b5-af29-889e8e443945"
+        },
+        "799ffad3-ebec-4cce-9e67-3b018222166e": {
+          "from": "7ec6a432-f965-4920-baef-e81cb0b47cb7",
+          "to": "26aabacd-980e-4c3c-bd65-087ddb1ca2c1",
+          "id": "799ffad3-ebec-4cce-9e67-3b018222166e"
+        },
+        "5dfc5087-4d8b-40e6-91a4-a7ca468755cc": {
+          "from": "7ec6a432-f965-4920-baef-e81cb0b47cb7",
+          "to": "d9f2c7ed-def5-44bb-8517-16befd7c99b6",
+          "id": "5dfc5087-4d8b-40e6-91a4-a7ca468755cc"
+        },
+        "8e9e45e6-3108-4def-a32f-8f6ef065d1c3": {
+          "from": "7ec6a432-f965-4920-baef-e81cb0b47cb7",
+          "to": "4ae47266-5a47-49ce-ba3e-5920c87f6306",
+          "id": "8e9e45e6-3108-4def-a32f-8f6ef065d1c3"
+        },
+        "54ae1869-7b88-4dd1-8f5e-35088ca8df95": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "b3e7ed2f-d413-449d-956e-f8c66ec6c639",
+          "id": "54ae1869-7b88-4dd1-8f5e-35088ca8df95"
+        },
+        "00cf6963-c4af-4ddf-aacb-9c4289117b86": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "44bace76-f6c2-43a4-97f4-8f9ce940f4c9",
+          "id": "00cf6963-c4af-4ddf-aacb-9c4289117b86"
+        },
+        "1f56864c-0746-4237-8faf-fb6b468998b5": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "9098d69c-33ae-45d6-ad5a-4c7b7bbd515d",
+          "id": "1f56864c-0746-4237-8faf-fb6b468998b5"
+        },
+        "e34265e7-1f46-4c20-af90-1abb62b2c617": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "1e5e28d9-e1cf-4e76-a15e-5869f12cdf62",
+          "id": "e34265e7-1f46-4c20-af90-1abb62b2c617"
+        },
+        "84c5118c-7fac-4dcb-b93b-77e9bdf46a61": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "6ad5a9b8-2ba5-449f-bbf1-ae79a2eb0bc0",
+          "id": "84c5118c-7fac-4dcb-b93b-77e9bdf46a61"
+        },
+        "c77333c0-ad6e-4981-8ab6-40821d2c98e6": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "35104863-e090-4d0c-880a-3e6d6a211061",
+          "id": "c77333c0-ad6e-4981-8ab6-40821d2c98e6"
+        },
+        "05808e08-4603-4f27-88cd-9a008ffd330f": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "5ba904bf-7a7b-426c-924d-2117bd440f31",
+          "id": "05808e08-4603-4f27-88cd-9a008ffd330f"
+        },
+        "8679371f-5469-44ae-a7eb-f72a03555c17": {
+          "from": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "to": "ba4e0e46-fd3c-4ce4-95aa-f3ae2bc04909",
+          "id": "8679371f-5469-44ae-a7eb-f72a03555c17"
+        },
+        "b67d1727-f8d2-4ec1-9886-45145ce0918b": {
+          "from": "56a0a82c-1c42-4da8-9b03-d952db168936",
+          "to": "c32155df-4b2a-4a56-8ff7-ee40730c416d",
+          "id": "b67d1727-f8d2-4ec1-9886-45145ce0918b"
         }
       },
       "length": 0,
@@ -75641,10 +78182,10 @@ var schemeData =
     }
   },
   "setup": {
-    "scale": 0.0136,
+    "scale": 0.017153190073385165,
     "viewPosition": {
-      "x": 108007.00000470589,
-      "y": 19799.99999941177
+      "x": 95235.21235090331,
+      "y": 15670.94434001615
     }
   }
 }
