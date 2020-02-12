@@ -44,7 +44,8 @@ var nodeLabelTextareaExpanded = false;
 var nodesDropDownMenuNodesIds = [];
 var dontShowShemeDataMenuPagesList = [
    "news1.html",
-   "news2.html"
+   "news2.html",
+   "youtube.html"
 ];
 var lastSelectedNodeId = null;
 var userConfData = {
@@ -301,10 +302,29 @@ function getTreeNodesAndEdges(rootNodeId) {
                
                branchesNodesAndEdges.nodes.forEach(function(node) {
                   branchNode = network.body.nodes[node.id];
-                  yStep = yStep + branchNode.shape.height/2;
-                  branchNode.y = yStep;
-                  yStep = yStep + branchNode.shape.height/2;
+                  if (node.shape == "image") {
+                     console.log(branchNode);
+                     console.log(node);
+                     branchNode.imageObj.image.crossOrigin = "Anonymous";
+                     var imgHeight = branchNode.shape.height;
+                     if (typeof node.imgHeight !== "undefined") {
+                        if (node.imgHeight < node.imgWidth) {
+                           imgHeight = 400;
+                        } else {
+                           imgHeight = 400*node.imgHeight/node.imgWidth;
+                        }
+                     }
+                     yStep = yStep + imgHeight/2;
+                     branchNode.y = yStep;
+                     yStep = yStep + imgHeight/2;
+                  } else {
+                     yStep = yStep + branchNode.shape.height/2;
+                     branchNode.y = yStep;
+                     yStep = yStep + branchNode.shape.height/2;
+                  }
+
                   if (xShift != null) branchNode.x = branchNode.x + xShift;
+
                });
 
                var rootNode = getNodeFromNetworkDataById(nodeId);

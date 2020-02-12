@@ -41206,6 +41206,29 @@ var schemeData =
           "shape": "box",
           "link": "news2.html",
           "borderWidth": "0"
+        },
+        "3685864a-9252-42cd-bfdd-d8790e7b8f5c": {
+          "id": "3685864a-9252-42cd-bfdd-d8790e7b8f5c",
+          "x": 118710,
+          "y": -1076,
+          "label": "Searching and Removing a\nSpecific Element by Value"
+        },
+        "3ed1b95a-891f-4cd3-bd0a-e0ecbbbeddcf": {
+          "id": "3ed1b95a-891f-4cd3-bd0a-e0ecbbbeddcf",
+          "x": 119142,
+          "y": -1069,
+          "label": "[\"bar\", \"baz\", \"foo\", \"qux\"]\n \nlist.splice( list.indexOf('foo'), 1 );\n// Find the index position of \"foo,\" then remove one element from that position",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14,
+            "align": "left"
+          },
+          "color": {
+            "background": "",
+            "border": ""
+          },
+          "borderWidth": ""
         }
       },
       "length": 0,
@@ -61280,6 +61303,16 @@ var schemeData =
           "id": "765f4b8a-a51f-445b-a3f9-2cd73c49ef99899359111147207",
           "from": "d4628ef8-97af-4c5a-b900-7c3b16d9d989899359111147207",
           "to": "e93af4ee-6ab3-4857-8283-128dcf629ab3210609247158728875145680296120294430899359111147207"
+        },
+        "520ac8e6-f880-460f-a321-0ebe9f4ff507": {
+          "from": "3685864a-9252-42cd-bfdd-d8790e7b8f5c",
+          "to": "3ed1b95a-891f-4cd3-bd0a-e0ecbbbeddcf",
+          "id": "520ac8e6-f880-460f-a321-0ebe9f4ff507"
+        },
+        "5280e56c-04de-4b17-8968-23f882c309d8": {
+          "from": "d148c804-583c-4167-a859-c3b6cc31af8d",
+          "to": "3685864a-9252-42cd-bfdd-d8790e7b8f5c",
+          "id": "5280e56c-04de-4b17-8968-23f882c309d8"
         }
       },
       "length": 0,
@@ -61319,8 +61352,8 @@ var schemeData =
   "setup": {
     "scale": 0.0156,
     "viewPosition": {
-      "x": 102403.00000128208,
-      "y": 11799.999998205136
+      "x": 102403.00000128255,
+      "y": 11799.999996923076
     }
   }
 }

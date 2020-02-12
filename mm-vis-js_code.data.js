@@ -1954,7 +1954,7 @@ var schemeData =
           },
           "shadow": {},
           "shapeProperties": {},
-          "label": "//var canvasWidth = 1200;\n//var canvasHeight = 800;\n\nvar canvasWidthSetup = 100;\nvar canvasHeightSetup = 100;\nvar canvasWidth = window.innerWidth;\nvar canvasHeight = window.innerHeight;\nvar body = null\n\nvar showDataButton = null;\nvar schemeEditElementsMenu = null;\nvar schemeDataMenu = null;\nvar schemeDataTextArea = null;\n\nvar network = null;\nvar canvas;\nvar ctx;\nvar rect = {}\nvar drag = false;\nvar drawingSurfaceImageData;\nvar containerJQ = $(\"div#network\");\nvar doubleClickTimeThreshold = 300;\nvar doubleClick = false;\nvar loadSavedProjectToMenuButton;\nvar deleteSavedProjectButton;\nvar projectSaveNodeNamePrefix = \"projectSave_\";\nvar saveCanvasProjectDataLine = \"saveCanvasProjectData\";\nvar projectSaveIdLine = \"projectSaveId\";\nvar nodesToPaste = [];\nvar edgesToPaste = [];\nvar themeGraph = false;\nvar cancelNodeEdit = false;\nvar showCursorCoordinates = false;\nvar pathDelimiter = \"/\";\nvar lastEditedNodesIds = [];\nvar lastClickPosition = null;\nvar servUrl = \"https://localhost:3001/\";\nvar publicImgsPath = \"public/imgs/\";\nvar clipboard = {};\nvar viewsSaves = {};\nvar jumpNavigationData = null;\nvar dataCash = null;\nvar nodeLabelTextareaExpanded = false;\nvar nodesDropDownMenuNodesIds = [];\nvar dontShowShemeDataMenuPagesList = [\n   \"news1.html\",\n   \"news2.html\"\n];\nvar lastSelectedNodeId = null;\nvar userConfData = generateCode1 return setup[\"userConfData\"]; generateCode2\n//Colors:\n//\"#ffc63b\"\n//\"#FFD570\" - lighter\n//\"#af55f4\" - goals and questions\n//\"DodgerBlue\" - blue\n///////////////////////////////////",
+          "label": "//var canvasWidth = 1200;\n//var canvasHeight = 800;\n\nvar canvasWidthSetup = 100;\nvar canvasHeightSetup = 100;\nvar canvasWidth = window.innerWidth;\nvar canvasHeight = window.innerHeight;\nvar body = null\n\nvar showDataButton = null;\nvar schemeEditElementsMenu = null;\nvar schemeDataMenu = null;\nvar schemeDataTextArea = null;\n\nvar network = null;\nvar canvas;\nvar ctx;\nvar rect = {}\nvar drag = false;\nvar drawingSurfaceImageData;\nvar containerJQ = $(\"div#network\");\nvar doubleClickTimeThreshold = 300;\nvar doubleClick = false;\nvar loadSavedProjectToMenuButton;\nvar deleteSavedProjectButton;\nvar projectSaveNodeNamePrefix = \"projectSave_\";\nvar saveCanvasProjectDataLine = \"saveCanvasProjectData\";\nvar projectSaveIdLine = \"projectSaveId\";\nvar nodesToPaste = [];\nvar edgesToPaste = [];\nvar themeGraph = false;\nvar cancelNodeEdit = false;\nvar showCursorCoordinates = false;\nvar pathDelimiter = \"/\";\nvar lastEditedNodesIds = [];\nvar lastClickPosition = null;\nvar servUrl = \"https://localhost:3001/\";\nvar publicImgsPath = \"public/imgs/\";\nvar clipboard = {};\nvar viewsSaves = {};\nvar jumpNavigationData = null;\nvar dataCash = null;\nvar nodeLabelTextareaExpanded = false;\nvar nodesDropDownMenuNodesIds = [];\nvar dontShowShemeDataMenuPagesList = [\n   \"news1.html\",\n   \"news2.html\",\n   \"youtube.html\"\n];\nvar lastSelectedNodeId = null;\nvar userConfData = generateCode1 return setup[\"userConfData\"]; generateCode2\n//Colors:\n//\"#ffc63b\"\n//\"#FFD570\" - lighter\n//\"#af55f4\" - goals and questions\n//\"DodgerBlue\" - blue\n///////////////////////////////////",
           "x": 38920,
           "y": -7600,
           "id": "ee38a01b-7b68-4bd4-8b3a-eee22629d252486",
@@ -20870,9 +20870,9 @@ var schemeData =
         },
         "701d9abe-1d6d-4129-b98c-ab3ea8de9d0a": {
           "id": "701d9abe-1d6d-4129-b98c-ab3ea8de9d0a",
-          "x": 67269,
+          "x": 67569,
           "y": -1755,
-          "label": "function getPage(newsUrl, getRSSAnswer) {\n   var url = require(\"url\");\n   var path = url.parse(newsUrl).path;\n   var host = url.parse(newsUrl).host;\n   const https = require('https')\n   //https://www.linux.org.ru/section-rss.jsp\n   const options = {\n     hostname: host,\n     port: 443,\n     path: path,\n     method: 'GET',\n     headers: {\n        'Content-Type': 'text/html'\n     }\n   }\n\n   var req = https.request(options, function(res) {\n      //console.log(\"statusCode: \", res.statusCode);\n      //console.log(\"headers: \", res.headers);\n\n      res.setEncoding('utf8');\n      res.on('data', function(d) {\n         //process.stdout.write(d);\n         getRSSAnswer(d);\n      });\n   });\n\n   req.end();\n\n   req.on('error', function(e) {\n      console.error(e);\n   });\n}\n\napp.get(\"/getWebPage\", function(req, res){\n   res.set('Access-Control-Allow-Origin', '*');\n   var urlString = req.query.urlString;\n   console.log(\"urlString:\");\n   console.log(urlString);\n\n/*\n   function getRSSAnswer(answerLine) {\n      answerLine = encodeURIComponent(answerLine)\n      answerLine = JSON.stringify(answerLine);\n      response.send(answerLine);\n   }\n\n   var answerLine = getPage(urlString, getRSSAnswer);\n*/\n\n    axios.get(urlString)\n    .then(function (response) {\n        var data = JSON.stringify(response.data);\n        //console.log(data);\n        res.send(data);\n    })\n    .catch(function (error) {\n        console.log(\"Error\");\n        //console.log(error);\n    });\n\n});",
+          "label": "function getPage(newsUrl, getRSSAnswer) {\n   var url = require(\"url\");\n   var path = url.parse(newsUrl).path;\n   var host = url.parse(newsUrl).host;\n   const https = require('https')\n   //https://www.linux.org.ru/section-rss.jsp\n   const options = {\n     hostname: host,\n     port: 443,\n     path: path,\n     method: 'GET',\n     headers: {\n        'Content-Type': 'text/html'\n     }\n   }\n\n   var req = https.request(options, function(res) {\n      //console.log(\"statusCode: \", res.statusCode);\n      //console.log(\"headers: \", res.headers);\n\n      res.setEncoding('utf8');\n      res.on('data', function(d) {\n         //process.stdout.write(d);\n         getRSSAnswer(d);\n      });\n   });\n\n   req.end();\n\n   req.on('error', function(e) {\n      console.error(e);\n   });\n}\n\napp.get(\"/getWebPage\", function(req, res){\n   res.set('Access-Control-Allow-Origin', '*');\n   var urlString = req.query.urlString;\n   console.log(\"urlString:\");\n   console.log(urlString);\n\n/*\n   function getRSSAnswer(answerLine) {\n      answerLine = encodeURIComponent(answerLine)\n      answerLine = JSON.stringify(answerLine);\n      response.send(answerLine);\n   }\n\n   var answerLine = getPage(urlString, getRSSAnswer);\n*/\n\n    var userAgentString = \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36\"\n\n    axios.get(urlString, { headers: { 'User-Agent': userAgentString }  })\n    .then(function (response) {\n        var data = JSON.stringify(response.data);\n        //console.log(data);\n        res.send(data);\n    })\n    .catch(function (error) {\n        console.log(\"Error\");\n        //console.log(error);\n    });\n\n});",
           "shape": "box",
           "link": "",
           "font": {
@@ -23779,9 +23779,9 @@ var schemeData =
         },
         "a69d2f2f-1558-4f7c-bd51-8353cf88680c": {
           "id": "a69d2f2f-1558-4f7c-bd51-8353cf88680c",
-          "x": 41008,
-          "y": -2656,
-          "label": "            function restoreNodeBranchesFromDataCash(nodeId) {\n\n               console.log(\"restoreNodeBranchesFromDataCash\");\n               var branchesNodesAndEdges = dataCash[nodeId];\n               if (typeof branchesNodesAndEdges === \"undefined\") return;\n\n               updateMenuFromScheme([],[]);\n   \n               updateSchemeFromMenu(branchesNodesAndEdges.nodes, branchesNodesAndEdges.edges);\n\n               var nodesPositions = network.getPositions();\n\n               var xShift = null;\n               if (typeof branchesNodesAndEdges.rootPosition !== \"undefined\") {\n                  xShift = nodesPositions[nodeId].x - branchesNodesAndEdges.rootPosition.x;\n               }\n\n               var yStep = nodesPositions[nodeId].y + network.body.nodes[nodeId].shape.height/2;\n               \n               branchesNodesAndEdges.nodes.forEach(function(node) {\n                  branchNode = network.body.nodes[node.id];\n                  yStep = yStep + branchNode.shape.height/2;\n                  branchNode.y = yStep;\n                  yStep = yStep + branchNode.shape.height/2;\n                  if (xShift != null) branchNode.x = branchNode.x + xShift;\n               });\n\n               var rootNode = getNodeFromNetworkDataById(nodeId);\n               rootNode.borderWidth = \"0\";\n               network.body.data.nodes.update(rootNode);\n\n               delete dataCash[nodeId];\n               updateMenuFromScheme([],[]);\n\n            }",
+          "x": 41020,
+          "y": -2551,
+          "label": "            function restoreNodeBranchesFromDataCash(nodeId) {\n\n               console.log(\"restoreNodeBranchesFromDataCash\");\n               var branchesNodesAndEdges = dataCash[nodeId];\n               if (typeof branchesNodesAndEdges === \"undefined\") return;\n\n               updateMenuFromScheme([],[]);\n   \n               updateSchemeFromMenu(branchesNodesAndEdges.nodes, branchesNodesAndEdges.edges);\n\n               var nodesPositions = network.getPositions();\n\n               var xShift = null;\n               if (typeof branchesNodesAndEdges.rootPosition !== \"undefined\") {\n                  xShift = nodesPositions[nodeId].x - branchesNodesAndEdges.rootPosition.x;\n               }\n\n               var yStep = nodesPositions[nodeId].y + network.body.nodes[nodeId].shape.height/2;\n               \n               branchesNodesAndEdges.nodes.forEach(function(node) {\n                  branchNode = network.body.nodes[node.id];\n                  if (node.shape == \"image\") {\n                     console.log(branchNode);\n                     console.log(node);\n                     branchNode.imageObj.image.crossOrigin = \"Anonymous\";\n                     var imgHeight = branchNode.shape.height;\n                     if (typeof node.imgHeight !== \"undefined\") {\n                        if (node.imgHeight < node.imgWidth) {\n                           imgHeight = 400;\n                        } else {\n                           imgHeight = 400*node.imgHeight/node.imgWidth;\n                        }\n                     }\n                     yStep = yStep + imgHeight/2;\n                     branchNode.y = yStep;\n                     yStep = yStep + imgHeight/2;\n                  } else {\n                     yStep = yStep + branchNode.shape.height/2;\n                     branchNode.y = yStep;\n                     yStep = yStep + branchNode.shape.height/2;\n                  }\n\n                  if (xShift != null) branchNode.x = branchNode.x + xShift;\n\n               });\n\n               var rootNode = getNodeFromNetworkDataById(nodeId);\n               rootNode.borderWidth = \"0\";\n               network.body.data.nodes.update(rootNode);\n\n               delete dataCash[nodeId];\n               updateMenuFromScheme([],[]);\n\n            }",
           "shape": "box",
           "link": "",
           "font": {
@@ -25195,7 +25195,7 @@ var schemeData =
           "id": "0412b23c-532f-4d72-a5f0-639724b79637",
           "x": 40479,
           "y": -11410,
-          "label": "jsFilesLinksParam:101",
+          "label": "jsFilesLinksParam:102",
           "shape": "box",
           "link": "",
           "font": {
@@ -27681,6 +27681,29 @@ var schemeData =
           "x": 22599,
           "y": 12265,
           "label": "Currently wrapped nodes are not counted."
+        },
+        "b25790aa-8c02-47d5-9e17-ad1f52a04950": {
+          "id": "b25790aa-8c02-47d5-9e17-ad1f52a04950",
+          "x": 22097,
+          "y": -2890,
+          "label": "Find all nodes with wrapped branches \nand format them"
+        },
+        "834f46cb-7ffb-4a1e-85ca-e02057ce84d7": {
+          "id": "834f46cb-7ffb-4a1e-85ca-e02057ce84d7",
+          "x": 22972,
+          "y": -2890,
+          "label": "objectToArray(network.body.nodes).forEach(function(node) {\n   if (typeof dataCash[node.id] !== \"undefined\" && dataCash[node.id].nodes.length > 0) {\n               var rootNode = getNodeFromNetworkDataById(node.id);\n               if (typeof rootNode.color !== \"undefined\") {\n                  rootNode.color.border = \"black\";\n               } else {\n                  rootNode.color = {border: \"black\"};\n               }\n               rootNode.borderWidth = \"1\";\n               network.body.data.nodes.update(rootNode);\n   }\n});",
+          "shape": "box",
+          "link": "",
+          "font": {
+            "size": 14,
+            "align": "left"
+          },
+          "color": {
+            "background": "#ffd570",
+            "border": ""
+          },
+          "borderWidth": ""
         }
       },
       "length": 0,
@@ -53250,6 +53273,16 @@ var schemeData =
           "from": "e8aef5d6-6479-4930-a01f-90dcb5541030",
           "to": "f2d18aec-0809-4149-aa04-f77cb56b4338",
           "id": "1f98fbe4-6be8-4d7b-afe9-3af29b982573"
+        },
+        "2ee5041b-dad0-43e7-a242-9c4ba85f6faa": {
+          "from": "b25790aa-8c02-47d5-9e17-ad1f52a04950",
+          "to": "834f46cb-7ffb-4a1e-85ca-e02057ce84d7",
+          "id": "2ee5041b-dad0-43e7-a242-9c4ba85f6faa"
+        },
+        "bb2ab76b-8669-4f5e-ae30-70d185454a5c": {
+          "from": "1cd537f0-df33-4713-9b58-7ab0b6cdac06399446364",
+          "to": "b25790aa-8c02-47d5-9e17-ad1f52a04950",
+          "id": "bb2ab76b-8669-4f5e-ae30-70d185454a5c"
         }
       },
       "length": 0,
@@ -53313,7 +53346,7 @@ var schemeData =
     "scale": 0.01,
     "viewPosition": {
       "x": 65673,
-      "y": 17507.999999999993
+      "y": 17508.000000000004
     }
   }
 }
