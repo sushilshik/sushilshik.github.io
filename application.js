@@ -45,13 +45,11 @@ var nodesDropDownMenuNodesIds = [];
 var dontShowShemeDataMenuPagesList = [
    "news1.html",
    "news2.html",
-   "youtube.html"
+   "youtube.html",
+   "base.html"
 ];
 var lastSelectedNodeId = null;
-var userConfData = {
-  "conceptualModelingLocalLink1": "file:///home/mike/oldmount/wd2_earx_wcazah/Downloads_2018/conceptual_modeling_2020.02.05/"
-}
-
+var userConfData = undefined
 //Colors:
 //"#ffc63b"
 //"#FFD570" - lighter
@@ -2741,6 +2739,78 @@ runNodeCodeButton.click(function() {
       }
    });
    $(document).keyup(function (event) {
+      //Connect nodes columns. alt+m
+      if (event.altKey == true && 
+          event.shiftKey == false && 
+          event.ctrlKey == false && 
+          event.keyCode === 77) {
+             var selectedNodes = objectToArray(network.selectionHandler.selectionObj.nodes);
+             var positions = network.getPositions();
+             var columns = {};
+             var minLeftNode = null;
+             for (i = 0; i < selectedNodes.length; i++) {
+                if (i == 0) minLeftNode = selectedNodes[i];
+                if (minLeftNode.shape.left > selectedNodes[i].shape.left) {
+                        minLeftNode = selectedNodes[i];
+                };
+             }
+
+             var leftColumn = [];
+             var rightColumn = [];
+             selectedNodes.forEach(function(node) {
+                var nodeD = getNodeFromNetworkDataById(node.id);
+                var pNode = positions[node.id];
+                nodeD.x = pNode.x;
+                nodeD.y = pNode.y;
+                network.body.data.nodes.update(nodeD);
+                if (typeof columns[node.shape.left] === "undefined" || columns[node.shape.left] == null) {
+                   columns[node.shape.left] = [];
+                }
+                columns[node.shape.left].push(node);
+                var leftPositionDiff = Math.abs(minLeftNode.shape.left - node.shape.left);
+                if (leftPositionDiff < 2) {
+                   leftColumn.push(node);
+                } else {
+                   rightColumn.push(node);
+                }
+             });
+
+             var lastLeftNode = null;
+             leftColumn.reverse().forEach(function(leftNode, leftColumnIndex) {
+                rightColumn.forEach(function(rightNode, index) {
+                   if (rightNode.y >= leftNode.y && (lastLeftNode == null || rightNode.y < lastLeftNode.y)) {
+                      var edgeData = {from: leftNode.id, to: rightNode.id};
+                      network.body.data.edges.getDataSet().add(edgeData);
+                   }
+                   if (leftColumnIndex == (leftColumn.length-1) && rightNode.y < leftNode.y) {
+                      var edgeData = {from: leftNode.id, to: rightNode.id};
+                      network.body.data.edges.getDataSet().add(edgeData);
+                   }
+                });
+                lastLeftNode = leftNode;
+             });
+      }
+   });
+   $(document).keyup(function (event) {
+      //Shift selected nodes left (500). alt+c
+      if (event.altKey == true && 
+          event.shiftKey == false && 
+          event.ctrlKey == false && 
+          event.keyCode === 67) {
+             var leftShift = 500;
+             var selectedNodes = objectToArray(network.selectionHandler.selectionObj.nodes);
+             var positions = network.getPositions();
+             selectedNodes.forEach(function(node) {
+                var nodeD = getNodeFromNetworkDataById(node.id);
+                var pNode = positions[node.id];
+                nodeD.x = pNode.x;
+                nodeD.y = pNode.y;
+                network.body.data.nodes.update(nodeD);
+                network.nodesHandler.moveNode(node.id, nodeD.x - leftShift, nodeD.y);
+             });
+      }
+   });
+   $(document).keyup(function (event) {
       //Move view down 1/10. j
       if (event.altKey == false && 
           event.shiftKey == false && 
@@ -3459,7 +3529,10 @@ runNodeCodeButton.click(function() {
 	});
 	$(document).keydown(function (event) {
 		//Connect nodes. ctrl+alt+c.
-		if (event.ctrlKey && event.altKey && event.keyCode === 67) {
+		if (event.ctrlKey == true && 
+                    event.altKey == true &&
+                    event.shiftKey == false &&
+                    event.keyCode === 67) {
                         var selectedNodesCount = network.selectionHandler._getSelectedNodeCount();
 			if (selectedNodesCount < 2) return;
                         var nodes = objectToArray(network.selectionHandler.selectionObj.nodes);
