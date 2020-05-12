@@ -1955,13 +1955,13 @@ var schemeData =
           },
           "shadow": {},
           "shapeProperties": {},
-          "label": "//var canvasWidth = 1200;\n//var canvasHeight = 800;\n\nvar canvasWidthSetup = 100;\nvar canvasHeightSetup = 100;\nvar canvasWidth = window.innerWidth;\nvar canvasHeight = window.innerHeight;\nvar body = null\n\nvar showDataButton = null;\nvar schemeEditElementsMenu = null;\nvar schemeDataMenu = null;\nvar schemeDataTextArea = null;\n\nvar network = null;\nvar canvas;\nvar ctx;\nvar rect = {}\nvar selectionRectangleDrag = false;\nvar drawingSurfaceImageData;\nvar containerJQ = $(\"div#network\");\nvar doubleClickTimeThreshold = 300;\nvar doubleClick = false;\nvar loadSavedProjectToMenuButton;\nvar deleteSavedProjectButton;\nvar projectSaveNodeNamePrefix = \"projectSave_\";\nvar saveCanvasProjectDataLine = \"saveCanvasProjectData\";\nvar projectSaveIdLine = \"projectSaveId\";\nvar nodesToPaste = [];\nvar edgesToPaste = [];\nvar themeGraph = false;\nvar cancelNodeEdit = false;\nvar showCursorCoordinates = false;\nvar pathDelimiter = \"/\";\nvar lastEditedNodesIds = [];\nvar lastClickPosition = null;\nvar servUrl = \"https://localhost:3001/\";\nvar publicImgsPath = \"public/imgs/\";\nvar clipboard = {};\nvar viewsSaves = {};\nvar jumpNavigationData = null;\nvar dataCash = null;\nvar nodeLabelTextareaExpanded = false;\nvar nodesDropDownMenuNodesIds = [];\nvar dontShowShemeDataMenuPagesList = [\n   \"news1.html\",\n   \"news2.html\",\n   \"news3.html\",\n   \"news4.html\",\n   \"news5.html\",\n   \"youtube1.html\",\n   \"youtube2.html\",\n   \"base.html\",\n   \"start_page.html\",\n   \"tmp.html\",\n   \"tmp1.html\",\n   \"nature.html\",\n   \"timelines.html\"\n];\nvar lastSelectedNodeId = null;\nvar userConfData = generateCode1 return setup[\"userConfData\"]; generateCode2\nvar cursorNodeId = null;\nvar keyboardMoveSelectedEnabled = false;\n//Colors:\n//\"#ffc63b\"\n//\"#FFD570\" - lighter\n//\"#af55f4\" - goals and questions\n//\"DodgerBlue\" - blue\n///////////////////////////////////",
+          "label": "//var canvasWidth = 1200;\n//var canvasHeight = 800;\n\nvar canvasWidthSetup = 100;\nvar canvasHeightSetup = 100;\nvar canvasWidth = window.innerWidth;\nvar canvasHeight = window.innerHeight;\nvar body = null\n\nvar showDataButton = null;\nvar schemeEditElementsMenu = null;\nvar schemeDataMenu = null;\nvar schemeDataTextArea = null;\n\nvar network = null;\nvar canvas;\nvar ctx;\nvar rect = {}\nvar selectionRectangleDrag = false;\nvar drawingSurfaceImageData;\nvar containerJQ = $(\"div#network\");\nvar doubleClickTimeThreshold = 300;\nvar doubleClick = false;\nvar loadSavedProjectToMenuButton;\nvar deleteSavedProjectButton;\nvar projectSaveNodeNamePrefix = \"projectSave_\";\nvar saveCanvasProjectDataLine = \"saveCanvasProjectData\";\nvar projectSaveIdLine = \"projectSaveId\";\nvar nodesToPaste = [];\nvar edgesToPaste = [];\nvar themeGraph = false;\nvar cancelNodeEdit = false;\nvar showCursorCoordinates = false;\nvar pathDelimiter = \"/\";\nvar lastEditedNodesIds = [];\nvar lastClickPosition = null;\nvar servUrl = \"https://localhost:3001/\";\nvar publicImgsPath = \"public/imgs/\";\nvar clipboard = {};\nvar viewsSaves = {};\nvar jumpNavigationData = null;\nvar dataCash = null;\nvar nodeLabelTextareaExpanded = false;\nvar nodesDropDownMenuNodesIds = [];\nvar dontShowShemeDataMenuPagesList = [\n   \"news1.html\",\n   \"news2.html\",\n   \"news3.html\",\n   \"news4.html\",\n   \"news5.html\",\n   \"youtube1.html\",\n   \"youtube2.html\",\n   \"base.html\",\n   \"start_page.html\",\n   \"tmp.html\",\n   \"tmp1.html\",\n   \"nature.html\",\n   \"timelines.html\",\n   \"music.html\"\n];\nvar lastSelectedNodeId = null;\nvar userConfData = generateCode1 return setup[\"userConfData\"]; generateCode2\nvar cursorNodeId = null;\nvar keyboardMoveSelectedEnabled = false;\n//Colors:\n//\"#ffc63b\"\n//\"#FFD570\" - lighter\n//\"#af55f4\" - goals and questions\n//\"DodgerBlue\" - blue\n///////////////////////////////////",
           "x": 38920,
           "y": -7600,
           "id": "ee38a01b-7b68-4bd4-8b3a-eee22629d252486",
           "shape": "box",
           "link": "",
-          "borderWidth": ""
+          "borderWidth": "0"
         },
         "db8817cf-9360-4031-ad9a-4f94541500f3486": {
           "color": {
@@ -25226,7 +25226,7 @@ var schemeData =
           "id": "0412b23c-532f-4d72-a5f0-639724b79637",
           "x": 40502,
           "y": -10926,
-          "label": "jsFilesLinksParam:201",
+          "label": "jsFilesLinksParam:205",
           "shape": "box",
           "link": "",
           "font": {
@@ -67302,7 +67302,7 @@ var schemeData =
     "scale": 0.01,
     "viewPosition": {
       "x": 65672.99999999996,
-      "y": 17508.000000000175
+      "y": 17507.999999999993
     }
   }
 }

@@ -55,7 +55,8 @@ var dontShowShemeDataMenuPagesList = [
    "tmp.html",
    "tmp1.html",
    "nature.html",
-   "timelines.html"
+   "timelines.html",
+   "music.html"
 ];
 var lastSelectedNodeId = null;
 var userConfData = undefined
