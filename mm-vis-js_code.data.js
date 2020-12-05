@@ -5065,7 +5065,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "mm-vis-js",
           "x": 39620,
-          "y": -11192,
+          "y": -10460,
           "id": "indx1_289",
           "shape": "box",
           "link": "",
@@ -5097,7 +5097,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Development",
           "x": 40253,
-          "y": -10810,
+          "y": -10078,
           "id": "indx1_290"
         },
         "indx1_291": {
@@ -5129,7 +5129,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "11/18/2019",
           "x": 40432,
-          "y": -10809,
+          "y": -10077,
           "id": "indx1_291",
           "shape": "box",
           "link": "",
@@ -5161,7 +5161,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "init",
           "x": 40515,
-          "y": -10809,
+          "y": -10077,
           "id": "indx1_292"
         },
         "indx1_293": {
@@ -5190,7 +5190,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Notes",
           "x": 40253,
-          "y": -11660,
+          "y": -10928,
           "id": "indx1_293"
         },
         "indx1_294": {
@@ -5248,7 +5248,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Details, thoughts",
           "x": 40462,
-          "y": -11980,
+          "y": -11248,
           "id": "indx1_295"
         },
         "indx1_296": {
@@ -5277,7 +5277,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Sections",
           "x": 40403,
-          "y": -11410,
+          "y": -10678,
           "id": "indx1_296"
         },
         "indx1_297": {
@@ -5306,7 +5306,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Books",
           "x": 40467,
-          "y": -11560,
+          "y": -10828,
           "id": "indx1_297"
         },
         "indx1_298": {
@@ -5335,7 +5335,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "R&D institutions",
           "x": 40497,
-          "y": -11535,
+          "y": -10803,
           "id": "indx1_298"
         },
         "indx1_299": {
@@ -5364,7 +5364,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Sites",
           "x": 40463,
-          "y": -11510,
+          "y": -10778,
           "id": "indx1_299"
         },
         "indx1_300": {
@@ -5393,7 +5393,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Magazines",
           "x": 40482,
-          "y": -11485,
+          "y": -10753,
           "id": "indx1_300"
         },
         "indx1_301": {
@@ -5422,7 +5422,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Articles",
           "x": 40470,
-          "y": -11460,
+          "y": -10728,
           "id": "indx1_301"
         },
         "indx1_302": {
@@ -5451,7 +5451,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Media content",
           "x": 40492,
-          "y": -11435,
+          "y": -10703,
           "id": "indx1_302"
         },
         "indx1_303": {
@@ -5480,7 +5480,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Misc. web links",
           "x": 40495,
-          "y": -11410,
+          "y": -10678,
           "id": "indx1_303"
         },
         "indx1_304": {
@@ -5509,7 +5509,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Projects",
           "x": 40473,
-          "y": -11385,
+          "y": -10653,
           "id": "indx1_304"
         },
         "indx1_305": {
@@ -5538,7 +5538,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Tools",
           "x": 40464,
-          "y": -11360,
+          "y": -10628,
           "id": "indx1_305"
         },
         "indx1_306": {
@@ -5567,7 +5567,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Organizations",
           "x": 40491,
-          "y": -11335,
+          "y": -10603,
           "id": "indx1_306"
         },
         "indx1_307": {
@@ -5596,7 +5596,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Standarts",
           "x": 40478,
-          "y": -11310,
+          "y": -10578,
           "id": "indx1_307"
         },
         "indx1_308": {
@@ -5625,7 +5625,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Forums, Groups",
           "x": 40499,
-          "y": -11285,
+          "y": -10553,
           "id": "indx1_308"
         },
         "indx1_309": {
@@ -5654,7 +5654,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Laws",
           "x": 40464,
-          "y": -11260,
+          "y": -10528,
           "id": "indx1_309"
         },
         "indx1_310": {
@@ -5683,7 +5683,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Adjacent Themes",
           "x": 40503,
-          "y": -11235,
+          "y": -10503,
           "id": "indx1_310"
         },
         "indx1_311": {
@@ -5712,7 +5712,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Questions",
           "x": 40253,
-          "y": -11110,
+          "y": -10378,
           "id": "indx1_311"
         },
         "indx1_312": {
@@ -5741,7 +5741,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Problems",
           "x": 40253,
-          "y": -11010,
+          "y": -10278,
           "id": "indx1_312"
         },
         "indx1_313": {
@@ -5770,7 +5770,7 @@ var schemeData =
           "shapeProperties": {},
           "label": "Goals",
           "x": 40253,
-          "y": -10910,
+          "y": -10178,
           "id": "indx1_313"
         },
         "indx1_314": {
@@ -5911,7 +5911,7 @@ var schemeData =
           "label": "mvj code setup for project name: mm-vis-js",
           "id": "indx1_317",
           "x": 39809,
-          "y": -10410,
+          "y": -9678,
           "shape": "box",
           "link": "",
           "borderWidth": ""
@@ -5946,7 +5946,7 @@ var schemeData =
           "label": "projectPath: /home/mike/progr/repo/mm-vis-js",
           "id": "indx1_318",
           "x": 40610,
-          "y": -10473,
+          "y": -9741,
           "shape": "box",
           "link": "",
           "borderWidth": ""
@@ -5981,7 +5981,7 @@ var schemeData =
           "label": "backupPaths: [\n\"/home/mike/progr/repo/mm-vis-js\"\n]",
           "id": "indx1_319",
           "x": 40576,
-          "y": -10402,
+          "y": -9670,
           "shape": "box",
           "link": "",
           "borderWidth": ""
@@ -8591,7 +8591,7 @@ var schemeData =
         "indx1_464": {
           "id": "indx1_464",
           "x": 40987,
-          "y": -12122,
+          "y": -11390,
           "label": "This is root scheme for mm-vis-js project. This scheme with red node \"mm-vis-js\"",
           "shape": "box",
           "link": "",
@@ -8608,19 +8608,19 @@ var schemeData =
         "indx1_465": {
           "id": "indx1_465",
           "x": 40794,
-          "y": -11912,
+          "y": -11180,
           "label": "How to build project"
         },
         "indx1_466": {
           "id": "indx1_466",
           "x": 41167,
-          "y": -12003,
+          "y": -11271,
           "label": "start mvj-serv.js from mm-vis-js/utils/"
         },
         "indx1_467": {
           "id": "indx1_467",
           "x": 41413,
-          "y": -12000,
+          "y": -11268,
           "label": "$ node mvj-serv.js",
           "shape": "box",
           "link": "",
@@ -8637,7 +8637,7 @@ var schemeData =
         "indx1_468": {
           "id": "indx1_468",
           "x": 41502,
-          "y": -12037,
+          "y": -11305,
           "label": "check port number in mvj-serv.js script - 3001.",
           "shape": "box",
           "link": "",
@@ -12769,14 +12769,14 @@ var schemeData =
         "indx1_592": {
           "id": "indx1_592",
           "x": 40775,
-          "y": -12659,
+          "y": -11927,
           "label": "git and github"
         },
         "indx1_593": {
           "id": "indx1_593",
           "x": 41148,
-          "y": -14076,
-          "label": "cp -r application.js \\\nindex.html \\\nindex.data.js \\\nbase.html \\\nbase.data.js \\\nculture.html \\\nculture.data.js \\\nruby.html \\\nruby.data.js \\\njavascript.html \\\njavascript.data.js \\\nmusic.html \\\nmusic.data.js \\\nmm-vis-js_code.html \\\nmm-vis-js_code.data.js \\\nmm-vis-js_docs.html \\\nmm-vis-js_docs.data.js \\\nmath.html \\\nmath.data.js \\\npublic \\\npython.html \\\npython.data.js \\\nengineering.html \\\nengineering.data.js \\\ncode.html \\\ncode.data.js \\\n../README.md \\\nnews1.html \\\nnews1.data.js \\\nnews2.html \\\nnews2.data.js \\\nnews3.html \\\nnews3.data.js \\\nnews4.html \\\nnews4.data.js \\\nnews41.html \\\nnews41.data.js \\\nnews5.html \\\nnews5.data.js \\\nnews51.html \\\nnews51.data.js \\\nnews52.html \\\nnews52.data.js \\\nnews6.html \\\nnews6.data.js \\\nnews61.html \\\nnews61.data.js \\\nyoutube1.html \\\nyoutube1.data.js \\\nyoutube2.html \\\nyoutube2.data.js \\\ntimelines.html \\\ntimelines.data.js \\\nnature.html \\\nnature.data.js \\\njava.html \\\njava.data.js \\\njava-api.html \\\njava-api.data.js \\\nsa1.html \\\nsa1.data.js \\\nadmin.html \\\nadmin.data.js \\\n../../sushilshik.github.io/",
+          "y": -13710,
+          "label": "cp -r application.js \\\nindex.html \\\nindex.data.js \\\nbase.html \\\nbase.data.js \\\nculture.html \\\nculture.data.js \\\nruby.html \\\nruby.data.js \\\njavascript.html \\\njavascript.data.js \\\nmusic.html \\\nmusic.data.js \\\nmm-vis-js_code.html \\\nmm-vis-js_code.data.js \\\nmm-vis-js_docs.html \\\nmm-vis-js_docs.data.js \\\nmath.html \\\nmath.data.js \\\npublic \\\npython.html \\\npython.data.js \\\nengineering.html \\\nengineering.data.js \\\ncode.html \\\ncode.data.js \\\n../README.md \\\nnews1.html \\\nnews1.data.js \\\nnews2.html \\\nnews2.data.js \\\nnews3.html \\\nnews3.data.js \\\nnews4.html \\\nnews4.data.js \\\nnews41.html \\\nnews41.data.js \\\nnews5.html \\\nnews5.data.js \\\nnews51.html \\\nnews51.data.js \\\nnews52.html \\\nnews52.data.js \\\nnews6.html \\\nnews6.data.js \\\nnews61.html \\\nnews61.data.js \\\nyoutube1.html \\\nyoutube1.data.js \\\nyoutube2.html \\\nyoutube2.data.js \\\ntimelines.html \\\ntimelines.data.js \\\nnature.html \\\nnature.data.js \\\njava.html \\\njava.data.js \\\njava-api.html \\\njava-api.data.js \\\nsa1.html \\\nsa1.data.js \\\nadmin.html \\\nadmin.data.js \\\nmusic1.html \\\nmusic1.data.js \\\nmusic2.html \\\nmusic2.data.js \\\nnews53.html \\\nnews53.data.js \\\nnews62.html \\\nnews62.data.js \\\nnews11.html \\\nnews11.data.js \\\nlisp.html \\\nlisp.data.js \\\nyoutube3.html \\\nyoutube3.data.js \\\n../../sushilshik.github.io/",
           "shape": "box",
           "link": "",
           "font": {
@@ -12792,25 +12792,25 @@ var schemeData =
         "indx1_594": {
           "id": "indx1_594",
           "x": 41002,
-          "y": -12639,
+          "y": -11907,
           "label": "git commit -a -m \"...\""
         },
         "indx1_595": {
           "id": "indx1_595",
           "x": 40967,
-          "y": -12689,
+          "y": -11957,
           "label": "git add ..."
         },
         "indx1_596": {
           "id": "indx1_596",
           "x": 41357,
-          "y": -12691,
+          "y": -11959,
           "label": "check git add on sushilshik.github repository"
         },
         "indx1_597": {
           "id": "indx1_597",
           "x": 41006,
-          "y": -12602,
+          "y": -11870,
           "label": "git push origin master"
         },
         "indx1_598": {
@@ -18201,20 +18201,20 @@ var schemeData =
         "indx1_766": {
           "id": "indx1_766",
           "x": 40789,
-          "y": -12253,
+          "y": -11521,
           "label": "packages to install"
         },
         "indx1_767": {
           "id": "indx1_767",
           "x": 41008,
-          "y": -12300,
+          "y": -11568,
           "label": "nodejs"
         },
         "indx1_768": {
           "label": "python",
           "link": "",
           "x": 41008,
-          "y": -12276,
+          "y": -11544,
           "id": "indx1_768",
           "color": {
             "highlight": {
@@ -18255,7 +18255,7 @@ var schemeData =
           "label": "TexLive",
           "link": "",
           "x": 41011,
-          "y": -12252,
+          "y": -11520,
           "id": "indx1_769",
           "color": {
             "highlight": {
@@ -18296,7 +18296,7 @@ var schemeData =
           "label": "tex-preview",
           "link": "",
           "x": 41023,
-          "y": -12228,
+          "y": -11496,
           "id": "indx1_770",
           "color": {
             "highlight": {
@@ -18337,7 +18337,7 @@ var schemeData =
           "label": "sympy",
           "link": "",
           "x": 41007,
-          "y": -12204,
+          "y": -11472,
           "id": "indx1_771",
           "color": {
             "highlight": {
@@ -18378,7 +18378,7 @@ var schemeData =
           "label": "texlive-collection-latexextra",
           "link": "",
           "x": 41072,
-          "y": -12180,
+          "y": -11448,
           "id": "indx1_772",
           "color": {
             "highlight": {
@@ -18418,13 +18418,13 @@ var schemeData =
         "indx1_773": {
           "id": "indx1_773",
           "x": 41062,
-          "y": -12492,
+          "y": -11760,
           "label": "Update links to images in image nodes"
         },
         "indx1_774": {
           "id": "indx1_774",
           "x": 41820,
-          "y": -12541,
+          "y": -11809,
           "label": "network.body.data.nodes.get().forEach(function(node) {\n   if (typeof node[\"image\"] !== 'undefined') {\n      //Line to prepare for push to github.\n      //node.image = node.image.replace(\"https://localhost:3001\",\"\");\n      //Line to prepare for local work.\n      //node.image = node.image.replace(\"/public/imgs\",\"https://localhost:3001/public/imgs\");\n      network.body.data.nodes.update(node);\n   }\n});",
           "shape": "box",
           "link": "",
@@ -18441,7 +18441,7 @@ var schemeData =
         "indx1_775": {
           "id": "indx1_775",
           "x": 41332,
-          "y": -12535,
+          "y": -11803,
           "label": "run in console for page with images",
           "shape": "box",
           "link": "",
@@ -18458,38 +18458,38 @@ var schemeData =
         "indx1_776": {
           "id": "indx1_776",
           "x": 42318,
-          "y": -12550,
+          "y": -11818,
           "label": "Нужно доработать - съезжают координаты нод"
         },
         "indx1_777": {
           "id": "indx1_777",
           "x": 41372,
-          "y": -12412,
+          "y": -11680,
           "label": "Replace paths in ...data.js file with vim. (Fast fix)"
         },
         "indx1_778": {
           "id": "indx1_778",
           "x": 41761,
-          "y": -12410,
+          "y": -11678,
           "label": "%s/https:\\/\\/localhost:3001\\/public\\/imgs/\\/public\\/imgs/g"
         },
         "indx1_779": {
           "id": "indx1_779",
           "x": 42312,
-          "y": -12510,
+          "y": -11778,
           "label": "Вместо этого пока исправляем ссылки в vim."
         },
         "indx1_780": {
           "id": "indx1_780",
           "x": 41153,
-          "y": -11905,
+          "y": -11173,
           "label": "Select any mm-vis-js code node"
         },
         "indx1_781": {
           "label": "Press alt+b",
           "link": "",
           "x": 41088,
-          "y": -11871,
+          "y": -11139,
           "id": "indx1_781",
           "color": {
             "highlight": {
@@ -18529,7 +18529,7 @@ var schemeData =
         "indx1_782": {
           "id": "indx1_782",
           "x": 41258,
-          "y": -11832,
+          "y": -11100,
           "label": "Wait for save alert on top right of page. Or even check messages\nin browser console that everything is ok.",
           "shape": "box",
           "link": "",
@@ -18546,7 +18546,7 @@ var schemeData =
         "indx1_783": {
           "id": "indx1_783",
           "x": 41879,
-          "y": -12038,
+          "y": -11306,
           "label": "Change it in mvj-serv.js and in build script above, if you need."
         },
         "indx1_784": {
@@ -25196,7 +25196,7 @@ var schemeData =
         "indx1_1361": {
           "id": "indx1_1361",
           "x": 40539,
-          "y": -10326,
+          "y": -9594,
           "label": "jsFilesLinksParam:270",
           "shape": "box",
           "link": "",
@@ -25213,7 +25213,7 @@ var schemeData =
         "indx1_1362": {
           "id": "indx1_1362",
           "x": 41356,
-          "y": -11946,
+          "y": -11214,
           "label": "Set incremental number in \"mvj code setup for project name: mm-vis-js\"->\"jsFilesLinksParam:...\"",
           "shape": "box",
           "link": "",
@@ -25230,7 +25230,7 @@ var schemeData =
         "indx1_1363": {
           "id": "indx1_1363",
           "x": 40551,
-          "y": -10273,
+          "y": -9541,
           "label": "readLocalUserConfig: false",
           "shape": "box",
           "link": "",
@@ -26107,7 +26107,7 @@ var schemeData =
         "indx1_1446": {
           "id": "indx1_1446",
           "x": 40775,
-          "y": -10271,
+          "y": -9539,
           "label": "set \"false\" for Github build",
           "shape": "box",
           "link": "",
@@ -88797,10 +88797,10 @@ var schemeData =
     }
   },
   "setup": {
-    "scale": 0.060831795450878495,
+    "scale": 0.01,
     "viewPosition": {
-      "x": 42039.48385403493,
-      "y": -4458.618065328322
+      "x": 65673,
+      "y": 17507.999999999993
     }
   }
 }
